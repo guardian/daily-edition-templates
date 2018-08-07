@@ -1,3 +1,92 @@
+/*Specific to news article */
+
+.byline {
+  &__author--news {
+    color: $news-main;
+  }
+
+  &__location--news {
+    color: $news-main;
+  }
+}
+
+.arrow-up--news {
+  border-bottom: 25px solid $news-main;
+}
+
+.section--news {
+  color: $news-main;
+}
+
+.picture {
+  &__caption-container--news {
+    background-color: $news-main;
+    color: white;
+  }
+}
+
+/*Specific to sport article */
+
+.byline {
+  &__author--sport {
+    color: $sport-main;
+  }
+
+  &__location--sport {
+    color: $sport-main;
+  }
+}
+
+.arrow-up--sport {
+  border-bottom: 25px solid $highlight-main;
+}
+
+.section--sport {
+  color: $sport-main;
+}
+
+.picture {
+  &__caption-container--sport {
+    background-color: $highlight-main;
+    color: $brightness-7;
+  }
+}
+
+.multiline--sport {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%229%22%20height%3D%2212%22%20viewBox%3D%220%200%209%2012%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22%23DFDFDF%22%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%221.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%224.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%227.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%2210.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%224.5%22%20cy%3D%221.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%224.5%22%20cy%3D%224.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%224.5%22%20cy%3D%227.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%224.5%22%20cy%3D%2210.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%221.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%224.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%227.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%2210.5%22%20r%3D%221%22/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 10px;
+  background-position-x: 0;
+  padding-top: 16px;
+}
+
+/*Specific to culture article */
+
+.byline {
+  &__author--culture {
+    color: $culture-main;
+  }
+
+  &__location--culture {
+    color: $culture-main;
+  }
+}
+
+.arrow-up--culture {
+  border-bottom: 25px solid $culture-main;
+}
+
+.section--culture {
+  color: $culture-main;
+}
+
+.picture {
+  &__caption-container--culture {
+    background-color: $culture-dark;
+    color: white;
+  }
+}
+
 /*Specific to lifestyle article */
 
 .byline {
