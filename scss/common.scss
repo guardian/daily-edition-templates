@@ -1,0 +1,160 @@
+@import "base/reset";
+@import "base/colour";
+@import "base/unit";
+@import "base/typography";
+@import "base/rules";
+@import "base/vars";
+@include fontList(ios);
+/* common */
+body {
+  /* -webkit-font-smoothing: antialiased;*/
+  background-color: white;
+  color: $brightness-7;
+}
+
+p {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+/* wrapper for left content */
+.content {
+  width: $width-content;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-right: 1px solid $brightness-60;
+  @media (orientation: landscape) {
+    padding-left: 128px;
+  }
+}
+/* section */
+.section {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: $egyptian-display;
+}
+/* headline */
+///////////////////////////////////////////////////
+
+.headline {
+  font-family: $egyptian-display;
+  font-size: 44px;
+  line-height: 46px;
+  color: $brightness-7;
+  padding-bottom: 50px;
+}
+
+.standfirst {
+  font-family: $egyptian-display;
+  font-size: 22px;
+  line-height: 28px;
+  color: $brightness-7;
+  clear: both;
+  padding-bottom: 20px;
+}
+
+.multiline {
+  @include multiline(4, $brightness-60, bottom);
+  content: '';
+  display: block;
+  height: 4px * 4;
+  /*height of multiline (4px) times the number of lines (4)*/
+}
+
+.guardian-body-text {
+  font-family: $egyptian-text;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 48px;
+  clear: both;
+
+  p {
+    padding-bottom: 22px;
+    padding-top: 0;
+  }
+}
+/* images */
+/////////////////////////////////////////
+
+.picture {
+  margin-bottom: 6px;
+  position: relative;
+
+  &--first img {
+    width: $width-content;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  &--second img {
+    width: $width-content;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  &__caption-container {
+    width: $width-content;
+    z-index: 1000;
+    background-color: $brightness-46;
+    color: white;
+  }
+
+  &__caption {
+    font-family: $egyptian-text;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline;
+
+    p {
+      padding-left: 8px;
+    }
+
+    &--second {
+      font-family: $agate-sans;
+      color: $brightness-46;
+      font-size: 14px;
+
+      p {
+        padding-left: 0;
+      }
+    }
+  }
+}
+// caption arrow
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid $brightness-46;
+  float: left;
+  margin: 0;
+  z-index: 1000;
+  position: absolute;
+  bottom: 60px;
+}
+/* byline */
+/////////////////////////////////////////
+
+.byline {
+  font-family: $egyptian-text;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 22px;
+  width: 35%;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  clear: both;
+
+  &__author {
+    font-weight: bold;
+  }
+
+  &__location {
+    font-style: italic;
+  }
+}

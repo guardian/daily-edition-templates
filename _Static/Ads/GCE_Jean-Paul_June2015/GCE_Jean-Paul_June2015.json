@@ -1,0 +1,21 @@
+{
+  "type":"rotate",
+  "campaignID":"GCE_Jean-Paul_June2015",
+  "stack":[{
+    "media":{
+      "type":"image",
+      "reference":"JPG_LM_ULTRA_IPAD_768x1024.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://www.debenhams.com/beauty/jean-paul-gaultier?CMP=BAC-JPG2"
+    }]
+  },{
+    "media":{
+      "type":"image",
+      "reference":"JPG_LM_ULTRA_IPAD_1024x768.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://www.debenhams.com/beauty/jean-paul-gaultier?CMP=BAC-JPG2"
+    }]
+  }]
+}

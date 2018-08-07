@@ -1,0 +1,5 @@
+{
+  "type": "bespoke",
+  "campaignID": "%%CAMP%%",
+  "advertAssets": "%%CDN%%/RealMedia/ads/Creatives/%%CAMP%%/releases/volvo-sun_the-guardian_v0.0.6.zip"
+}

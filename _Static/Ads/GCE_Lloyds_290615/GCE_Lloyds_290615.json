@@ -1,0 +1,21 @@
+{
+  "type":"rotate",
+  "campaignID":"GCE_Lloyds_290615",
+  "stack":[{
+    "media":{
+      "type":"image",
+      "reference":"iPad_768x1024_portrait_Talker.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://ad.doubleclick.net/ddm/clk/292300284;119465679;n"
+    }]
+  },{
+    "media":{
+      "type":"image",
+      "reference":"iPad_1024x768_landscape_Talker.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://ad.doubleclick.net/ddm/clk/292300284;119465679;n"
+    }]
+  }]
+}

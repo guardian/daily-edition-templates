@@ -1,0 +1,1216 @@
+        #rendered .title::after {
+            content: ' - Phone';
+        }
+        
+        @media (min-width: 480px) {
+            #rendered .title::after {
+                content: ' - Phone large';
+            }
+            #rendered {
+                width: 96%;
+                font-size: 110%;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            #rendered .title::after {
+                content: ' - Tablet';
+            }
+            #rendered {
+                width: 80%;
+                font-size: 120%;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            #rendered .title::after {
+                content: ' - Desktop';
+            }
+            #rendered {
+                width: 70%;
+                font-size: 130%;
+            }
+            #rendered li {
+                margin: 0.5em;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            #rendered .title::after {
+                content: ' - Desktop large';
+            }
+            #rendered {
+                width: 60%;
+                font-size: 140%;
+            }
+        }
+        
+        .ogroup-id-comment {}
+        
+        div {}
+        
+        .o-id-normal-graphics-frame {}
+        
+        .o-id-normal-text-frame {}
+        
+        .o-id-normal-grid {}
+        
+        .o-anchored-comment-quote {}
+        
+        .o-anchored-gizmo {}
+        
+        .o-anchored-gizmo-quote {}
+        
+        .o-anchored-stackable {}
+        
+        .o-caption {}
+        
+        .o-comment-standfirst {}
+        
+        .o-fancy-caption {}
+        
+        .o-fancy-headline {}
+        
+        .o-fancy-label {}
+        
+        .o-label {}
+        
+        .o-matrixanchor {}
+        
+        .o-obits-standfirst {}
+        
+        .o-weekend-27-white {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .o-invisible-stroke-for-inset-spacing {
+            border: 8px solid rgb(255, 255, 255);
+            background-color: rgb(183, 33, 102);
+        }
+        
+        .o-anchored-auto {}
+        
+        .o-anchored-news {}
+        
+        .o-anchored-picture {}
+        
+        .o-anchored-cutout {}
+        
+        .o-anchored-cutout-weekend {}
+        
+        .o-anchored-video {}
+        
+        .o-comment-byline {}
+        
+        .o-fancy-comment-byline {}
+        
+        .o-fancy-standfirst {}
+        
+        .o-panel {
+            background-color: rgb(239, 239, 231);
+        }
+        
+        .o-racecard {}
+        
+        .p-tx-dropcap:first-child:first-letter {
+        	float: left;
+        	color: #903;
+        	font-size: 75px;
+        	line-height: 60px;
+        	padding-top: 4px;
+        	padding-right: 8px;
+        	padding-left: 3px;
+        	font-family: Georgia;
+        }
+        
+        p {
+            letter-spacing: -0.01em;
+            line-height: 24px;
+            margin-bottom: -5.557px;
+            font-family: 'WT1 Web Text';
+            color: rgb(51, 51, 51);
+            top: 0;
+            font-size: 17px;
+            min-height: 24px;
+            text-indent: 24px;
+            word-spacing: -0.059em;
+            margin-top: 5.557px;
+            position: relative;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        p:first-child {
+            padding-top: 0;
+        }
+        
+        p:first-of-type {
+            margin-top: -4.894px;
+        }
+        
+        .p-by-ip-byline {
+            letter-spacing: -0.009em;
+            font-family: 'WT1 Web Text';
+            margin-bottom: -5.557px;
+            color: rgb(153, 153, 153);
+            font-size: 17px;
+            min-height: 24px;
+            line-height: 24px;
+            word-spacing: -0.056em;
+            margin-top: 5.557px;
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .p-by-ip-byline:first-child {}
+        
+        .p-by-ip-byline:first-of-type {
+            margin-top: 5.557px;
+        }
+        
+        .p-ca-ip-gizmo-caption {
+            letter-spacing: -0.009em;
+            font-family: 'WT1 Web Text';
+            margin-bottom: -5.557px;
+            color: rgb(153, 153, 153);
+            top: 0;
+            font-size: 17px;
+            min-height: 24px;
+            line-height: 24px;
+            word-spacing: -0.056em;
+            margin-top: 5.557px;
+            padding-right: 24px;
+            position: relative;
+            font-weight: bold;
+            font-style: normal;
+            padding-left: 246px;
+        }
+        
+        .p-ca-ip-gizmo-caption:first-child {}
+        
+        .p-ca-ip-gizmo-caption:first-of-type {
+            margin-top: 5.557px;
+        }
+        
+        
+        .p-hd-bill {
+            font-size: 44px;
+            color: rgb(51, 51, 51);
+            min-height: 48px;
+            margin-bottom: -8.336px;
+            word-spacing: 0.023em;
+            margin-top: 8.336px;
+            font-family: 'DE3 Display Egyptian';
+            line-height: 48px;
+        }
+        .p-hd-ip-medium {
+            font-size: 44px;
+            color: rgb(51, 51, 51);
+            min-height: 48px;
+            margin-bottom: -8.336px;
+            word-spacing: 0.023em;
+            margin-top: 8.336px;
+            font-family: 'DE3 Display Egyptian';
+            line-height: 48px;
+        }
+        
+        .p-hd-ip-medium:first-of-type {
+            margin-top: -6.796px;
+        }
+        
+        .p-hd-ip-medium-light-kicker {
+            letter-spacing: 0.01em;
+            color: rgb(51, 51, 51);
+            font-size: 44px;
+            min-height: 48px;
+            margin-bottom: -8.534px;
+            word-spacing: 0;
+            margin-top: 8.534px;
+            font-family: 'DE2 Display Egyptian Light';
+            line-height: 48px;
+        }
+        
+        .p-hd-ip-medium-light-kicker:first-of-type {
+            margin-top: -6.731px;
+        }
+        
+        .p-hd-ip-medium-light-small-kicker {
+            letter-spacing: 0.01em;
+            color: rgb(51, 51, 51);
+            font-size: 34px;
+            min-height: 38px;
+            margin-bottom: -7.049px;
+            word-spacing: 0;
+            margin-top: 7.049px;
+            font-family: 'DE2 Display Egyptian Light';
+            line-height: 38px;
+        }
+        
+        .p-hd-ip-medium-light-small-kicker:first-of-type {
+            margin-top: -5.655px;
+        }
+        
+        .p-la-ip-label {
+            letter-spacing: 0.01em;
+            color: rgb(149, 28, 85);
+            font-size: 20px;
+            min-height: 24px;
+            margin-bottom: -4.97px;
+            word-spacing: -0.05em;
+            margin-top: 4.97px;
+            font-family: 'DE2 Display Egyptian Light';
+            line-height: 24px;
+        }
+        
+        .p-la-ip-label:first-of-type {
+            margin-top: -4.15px;
+        }
+        
+        .p-pq-ip-gizmo-quote-no-rules {
+            font-size: 24px;
+            color: rgb(153, 153, 153);
+            top: 0;
+            min-height: 30px;
+            margin-bottom: -6.564px;
+            word-spacing: -0.001em;
+            margin-top: 6.564px;
+            padding-right: 12px;
+            position: relative;
+            font-family: 'DE2 Display Egyptian Light';
+            line-height: 30px;
+            padding-left: 246px;
+        }
+        
+        .p-pq-ip-gizmo-quote-no-rules:first-of-type {
+            margin-top: -5.58px;
+        }
+        
+        .p-pq-ip-gizmo-quotemark-above {
+            font-size: 28px;
+            color: rgb(153, 153, 153);
+            top: 0;
+            min-height: 30px;
+            margin-bottom: -5.158px;
+            word-spacing: -0.001em;
+            margin-top: 5.158px;
+            padding-right: 12px;
+            position: relative;
+            font-family: 'DE2 Display Egyptian Light';
+            line-height: 30px;
+            padding-left: 246px;
+        }
+        
+        .p-pq-ip-gizmo-quotemark-above:first-of-type {
+            margin-top: 4.158px;
+        }
+        
+        .p-pq-ip-gizmo-quotemark-below {
+            font-size: 28px;
+            color: rgb(153, 153, 153);
+            top: 0;
+            min-height: 30px;
+            margin-bottom: -5.158px;
+            word-spacing: -0.001em;
+            margin-top: 5.158px;
+            padding-right: 12px;
+            position: relative;
+            font-family: 'DE2 Display Egyptian Light';
+            line-height: 30px;
+            padding-left: 246px;
+        }
+        
+        .p-pq-ip-gizmo-quotemark-below:first-of-type {
+            margin-top: -4.01px;
+        }
+        
+        .p-pq-ip-quote-mark-above {
+            font-size: 44px;
+            color: rgb(153, 153, 153);
+            top: 6px;
+            min-height: 44px;
+            margin-bottom: -10.01px;
+            word-spacing: 0;
+            margin-top: 10.01px;
+            position: relative;
+            font-family: 'DE1 Display Egyptian Thin';
+            line-height: 44px;
+        }
+        
+        .p-pq-ip-quote-mark-above:first-of-type {
+            margin-top: -1.43px;
+        }
+        
+        .p-pq-ip-quote-mark-below {
+            font-size: 44px;
+            color: rgb(153, 153, 153);
+            min-height: 40px;
+            margin-bottom: -8.01px;
+            word-spacing: 0;
+            margin-top: 8.01px;
+            font-family: 'DE1 Display Egyptian Thin';
+            line-height: 40px;
+        }
+        
+        .p-pq-ip-quote-mark-below:first-of-type {
+            margin-top: 0.57px;
+        }
+        
+        .p-pq-ip-weekend-pullquote-w-attribution {
+            letter-spacing: 0.009em;
+            color: rgb(102, 102, 102);
+            font-variant-numeric: proportional-nums oldstyle-nums;
+            font-size: 32px;
+            min-height: 30px;
+            margin-bottom: -3.32px;
+            word-spacing: 0.024em;
+            margin-top: 3.32px;
+            padding-right: 194px;
+            font-family: 'DE6 Display Egyptian Bold';
+            line-height: 30px;
+        }
+        
+        .p-pq-ip-weekend-pullquote-w-attribution:first-of-type {
+            margin-top: 6.32px;
+        }
+        
+        .p-sf-ip-regular {
+            letter-spacing: -0.009em;
+            font-family: 'WT1 Web Text';
+            margin-bottom: -5.557px;
+            color: rgb(34, 34, 34);
+            top: 0;
+            font-size: 17px;
+            min-height: 24px;
+            line-height: 24px;
+            word-spacing: -0.056em;
+            margin-top: 5.557px;
+            padding-bottom: 24px;
+            position: relative;
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .p-sf-ip-regular:first-of-type {
+            margin-top: 5.557px;
+        }
+        
+        .p-sf-ip-large {
+            letter-spacing: 0.01em;
+            color: rgb(102, 102, 102);
+            font-variant-numeric: proportional-nums oldstyle-nums;
+            font-size: 24px;
+            min-height: 28px;
+            margin-bottom: -5.564px;
+            word-spacing: 0;
+            margin-top: 5.564px;
+            font-family: 'DE2 Display Egyptian Light';
+            line-height: 28px;
+        }
+        
+        .p-sf-ip-large:first-of-type {
+            margin-top: -4.58px;
+        }
+        
+        .p-sn-ip-score-line-1 {
+            letter-spacing: -0.009em;
+            font-family: 'WT1 Web Text';
+            margin-bottom: -5.557px;
+            color: rgb(51, 51, 51);
+            top: 0;
+            font-size: 17px;
+            min-height: 24px;
+            line-height: 24px;
+            word-spacing: -0.056em;
+            margin-top: 5.557px;
+            position: relative;
+            padding-top: 24px;
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .p-sn-ip-score-line-1:first-child {
+            padding-top: 0;
+        }
+        
+        .p-sn-ip-score-line-1:first-of-type {
+            margin-top: 5.557px;
+        }
+        
+        .p-tx-video-embed {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-indent:0;
+        }
+                        
+        .p-tx-ip-roman-ragged {
+            letter-spacing: -0.01em;
+            line-height: 24px;
+            margin-bottom: -5.557px;
+            font-family: 'WT1 Web Text';
+            color: rgb(51, 51, 51);
+            top: 0;
+            font-size: 17px;
+            min-height: 24px;
+            text-indent: 24px;
+            word-spacing: -0.059em;
+            margin-top: 5.557px;
+            position: relative;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .p-tx-ip-roman-ragged:first-of-type {
+            margin-top: -4.894px;
+        }
+        
+        .p-tx-ip-roman-ragged-bold-999-ni {
+            letter-spacing: -0.01em;
+            font-family: 'WT1 Web Text';
+            margin-bottom: -5.557px;
+            color: rgb(51, 51, 51);
+            top: 0;
+            font-size: 17px;
+            min-height: 24px;
+            line-height: 24px;
+            word-spacing: -0.059em;
+            margin-top: 5.557px;
+            position: relative;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .p-tx-ip-roman-ragged-bold-999-ni:first-of-type {
+            margin-top: -4.894px;
+        }
+        
+        .p-xh-ip-guide-portmanteau-rule {
+            letter-spacing: -0.008em;
+            color: rgb(153, 153, 153);
+            top: 0;
+            font-size: 18px;
+            min-height: 24px;
+            margin-bottom: -5.43px;
+            word-spacing: -0.051em;
+            margin-top: 5.43px;
+            position: relative;
+            padding-top: 24px;
+            font-family: 'DE6 Display Egyptian Bold';
+            line-height: 24px;
+        }
+        
+        .p-xh-ip-guide-portmanteau-rule:first-child {
+            padding-top: 0;
+        }
+        
+        .p-xh-ip-guide-portmanteau-rule:first-of-type {
+            margin-top: 5.43px;
+        }
+        
+        .p-df-sport-agate {
+            font-size: 17px;
+            font-family: 'AS32 Agate Sans';
+            margin-bottom: -5.37px;
+            color: rgb(51, 51, 51);
+            top: 0;
+            letter-spacing: 0.005em;
+            min-height: 24px;
+            line-height: 24px;
+            word-spacing: -0.047em;
+            margin-top: 5.37px;
+            position: relative;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .p-df-sport-agate:first-of-type {
+            margin-top: -6.407px;
+        }
+        
+        .p-df-fb-prem-table-2over5-col-3rd {
+            letter-spacing: -0.001em;
+            font-family: 'AS32 Agate Sans';
+            margin-bottom: -4.15px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            min-height: 20px;
+            line-height: 20px;
+            word-spacing: -0.068em;
+            margin-top: 4.15px;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .p-df-fb-prem-table-2over5-col-3rd:first-of-type {
+            margin-top: -5.065px;
+        }
+        
+        .p-hd-head-3175-de3-3175-332595 {
+            font-size: 31.75px;
+            font-family: 'DE3 Display Egyptian';
+            margin-bottom: -5.322px;
+            color: rgb(0, 0, 0);
+            top: 0;
+            letter-spacing: 0.001em;
+            min-height: 33.25px;
+            line-height: 33.25px;
+            margin-top: 5.322px;
+            position: relative;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .p-hd-head-3175-de3-3175-332595:first-of-type {
+            margin-top: -4.211px;
+        }
+        
+        .p-tx-sans-ragged-bold-no-indent-ts32-bd-8-95 {
+            font-size: 8px;
+            font-family: 'TS3 Text Sans';
+            color: rgb(0, 0, 0);
+            top: 0;
+            min-height: 9.5px;
+            line-height: 9.5px;
+            word-spacing: -0.035em;
+            position: relative;
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .p-tx-sans-ragged-bold-no-indent-ts32-bd-8-95:first-of-type {
+            margin-top: -0.75px;
+        }
+        
+        .p-by-byline-name-rule-above-te32-bd-9-105 {
+            font-size: 9.2px;
+            color: rgb(0, 61, 153);
+            top: 3px;
+            min-height: 10.5px;
+            margin-bottom: -1.915px;
+            word-spacing: -0.034em;
+            margin-top: 1.915px;
+            position: relative;
+            font-family: 'DE5 Display Egyptian SemiBold';
+            line-height: 10.5px;
+        }
+        
+        .p-by-byline-name-rule-above-te32-bd-9-105:first-of-type {
+            margin-top: -1.694px;
+        }
+        
+        .p-tx-roman-justified-te32-8-95 {
+            font-size: 8px;
+            line-height: 9.5px;
+            margin-bottom: -1.718px;
+            font-family: 'TE32 Text Egyptian';
+            color: rgb(0, 0, 0);
+            top: 0;
+            min-height: 9.5px;
+            text-indent: 9.5px;
+            word-spacing: -0.071em;
+            margin-top: 1.718px;
+            position: relative;
+            font-weight: normal;
+            font-style: normal;
+            text-align: justify;
+        }
+        
+        .p-tx-roman-justified-te32-8-95:first-of-type {
+            margin-top: -1.406px;
+        }
+        
+        .p-sn-ip-review-title {
+            padding-bottom: 0;
+        }
+        
+        .p-hd-ip-guide-black {
+            font-size: 44px;
+            color: rgb(51, 51, 51);
+            min-height: 48px;
+            margin-bottom: -7.83px;
+            margin-top: 7.83px;
+            font-family: 'DE7 Display Egyptian Black', 'DE3 Display Egyptian';
+            line-height: 48px;
+        }
+        
+        .p-hd-ip-guide-black:first-of-type {
+            margin-top: -7.126px;
+        }
+        
+        .p-id-normalp {}
+        
+        .p-tx-ip-roman-ragged-ni {
+            margin-top: 5.557px;
+            margin-bottom: -5.557px;
+            text-indent: 0;
+        }
+        
+        .p-tx-ip-roman-ragged-ni:first-of-type {
+            margin-top: 5.557px;
+        }
+        
+        .p-tx-ip-medium-ragged {
+            word-spacing: -0.056em;
+            color: rgb(34, 34, 34);
+            letter-spacing: -0.009em;
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .p-hd-ip-features-fancy-light {
+            letter-spacing: 0;
+            margin-bottom: -9.7px;
+            color: rgb(251, 251, 243);
+            font-size: 56px;
+            min-height: 60px;
+            text-indent: 0;
+            word-spacing: -0.025em;
+            margin-top: 9.7px;
+            padding-bottom: 52px;
+            font-family: 'DE5 Display Egyptian SemiBold';
+            line-height: 60px;
+        }
+        
+        .p-hd-ip-features-fancy-light:first-of-type {
+            margin-top: -8.356px;
+        }
+        
+        .p-sn-ip-review-details {
+            color: rgb(102, 102, 102);
+            margin-top: 5.557px;
+            margin-bottom: -5.557px;
+        }
+        
+        .p-sn-ip-review-details:first-of-type {
+            margin-top: -4.894px;
+        }
+        
+        .p-df-fb-prem-table-2over5-col-2nd {}
+        
+        .p-tx-ip-roman-ragged-ni-rule-above {
+            padding-top: 24px;
+        }
+        
+        .p-tx-ip-roman-ragged-ni-rule-above:first-child {
+            padding-top: 0;
+        }
+        
+        .p-tx-ip-recipe-ingredients {
+            margin-top: 5.557px;
+            font-weight: bold;
+            font-style: normal;
+            margin-bottom: -5.557px;
+            padding-bottom: 12px;
+        }
+        
+        .p-tx-ip-recipe-ingredients:first-of-type {
+            margin-top: -4.894px;
+        }
+        
+        .p-df-results-division-top {
+            color: rgb(153, 153, 153);
+            margin-bottom: -5.557px;
+            word-spacing: -0.025em;
+            margin-top: 5.557px;
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .p-df-results-division-top:first-of-type {
+            margin-top: 4.557px;
+        }
+        
+        .p-tx-ip-medium-ragged-ni {
+            margin-top: 5.557px;
+            margin-bottom: -5.557px;
+            text-indent: 0;
+        }
+        
+        .p-tx-ip-medium-ragged-ni:first-of-type {
+            margin-top: 5.557px;
+        }
+        
+        .p-xh-ip-crosshead {
+            color: rgb(153, 153, 153);
+            padding-top: 24px;
+            margin-top: 5.557px;
+            margin-bottom: -5.557px;
+        }
+        
+        .p-xh-ip-crosshead:first-child {
+            padding-top: 0;
+        }
+        
+        .p-xh-ip-crosshead:first-of-type {
+            margin-top: -4.894px;
+        }
+        
+        .p-xh-ip-panel-head {
+            color: rgb(149, 28, 85);
+            margin-bottom: -5.557px;
+            margin-top: 5.557px;
+            padding-bottom: 24px;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .p-xh-ip-panel-head:first-of-type {
+            margin-top: 5.557px;
+        }
+        
+        span {}
+        
+        .c-txt-webtext-no-size {
+            font-weight: bold;
+            font-style: normal;
+            font-family: 'WT1 Web Text';
+        }
+        
+        .c-txt-de5-no-size {
+            font-weight: normal;
+            font-style: normal;
+            font-family: 'DE5 Display Egyptian SemiBold';
+        }
+        
+        .c-col-222 {
+            color: rgb(34, 34, 34);
+        }
+        
+        .c-col-333 {
+            color: rgb(51, 51, 51);
+        }
+        
+        .c-col-999 {
+            color: rgb(153, 153, 153);
+        }
+        
+        .c-col-arts {
+            color: rgb(183, 33, 102);
+        }
+        
+        .c-col-arts-2 {
+            color: rgb(153, 153, 153);
+        }
+        
+        .c-col-bkgd-002 {
+            color: rgb(239, 239, 231);
+        }
+        
+        .c-col-dos-regulars {
+            color: rgb(153, 153, 153);
+        }
+        
+        .c-col-editorial-001 {
+            color: rgb(35, 88, 136);
+        }
+        
+        .c-col-editorial-002 {
+            color: rgb(153, 153, 153);
+        }
+        
+        .c-col-features-1 {
+            color: rgb(183, 33, 102);
+        }
+        
+        .c-col-features-2 {
+            color: rgb(153, 153, 153);
+        }
+        
+        .c-col-guide-1 {
+            color: rgb(204, 79, 140);
+        }
+        
+        .c-col-guide-2 {
+            color: rgb(153, 153, 153);
+        }
+        
+        .c-col-national-001 {
+            color: rgb(149, 28, 85);
+        }
+        
+        .c-col-national-002 {
+            color: rgb(153, 153, 153);
+        }
+        
+        .c-col-section-colour-1 {
+            color: rgb(149, 28, 85);
+        }
+        
+        .c-col-section-colour-2 {
+            color: rgb(153, 153, 153);
+        }
+        
+        .c-col-sport-001 {
+            color: rgb(51, 177, 72);
+        }
+        
+        .c-col-sport-002 {
+            color: rgb(153, 153, 153);
+        }
+        
+        .c-col-tint {
+            color: rgb(227, 227, 219);
+        }
+        
+        .c-col-tint-001 {
+            color: rgb(251, 251, 243);
+        }
+        
+        .c-col-tint-005 {
+            color: rgb(195, 195, 187);
+        }
+        
+        .c-col-white {
+            color: rgb(255, 255, 255);
+        }
+        
+        .c-ind-dead-link {
+            color: rgb(34, 34, 34);
+        }
+        
+        .c-tx-agate-regular {
+            font-weight: normal;
+            font-style: normal;
+            font-family: 'AS32 Agate Sans';
+        }
+        
+        .c-txt-bold {
+            font-weight: bold;
+            font-style: normal;
+            font-family: 'WT1 Web Text';
+        }
+        
+        .c-txt-cook-medium-lt-white {
+            font-size: 44px;
+            font-family: 'DE2 Display Egyptian Light';
+            color: rgb(255, 255, 255);
+            min-height: 48px;
+            line-height: 48px;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .c-txt-de2-no-size {
+            font-weight: normal;
+            font-style: normal;
+            font-family: 'DE2 Display Egyptian Light';
+        }
+        
+        .c-txt-de6 {
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-family: 'DE6 Display Egyptian Bold';
+        }
+        
+        .c-txt-de6-999 {
+            font-size: 18px;
+            font-family: 'DE6 Display Egyptian Bold';
+            color: rgb(153, 153, 153);
+            top: 0;
+            position: relative;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .c-txt-de6-black {
+            font-size: 18px;
+            font-family: 'DE6 Display Egyptian Bold';
+            color: rgb(51, 51, 51);
+            top: 0;
+            position: relative;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .c-txt-de6-no-size-change {
+            font-weight: normal;
+            font-style: normal;
+            font-family: 'DE6 Display Egyptian Bold';
+        }
+        
+        .c-txt-de7-5025-black {
+            color: rgb(128, 128, 128);
+            font-weight: normal;
+            font-style: normal;
+            font-family: 'DE7 Display Egyptian Black', 'DE3 Display Egyptian';
+        }
+        
+        .c-txt-guide-fancy-sf {
+            font-size: 22px;
+            font-weight: normal;
+            min-height: 25px;
+            line-height: 25px;
+            font-family: 'DE6 Display Egyptian Bold';
+            font-style: normal;
+        }
+        
+        .c-txt-te32-prem-table-move-arrow {
+            font-size: 10px;
+            font-family: 'WT1 Web Text';
+            color: rgb(0, 0, 0);
+            top: 0;
+            position: relative;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .c-wob-ip-off-white {
+            color: rgb(251, 251, 243);
+        }
+        
+        .c-wob-ip-orange {
+            color: rgb(153, 153, 153);
+        }
+        
+        .c-wob-ip-purple {
+            color: rgb(183, 33, 102);
+        }
+        
+        .c-xdf-10pt {
+            font-size: 10px;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .c-xdf-bold {
+            position: relative;
+            top: 0;
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .c-xdf-card-red {
+            color: rgb(240, 64, 40);
+        }
+        
+        .c-xdf-card-yellow {
+            color: rgb(253, 185, 51);
+        }
+        
+        .c-xdf-champ {
+            color: rgb(51, 51, 51);
+            font-weight: normal;
+            font-style: normal;
+            font-family: 'AS32 Agate Sans';
+        }
+        
+        .c-xdf-champ-bold {
+            font-family: 'AS32 Agate Sans';
+            color: rgb(51, 51, 51);
+            top: 0.5px;
+            position: relative;
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .c-xdf-champ-bold-key {
+            font-family: 'AS32 Agate Sans';
+            color: rgb(153, 153, 153);
+            top: 0.5px;
+            position: relative;
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .c-xdf-champ-key {
+            color: rgb(153, 153, 153);
+            position: relative;
+            top: 0.5px;
+            font-family: 'AS32 Agate Sans';
+        }
+        
+        .c-xdf-company-bold {
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .c-xdf-ip-number-stack-number {
+            font-size: 48px;
+            font-family: 'DE2 Display Egyptian Light';
+            top: 23px;
+            min-height: 0;
+            line-height: 0;
+            position: relative;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .c-xdf-next-games-prem {
+            font-weight: normal;
+            font-style: normal;
+            font-family: 'AS32 Agate Sans';
+        }
+        
+        .c-xdf-racecard-time {
+            font-size: 27px;
+            font-family: 'DE5 Display Egyptian SemiBold';
+            color: rgb(153, 153, 153);
+            top: 7px;
+            min-height: 8px;
+            line-height: 8px;
+            position: relative;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .c-xdf-regular {
+            color: rgb(51, 51, 51);
+            position: relative;
+            top: 0;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .c-xdf-regular-666 {
+            color: rgb(102, 102, 102);
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .c-xdf-regular-999 {
+            color: rgb(153, 153, 153);
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .c-xdf-weekahead-channel {
+            color: rgb(153, 153, 153);
+            font-weight: normal;
+            font-style: italic;
+        }
+        
+        .c-xdf-weekahead-grey-bold {
+            color: rgb(51, 51, 51);
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .c-xhd-ip-orange-light {
+            color: rgb(153, 153, 153);
+        }
+        
+        .c-txt-wt1-reg {
+            font-weight: normal;
+            font-style: normal;
+            font-family: 'WT1 Web Text';
+        }
+        
+        .c-col-666 {
+            color: rgb(102, 102, 102);
+        }
+        
+        .c-txt-bold-666 {
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .mainheadline {
+            /*max-width:100%;*/
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .articlespace {
+            padding-right: 30px;
+            margin: 10px;
+            /*width: 100%;*/
+        }
+        
+        .mainbyline {
+            max-width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .maincaption {
+            max-width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .mainstandfirst {
+            max-width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .mainimage {
+            max-width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .standardimage {
+            max-width: 460px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .inlinefullwidth {
+            max-width: 748px;
+            min-width: 748px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .fullwidth {
+            max-width: 1024px;
+            min-width: 748px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .bodydiv {
+            max-width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .bodydiv p:first-of-type {
+            margin-top:4px;
+            text-indent: 0;
+        }
+        
+        .bodydiv p {
+            text-indent: 2em;
+        }
+                
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            height: auto;
+            overflow: hidden;
+            margin: 20px;
+        }
+        
+        .right {
+            width: 197px;
+            float: right;
+            height: auto;
+            /*margin: auto;*/
+            /*background: #cccccc;*/
+        }
+        
+        .left {
+            float: none;
+            /* the next props are meant to keep this block independent from the other floated one */
+            overflow: hidden;
+            padding-right: 29px;
+        }
+        
+        .articlediv {
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 484px;
+        }
+        
+        img.wrapimage {
+            float: left;
+            shape-image-threshold: 0.5;
+            shape-margin: 1em;
+            margin: 1em;
+        	max-width: 100%;
+        }

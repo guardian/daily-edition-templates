@@ -1,0 +1,397 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 0;
+  border-width: 0;
+  border-style: solid;
+  border-color: black;
+  margin: 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+@font-face {
+  font-family: "Guardian Icons";
+  src: url("fonts/icons.otf"); }
+
+@font-face {
+  font-family: "Guardian Headline";
+  font-weight: 200;
+  src: url("fonts/GHGuardianHeadline-Light.ttf"); }
+
+@font-face {
+  font-family: "Guardian Headline";
+  font-style: italic;
+  font-weight: 200;
+  src: url("fonts/GHGuardianHeadline-LightItalic.ttf"); }
+
+@font-face {
+  font-family: "Guardian Headline";
+  font-weight: 400;
+  src: url("fonts/GHGuardianHeadline-Regular.ttf"); }
+
+@font-face {
+  font-family: "Guardian Headline";
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/GHGuardianHeadline-RegularItalic.ttf"); }
+
+@font-face {
+  font-family: "Guardian Headline";
+  font-weight: 500;
+  src: url("fonts/GHGuardianHeadline-Medium.ttf"); }
+
+@font-face {
+  font-family: "Guardian Headline";
+  font-style: italic;
+  font-weight: 500;
+  src: url("fonts/GHGuardianHeadline-MediumItalic.ttf"); }
+
+@font-face {
+  font-family: "Guardian Headline";
+  font-weight: 600;
+  src: url("fonts/GHGuardianHeadline-Semibold.ttf"); }
+
+@font-face {
+  font-family: "Guardian Headline";
+  font-style: italic;
+  font-weight: 600;
+  src: url("fonts/GHGuardianHeadline-SemiboldItalic.ttf"); }
+
+@font-face {
+  font-family: "Guardian Headline";
+  font-weight: 700;
+  src: url("fonts/GHGuardianHeadline-Bold.ttf"); }
+
+@font-face {
+  font-family: "Guardian Headline";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/GHGuardianHeadline-BoldItalic.ttf"); }
+
+@font-face {
+  font-family: "Guardian Headline";
+  font-weight: 900;
+  src: url("fonts/GHGuardianHeadline-Black.ttf"); }
+
+@font-face {
+  font-family: "Guardian Headline";
+  font-style: italic;
+  font-weight: 900;
+  src: url("fonts/GHGuardianHeadline-BlackItalic.ttf"); }
+
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("fonts/egyptiantext-regular.otf"); }
+
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  font-weight: bold;
+  src: url("fonts/egyptiantext-medium.otf"); }
+
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  font-style: italic;
+  src: url("fonts/egyptiantext-regularitalic.otf"); }
+
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  font-style: italic;
+  font-weight: bold;
+  src: url("fonts/egyptiantext-mediumitalic.otf"); }
+
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  font-weight: 200;
+  src: url("fonts/GuardianSansWeb-Light.ttf"); }
+
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  font-weight: 300;
+  src: url("fonts/GuardianSansWeb-Regular.ttf"); }
+
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  font-weight: 600;
+  src: url("fonts/GuardianSansWeb-Semibold.ttf"); }
+
+@font-face {
+  font-family: "Titlepiece";
+  font-weight: 600;
+  src: url("fonts/titlepiece.otf"); }
+
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  font-weight: 100;
+  src: url("fonts/egyptiandisplay-thin.otf"); }
+
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  font-weight: 200;
+  src: url("fonts/egyptiandisplay-light.otf"); }
+
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  font-weight: 300;
+  src: url("fonts/egyptiandisplay-regular.otf"); }
+
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  font-weight: 400;
+  src: url("fonts/egyptiandisplay-medium.otf"); }
+
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  font-weight: 600;
+  src: url("fonts/egyptiandisplay-bold.otf"); }
+
+@font-face {
+  font-family: "Guardian Agate Sans 1 Web";
+  src: url("fonts/agate-regular.otf"); }
+
+@font-face {
+  font-family: "Guardian Agate Sans 1 Web";
+  font-weight: bold;
+  src: url("fonts/agate-bold.otf"); }
+
+@font-face {
+  font-family: "Guardian Agate Sans 1 Web";
+  font-style: italic;
+  src: url("fonts/agate-regularitalic.otf"); }
+
+@font-face {
+  font-family: "Guardian Agate Sans 1 Web";
+  font-style: italic;
+  font-weight: bold;
+  src: url("fonts/agate-bolditalic.otf"); }
+
+/* common */
+body {
+  /* -webkit-font-smoothing: antialiased;*/
+  background-color: white;
+  color: #121212; }
+
+p {
+  padding-top: 12px;
+  padding-bottom: 12px; }
+
+/* wrapper for left content */
+.content {
+  width: 620px;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-right: 1px solid #999999; }
+  @media (orientation: landscape) {
+    .content {
+      padding-left: 128px; } }
+
+/* section */
+.section {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif; }
+
+/* headline */
+.headline {
+  font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+  font-size: 44px;
+  line-height: 46px;
+  color: #121212;
+  padding-bottom: 50px; }
+
+.standfirst {
+  font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+  font-size: 22px;
+  line-height: 28px;
+  color: #121212;
+  clear: both;
+  padding-bottom: 20px; }
+
+.multiline {
+  background-image: repeating-linear-gradient(to bottom, #999999, #999999 1px, transparent 1px, transparent 4px);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 1px 13px;
+  content: '';
+  display: block;
+  height: 16px;
+  /*height of multiline (4px) times the number of lines (4)*/ }
+
+.guardian-body-text {
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 48px;
+  clear: both; }
+  .guardian-body-text p {
+    padding-bottom: 22px;
+    padding-top: 0; }
+
+/* images */
+.picture {
+  margin-bottom: 6px;
+  position: relative; }
+  .picture--first img {
+    width: 620px;
+    margin: 0;
+    padding: 0;
+    display: block; }
+  .picture--second img {
+    width: 620px;
+    margin: 0;
+    padding: 0;
+    display: block; }
+  .picture__caption-container {
+    width: 620px;
+    z-index: 1000;
+    background-color: #767676;
+    color: white; }
+  .picture__caption {
+    font-family: "Guardian Text Egyptian Web", Georgia, serif;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline; }
+    .picture__caption p {
+      padding-left: 8px; }
+    .picture__caption--second {
+      font-family: "Guardian Agate Sans 1 Web", sans-serif;
+      color: #767676;
+      font-size: 14px; }
+      .picture__caption--second p {
+        padding-left: 0; }
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #767676;
+  float: left;
+  margin: 0;
+  z-index: 1000;
+  position: absolute;
+  bottom: 60px; }
+
+/* byline */
+.byline {
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 22px;
+  width: 35%;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  clear: both; }
+  .byline__author {
+    font-weight: bold; }
+  .byline__location {
+    font-style: italic; }
+
+/*Specific to news article */
+.picture__caption-container--news {
+  background-color: #c70000;
+  color: white; }
+
+.byline__author--news {
+  color: #c70000; }
+
+.byline__location--news {
+  color: #c70000; }
+
+.arrow-up--news {
+  border-bottom: 25px solid #c70000; }
+
+.section--news {
+  color: #c70000; }
+
+.picture__caption-container--sport {
+  background-color: #ffe500;
+  color: #121212; }
+
+.byline__author--sport {
+  color: #0084c6; }
+
+.byline__location--sport {
+  color: #0084c6; }
+
+.arrow-up--sport {
+  border-bottom: 25px solid #ffe500; }
+
+.section--sport {
+  color: #0084c6;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif; }
+
+.sport-rules {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%229%22%20height%3D%2212%22%20viewBox%3D%220%200%209%2012%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22%23DFDFDF%22%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%221.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%224.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%227.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%2210.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%224.5%22%20cy%3D%221.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%224.5%22%20cy%3D%224.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%224.5%22%20cy%3D%227.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%224.5%22%20cy%3D%2210.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%221.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%224.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%227.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%2210.5%22%20r%3D%221%22/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 10px;
+  background-position-x: 0;
+  padding-top: 16px; }

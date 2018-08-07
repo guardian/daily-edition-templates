@@ -1,0 +1,21 @@
+{
+  "type":"rotate",
+  "campaignID":"GCE_Virgin_Money_Week_Three",
+  "stack":[{
+    "media":{
+      "type":"image",
+      "reference":"VM_Tablet_Kitten_2cards_Portrait.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://ad.doubleclick.net/ddm/clk/291655513;118913967;r"
+    }]
+  },{
+    "media":{
+      "type":"image",
+      "reference":"VM_Tablet_Kitten_2cards_Landscape.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://ad.doubleclick.net/ddm/clk/291655513;118913967;r"
+    }]
+  }]
+}

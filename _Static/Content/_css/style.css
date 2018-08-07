@@ -1,0 +1,212 @@
+.luther-document a:link,
+.luther-document a:visited,
+.luther-document a:active,
+.luther-document a:hover {
+  color: rgb(0, 86, 137);
+  text-decoration: none;
+}
+
+/* There's never a time that we'd want an inline image */
+.luther-document img {
+  display: block;
+}
+
+/* Stop {sub,super}script from changing the size of the line box */
+.luther-document sup,
+.luther-document sub {
+  line-height: 0;
+}
+
+/* InDesign renders all spaces, so let's do that in the HTML */
+/* There is no way of generating <CR> via InDesign, so that should be fine. */
+.luther-document p {
+  white-space: pre-wrap;
+}
+
+.luther-document .textwrap-left {
+  float: left;
+  clear: both;
+}
+
+.luther-document .textwrap-right {
+  float: right;
+  clear: both;
+}
+
+.luther-document .rule-above {
+  position: relative;
+  line-height: 0;
+  min-height: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.luther-document .rule-below {
+  position: relative;
+  line-height: 0;
+  min-height: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+body {
+  background: url(../_images/sandstone.png);
+  color: #333;
+}
+
+@media screen and (orientation: landscape) {
+  body.normal .luther-document {
+    margin-left: 128px; /* 147 - 19px on the left of the article */
+    position: relative;
+  }
+
+  .copyright-notice {
+    margin-left: 128px; /* 147 - 19px on the left of the article */
+  }
+
+  body.normal .CrossRefs {
+    left: 634px!important;
+  }
+
+}
+
+/* ============================== Share Buttons */
+#share, #text-size {
+  z-index: 3000;
+  position: absolute;
+  top: 20px;
+  display: block;
+}
+
+#share { display: none; }
+
+#share { right: 30px; }
+/* #text-size { right: 19px; } */
+
+/* ============================== CrossRefs column */
+.CrossRefs {
+  margin-bottom: 48px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.CrossRefs .weblinks {
+  opacity: 0;
+}
+
+.CrossRefs .weblinks h3 {
+  border-top: 1px solid rgb(195, 195, 187);
+  padding-left: 7px;
+  padding-bottom: 24px;
+  padding-top: 7px;
+}
+
+.CrossRefs .weblinks .date {
+  color: #999;
+}
+
+.CrossRefs ol {
+  list-style-type: none;
+}
+
+.CrossRefs p, .CrossRefs a, .CrossRefs span {
+  font-family: "WT1 Web Text";
+  font-size: 15px;
+  line-height: 1.2666;
+}
+
+
+.CrossRefs h3 {
+  font-family: "DE5 Display Egyptian Semibold";
+  font-size: 15px;
+  line-height: 1.266;
+  color: rgb(149, 28, 85);
+}
+
+.CrossRefs .next-previous {
+  margin-bottom: 25px;
+}
+
+.CrossRefs .next-previous li {
+  border-top: 1px solid rgb(195, 195, 187);
+  position: relative;
+}
+
+.CrossRefs .next-previous span.count {
+  color: #999;
+  float: right;
+}
+
+.CrossRefs .next-previous h3 {
+  padding-left: 17px;
+  float: left;
+}
+
+.CrossRefs .next-previous li.previous h3 {
+  background: url(../_images/prev-article.png) 0 2px no-repeat;
+}
+
+.CrossRefs .next-previous li.next h3 {
+  background: url(../_images/next-article.png) 0 2px no-repeat;
+}
+
+.CrossRefs .next-previous p {
+  clear: both;
+}
+
+.CrossRefs .story-package, .CrossRefs .package-header, .CrossRefs .weblinks {
+  background: rgb(239, 239, 231);
+}
+
+.CrossRefs h3.package-header {
+  padding-top: 8px;
+  padding-left: 7px;
+  padding-bottom: 24px;
+  opacity: 0;
+}
+
+.CrossRefs .package-name {
+  font-family: "DE5 Display Egyptian Semibold";
+  display: block;
+  color: rgb(240, 120, 35);
+}
+
+.CrossRefs .next-previous li, .CrossRefs .story-package li, .CrossRefs .weblinks li {
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 6px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgb(195, 195, 187);
+}
+
+.CrossRefs .next-previous li {
+  padding-left: 0;
+}
+
+.CrossRefs .story-package {
+  opacity: 0;
+}
+
+.CrossRefs .story-package li.current {
+  background-color: rgb(215, 215, 206);
+}
+
+.CrossRefs .story-package .section {
+  color: #999;
+  display: block;
+  font-family: "DE5 Display Egyptian Semibold";
+}
+
+.copyright-notice {
+  color: #333;
+  font-family: "WT1 Web Text";
+  height: 30px;
+  opacity: 0;
+  position: absolute;
+  font-size: 15px;
+  width: 494px;
+  left: 0;
+  padding-left: 19px;
+  padding-bottom: 24px;
+}
+

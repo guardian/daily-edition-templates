@@ -1,0 +1,7 @@
+{
+  "type": "bespoke",
+    "campaignID": "%%CAMP%%",
+    "advertAssets":
+      "%%CDN%%/RealMedia/ads/Creatives/%%CAMP%%/SunvilItalySicilyBespoke.zip"
+}
+

@@ -1,0 +1,340 @@
+/*
+ *	WEATHER COMMON STYLES
+ */
+html * {
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body#weather {
+  font-size: 10px;
+  font-weight: normal;
+  background: rgb(245, 245, 242) url(../../Content/_images/sandstone.png);
+  color: #333;
+  padding-left: 19px;
+}
+
+#wrapper h2, #wrapper h1 {
+  font-family: "DE5 Display Egyptian SemiBold";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+  padding: 0;
+  padding-bottom: 22px;
+  color: #666;
+}
+
+#wrapper h1 {
+  color: rgb(240, 120, 35);
+  padding-top: 18px;
+  padding-bottom: 0px;
+}
+
+#wrapper h2 span {
+  color: #999;
+  padding-left: 10px;
+}
+
+#wrapper h3 {
+  font-family: "TE4 Text Egyptian Medium";
+  font-size: 17px;
+  line-height: 19px;
+  border-top: 1px solid rgb(185, 185, 170);
+  border-bottom: 1px solid rgb(185, 185, 170);
+  padding: 8px 0 21px 0;
+  color: #999;
+  font-weight: normal;
+}
+
+#wrapper h3 span {
+  color: rgb(149, 178, 203);
+}
+
+#wrapper p.heavy, #wrapper h4 {
+  font-family: "TE4 Text Egyptian Medium";
+  font-size: 17px;
+  line-height: 24px;
+  padding-top: 5px;
+  font-weight: normal;
+}
+
+#wrapper p {
+  font-family: "TE32 Text Egyptian";
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+#wrapper div.panel {
+  opacity: 0;
+  position: absolute;
+}
+
+#wrapper div.panel.active-panel {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  position: static;
+}
+
+#wrapper {
+  overflow: hidden;
+}
+
+#weather-content {
+  float: left;
+  width: 484px;
+  position: relative;
+  overflow: hidden;
+}
+
+#weather .CrossRefs {
+  position: absolute;
+  top: 140px;
+  left: 552px!important;
+  width: 197px;
+}
+
+#weather .CrossRefs ol.story-package li a {
+  -webkit-tap-highlight-color: transparent;
+}
+/*
+ *	WEATHER FORECAST CONTENT
+ */
+
+#wrapper #weather-forecast div.sub-content li {
+  float: left;
+  border-right: 1px solid rgb(185, 185, 170);
+  margin-bottom: 10px;
+  padding-right: 1px;
+}
+
+#wrapper #weather-forecast div.sub-content li:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+#wrapper #weather-forecast div.todays-forecast {
+  margin-bottom: 24px;
+}
+
+/*
+ *	WEATHER REPORT
+ */
+#wrapper table {
+  font-size: 15px;
+  font-family: "AS32 Agate Sans";
+  line-height: 19px;
+  border-collapse: collapse;
+  margin-top: 8px;
+  width: 100%;
+}
+
+#wrapper th, #wrapper td {
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgb(185, 185, 170);
+}
+
+#wrapper thead th {
+  width: 60px;
+  font-weight: normal;
+}
+
+#wrapper th.town {
+  width: 154px;
+}
+
+#wrapper thead th.weather {
+  width: 90px;
+}
+
+#wrapper #summary h2 {
+  border-bottom: 1px solid rgb(185, 185, 170);
+}
+
+/*
+ *	WEATHER AROUND THE WORLD CONTENT
+ */
+#wrapper #around-world p.heavy {
+  padding-top: 0;
+}
+
+#wrapper #around-world thead th {
+  padding-top: 10px;
+}
+
+/*
+ *	MOON AND TIDES
+ */
+#wrapper #moon-tides:after {
+  content: '.';
+  visibility: hidden;
+  clear: both;
+}
+
+#wrapper #moon-tides table {
+  margin-top: 0;
+}
+
+#wrapper #moon-tides table#high-tides {
+  margin-bottom: 50px;
+}
+
+#wrapper #moon-tides thead {
+  visibility: hidden;
+  position: absolute;
+}
+
+#wrapper #moon-tides td {
+  text-align: right;
+}
+
+#wrapper #moon-tides div.column {
+  width: 238px;
+  float: left;
+  margin-bottom: 30px;
+}
+
+#wrapper #moon-tides div.column:last-child {
+  margin-left: 8px;
+}
+
+#wrapper #moon-tides #air-pollution td {
+  padding-right: 0px;
+}
+
+#wrapper #moon-tides #air-pollution + p {
+  font-size: 15px;
+  font-family: AS32 Agate Sans, sans-serif;
+  line-height: 19px;
+}
+
+#wrapper #sun-moon + h3 {
+  border-top: none;
+}
+/*
+ *	LANDSCAPE ALTERATIONS
+ */
+@media screen and (orientation: landscape) {
+  #weather .CrossRefs {
+    left: 762px!important;
+}
+  #weather-content {
+    width: 730px;
+  }
+
+  #wrapper p.heavy,
+  #wrapper h4 {
+    font-size: 17px;
+    line-height: 24px;
+    padding-top: 5px;
+  }
+
+  #wrapper h3 {
+    padding: 5px 0 21px 0;
+  }
+
+  #wrapper p {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  #nav {
+    float: right;
+    width: 238px;
+    position: relative;
+    top: 88px;
+  }
+
+  .todays-forecast {
+    float: left;
+  }
+
+  .todays-forecast img {
+    border-bottom: 11px solid #fff;
+  }
+
+  .sub-content {
+    float: left;
+    width: 215px;
+    margin-top: 88px;
+    border-left:1px solid rgb(185, 185, 170);
+    margin-left:12px;
+    padding-left:11px;
+  }
+
+  #weather-forecast ul.days {
+    margin-left:0px;
+    float:left;
+  }
+
+  #wrapper #weather-content #weather-forecast .sub-content h3 {
+    padding-left: 0px;
+  }
+
+  #wrapper #weather-forecast div.sub-content ul.days {
+    border-top: 2px solid #fff;
+    background-color: #fff;
+  }
+
+  #wrapper #weather-forecast div.sub-content ul.days li {
+    border-right-style: none;
+    border-bottom: 1px solid #B9B9AA;
+    margin-bottom: 0;
+    padding-right: 0;
+    height: 170px;
+  }
+
+  #wrapper #weather-forecast div.sub-content ul.days li:nth-child(odd) {
+    border-right: 1px solid #B9B9AA;
+  }
+
+  #wrapper #weather-forecast div.sub-content ul.days li:nth-child(odd) img {
+    border-left: 8px solid #fff;
+    border-right: 8px solid #fff;
+  }
+
+  #wrapper #weather-forecast div.sub-content ul.days li:nth-child(even) img {
+    border-right: 8px solid #fff;
+    border-right: 8px solid #fff:
+  }
+
+  #wrapper #weather-forecast div.sub-content ul.days li:last-child {
+    background-color: #B9B9AA;
+    float: left;
+    border-bottom: 1px solid #fff;
+  }
+
+  #wrapper #summary #summary-scroll {
+    width: 607px;
+  }
+
+  #wrapper #summary, #wrapper #weather-report, #wrapper #around-world, #moon-tides {
+    width: 725px;
+  }
+
+  #report-scroll, #world-scroll {
+    width: 425px;
+    margin-bottom: 30px;
+  }
+
+  #around-world h3.top, #moon-tides h3.top {
+    border-style: none;
+  }
+
+  #around-world h2, #moon-tides h2 {
+    border-bottom: 1px solid rgb(185, 185, 170);
+  }
+
+  #around-world h3, #world-scroll, #wrapper #moon-tides #high-tides, #high-tides h3 {
+    width: 484px;
+  }
+
+  #nav li:nth-child(5) {
+    margin-bottom: 200px;
+  }
+}
+

@@ -1,0 +1,228 @@
+html{
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+    font-family: 'font';
+    src: url('../fonts/FrankfurterStd.eot?#iefix') format('embedded-opentype'), url('../fonts/FrankfurterStd.otf') format('opentype'), url('../fonts/FrankfurterStd.woff') format('woff'), url('../fonts/FrankfurterStd.ttf') format('truetype'), url('../fonts/FrankfurterStd.svg#FrankfurterStd') format('svg');
+    font--weight: normal;
+    font-style: normal;
+}
+@media screen and (max-width:768px) and (orientation: portrait){
+	.container
+	{
+		width: 768px;
+		height: 1024px;
+		margin: 0;
+		padding: 0;
+	}
+	.landing-page{
+		background: url(../images/landing-portrait.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+	.car-background{
+		background: url(../images/exterior.jpg);
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 100%;
+	}
+	.description{
+		font-family: font;
+		font-size: 25px;
+		color: #990033;
+		margin-top: -320px;
+		width: 100%;
+		text-align: center;
+		position: absolute;
+	}
+	.little-car{
+		background: url(../images/cars.jpg);
+		background-repeat: no-repeat;
+		margin-top: -250px;
+		margin-left: 25px;
+		width: 92%;
+		height: 10%;
+	}
+	.tabs{
+		width: 98%;
+		height: 7.5%;
+		position: absolute;
+		margin-left: 15px;
+		bottom: 0;
+	}
+	.tab-1{
+		background: url(../images/book-test.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 70%;
+		height: 100%;
+	}
+	.tab-2{
+		background: url(../images/more.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 70%;
+		height: 100%;
+	}
+	.tab-3{
+		background: url(../images/gallery.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 70%;
+		height: 100%;
+	}
+	.tab-4{
+		background: url(../images/back.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 70%;
+		height: 100%;
+	}
+	.container-gallery {
+		background-color: black;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.container-gallery div {
+	    background-color: white;
+	    width: 100%;
+	    display: inline-block;
+	    display: none;
+	}
+	.container-gallery img {
+	    width: 100%;
+	    height: 100%;
+	}
+	.container-gallery-landscape{
+		display: none;
+	}
+	.next {
+		background: url(../images/next.png);
+	    height: 101px;
+	    width: 71px;
+	    right: 0.1px;
+	    margin-top: 500px;
+	    position: absolute;
+	}
+	.prev {
+		background: url(../images/prev.png);
+		height: 101px;
+	    width: 71px;
+	    margin-top: 500px;
+	    position: absolute;
+	}
+}
+@media screen and (min-width:768px) and (orientation: landscape){
+	.container
+	{
+		width: 1024px;
+		height: 768px;
+		margin: 0;
+		padding: 0;
+	}
+	.landing-page{
+		background: url(../images/landing-landscape.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+	.car-background{
+		background: url(../images/exterior-landscape.jpg);
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 100%;
+	}
+	.description{
+		font-family: font;
+		font-size: 25px;
+		color: #990033;
+		line-height: 90%;
+		margin-top: -520px;
+		margin-left: 610px;
+		text-align: center;
+		width: 30%;
+		position: absolute;
+	}
+	.little-car{
+		background: url(../images/cars-landscape.jpg);
+		background-repeat: no-repeat;
+		margin-top: -420px;
+		margin-left: 550px;
+		width: 42%;
+		height: 35%;
+	}
+	.tabs{
+		width: 93%;
+		height: 10%;
+		position: absolute;
+		margin-left: 70px;
+		bottom: 0px;
+	}
+	.tab-1{
+		background: url(../images/book-test.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 70%;
+		height: 100%;
+	}
+	.tab-2{
+		background: url(../images/more.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 70%;
+		height: 100%;
+	}
+	.tab-3{
+		background: url(../images/gallery.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 70%;
+		height: 100%;
+	}
+	.tab-4{
+		background: url(../images/back.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 70%;
+		height: 100%;
+	}
+	.container-gallery-landscape {
+		background-color: black;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.container-gallery-landscape div {
+	    background-color: white;
+	    width: 100%;
+	    display: inline-block;
+	    display: none;
+	}
+	.container-gallery-landscape img {
+	    width: 100%;
+	    height: 100%;
+	}
+	.container-gallery{
+		display: none;
+	}
+	.next {
+		background: url(../images/next.png);
+	    height: 101px;
+	    width: 71px;
+	    right: 0.1px;
+	    margin-top: 350px;
+	    position: absolute;
+	}
+	.prev {
+		background: url(../images/prev.png);
+		height: 101px;
+	    width: 71px;
+	    margin-top: 350px;
+	    position: absolute;
+	}
+}

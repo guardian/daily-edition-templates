@@ -1,0 +1,21 @@
+{
+  "type":"rotate",
+  "campaignID":"GCE_Cisco_June15",
+  "stack":[{
+    "media":{
+      "type":"image",
+      "reference":"CISCO_768x1024_ipad.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://www.theguardian.com/technology/series/connected-world?INTCMP=dis-321"
+    }]
+  },{
+    "media":{
+      "type":"image",
+      "reference":"CISCO_1024x768_Ipad.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://www.theguardian.com/technology/series/connected-world?INTCMP=dis-321"
+    }]
+  }]
+}

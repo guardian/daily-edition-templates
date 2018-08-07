@@ -1,0 +1,21 @@
+{
+  "type":"rotate",
+  "campaignID":"GCE_celine_summer_week2",
+  "stack":[{
+    "media":{
+      "type":"image",
+      "reference":"UK-the-Guardian-768x1024-1.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"https://www.celine.com/en"
+    }]
+  },{
+    "media":{
+      "type":"image",
+      "reference":"UK-the-Guardian-1024x768-1.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"https://www.celine.com/en"
+    }]
+  }]
+}

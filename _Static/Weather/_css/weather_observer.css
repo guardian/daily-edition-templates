@@ -1,0 +1,237 @@
+/*
+ *	WEATHER COMMON STYLES
+ */
+html * {
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#wrapper {
+  overflow: hidden;
+}
+
+#wrapper div.panel {
+  opacity: 0;
+  position: absolute;
+}
+
+#wrapper div.panel.active-panel {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  position: static;
+}
+
+
+
+#wrapper p {
+  font-family: "Mercury Display", "DE3 Display Egyptian";
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+#wrapper p strong {
+  font-family: "WP2 Web Prelo Book";
+}
+
+#wrapper h1 {
+  font-family: "WP2 Web Prelo Book";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 6px 0 24px 0;
+  color: #19b4dc;
+  border-top: 1px solid rgb(185, 185, 170);
+  border-bottom: 1px solid rgb(185, 185, 170);
+}
+#wrapper h1:first-of-type {
+  padding-top: 24px;
+  border-top: 0;
+}
+
+#wrapper h1 span {
+  font-weight: normal;
+}
+
+#wrapper h2 {
+  font-family: "WP2 Web Prelo Book";
+  font-size: 18px;
+  line-height: 24px;
+  color: #333;
+  padding: 24px 0;
+}
+
+#weather-content {
+  float: left;
+  width: 484px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+
+#weather .CrossRefs {
+  position: absolute;
+  top: 140px;
+  left: 552px;
+  width: 197px;
+}
+
+#weather .CrossRefs .story-package li {
+  padding-bottom: 0;
+}
+
+#weather .CrossRefs ol.story-package li a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#weather {
+  font-size: 10px;
+  font-weight: normal;
+  background: rgb(245, 245, 242);
+  color: #333;
+  padding-left: 19px;
+}
+
+
+
+
+/*
+ *  UK/EUROPE TODAY CONTENT
+ */
+#europe-today .todays-forecast h1 {
+  margin-bottom: 8px;
+}
+
+#uk-today > img,
+#europe-today > img {
+  margin-bottom: 8px;
+}
+
+
+/*
+ *  WEATHER REPORT
+ */
+#wrapper table {
+  font-size: 15px;
+  font-family: helvetica;
+  line-height: 19px;
+  border-collapse: collapse;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+#wrapper th,
+#wrapper td {
+  text-align: left;
+  vertical-align: top;
+}
+#wrapper table caption,
+#wrapper thead th {
+  border-bottom: 1px solid rgb(185, 185, 170);
+}
+
+#wrapper thead th {
+  width: 60px;
+  height: 48px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+#wrapper th.town {
+  width: 154px;
+}
+
+#wrapper thead th.weather {
+  width: 90px;
+}
+
+#wrapper tbody tr {
+  height: 28px;
+  line-height: 28px;
+}
+
+#wrapper tbody tr:nth-child(odd) {
+  background-color:#fff;
+}
+
+#wrapper #summary h2 {
+  border-bottom: 1px solid rgb(185, 185, 170);
+}
+
+#wrapper p.legend {
+  font-family: helvetica;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999;
+  white-space: normal;
+  border-top: 1px solid rgb(185, 185, 170);
+  padding-top: 8px;
+}
+
+#wrapper p.legend strong {
+  font-family: helvetica;
+}
+
+
+/*
+ *  STATISTICS
+ */
+#statistics .sunrise-sunset th,
+#statistics .air-pollution th {
+  width: 115px;
+}
+
+#statistics .sunrise-sunset td,
+#statistics .air-pollution td {
+  width: 60px;
+}
+
+#statistics .sunrise-sunset td:last-child,
+#statistics .air-pollution td:last-child {
+  width: auto;
+}
+
+
+
+#statistics table caption {
+  font-weight: bold;
+  height: 48px;
+  line-height: 48px;
+}
+
+#statistics .home-yesterday,
+#statistics .abroad-yesterday {
+  overflow: hidden;
+}
+
+#statistics .home-yesterday table,
+#statistics .abroad-yesterday table {
+  width: 238px;
+  float: left;
+}
+
+#statistics .home-yesterday table:first-of-type,
+#statistics .abroad-yesterday table:first-of-type {
+  margin-right: 8px;
+}
+
+#statistics .weather-statistics h2 {
+  font-family: helvetica;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  margin-top: 8px;
+}
+#statistics .weather-statistics p,
+#statistics .weather-statistics p strong {
+  font-family: helvetica;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 0;
+  color: #666;
+}
+

@@ -1,0 +1,76 @@
+body {
+	margin: 0;
+}
+
+#stage {
+	overflow: hidden;
+}
+
+
+.absolute {
+	position: absolute;
+}
+
+.full {
+	width: 100%;
+	height: 100%;
+}
+
+.background,
+.background-cover,
+.background-contain,
+.background-fill {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+.background-cover {
+	-moz-background-size: cover;
+	  -o-background-size: cover;
+	     background-size: cover;
+}
+.background-contain {
+	-moz-background-size: contain;
+	  -o-background-size: contain;
+	     background-size: contain;
+}
+.background-fill {
+	-moz-background-size: 100% 100%;
+	  -o-background-size: 100% 100%;
+	     background-size: 100% 100%;
+}
+
+
+.button-wrapper {
+	left: 0;
+	right: 0;
+	bottom: 1%;
+	margin: auto;
+	height: 15%;
+	width: 95%;
+}
+@media all and (orientation:landscape) {
+	.button-wrapper {
+		width: 67%;
+	}
+}
+
+.button-wrapper > div {
+	width: 45%;
+	height: 100%;
+}
+
+.button-wrapper > div:nth-child(1) {
+	float: left;
+	background-position: left center;
+}
+.button-wrapper > div:nth-child(2) {
+	float: right;
+	background-position: right center;
+}
+
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+}

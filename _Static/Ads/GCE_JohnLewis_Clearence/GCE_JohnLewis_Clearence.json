@@ -1,0 +1,21 @@
+{
+  "type":"rotate",
+  "campaignID":"GCE_JohnLewis_Clearence",
+  "stack":[{
+    "media":{
+      "type":"image",
+      "reference":"768x1024_JL_SUMMER_CLEARANCE_NOW_OPEN_Guardian_P14046.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://www.johnlewis.com/clearance/c6000270062?rdr=1&tmad=c&tmcampid=50&source=BR24062015Clearance_copy_only"
+    }]
+  },{
+    "media":{
+      "type":"image",
+      "reference":"1024x768_JL_SUMMER_CLEARANCE_BED_LINEN_Guardian_P14046.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://www.johnlewis.com/browse/clearance/bedroom-offers/duvet-pillow-offers/_/N-5nff?tmad=c&tmcampid=50&source=BR24062015Clearance_bedding"
+    }]
+  }]
+}

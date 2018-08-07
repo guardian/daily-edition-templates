@@ -1,0 +1,21 @@
+{
+  "type":"rotate",
+  "campaignID":"GCE_GUShopTourDeFrance_290615",
+  "stack":[{
+    "media":{
+      "type":"image",
+      "reference":"TourDeFrance_iPad_PORT.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://entertainment.guardianoffers.co.uk/c-xab/sport/?utm_source=ipad&utm_medium=ad&utm_campaign=cycle"
+    }]
+  },{
+    "media":{
+      "type":"image",
+      "reference":"TourDeFrance_iPad_LAND.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://entertainment.guardianoffers.co.uk/c-xab/sport/?utm_source=ipad&utm_medium=ad&utm_campaign=cycle"
+    }]
+  }]
+}

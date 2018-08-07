@@ -1,0 +1,21 @@
+{
+  "type":"rotate",
+  "campaignID":"GCE_Heineken_29062015",
+  "stack":[{
+    "media":{
+      "type":"image",
+      "reference":"43396_Symonds_Newton_768x1024px.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"https://www.heineken.co.uk"
+    }]
+  },{
+    "media":{
+      "type":"image",
+      "reference":"43395_Symonds_Newton_1024x768px.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"https://www.heineken.co.uk"
+    }]
+  }]
+}

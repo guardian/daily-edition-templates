@@ -1,0 +1,21 @@
+{
+  "type":"rotate",
+  "campaignID":"GCE_MI6_29062015",
+  "stack":[{
+    "media":{
+      "type":"image",
+      "reference":"MI6iPadPortrait768x1024.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"https://www.sis.gov.uk/careers/roles/intelligence-officers.html"
+    }]
+  },{
+    "media":{
+      "type":"image",
+      "reference":"MI6iPadLandscape1024x768.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"https://www.sis.gov.uk/careers/roles/intelligence-officers.html"
+    }]
+  }]
+}

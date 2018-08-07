@@ -1,0 +1,62 @@
+.main {
+	background: rgb(122,94,73);
+	background: -moz-radial-gradient(top right, ellipse cover,  rgba(122,94,73,1) 0%, rgba(21,16,13,1) 100%);
+	background: -webkit-gradient(radial, top right, 0px, center center, 100%, color-stop(0%,rgba(122,94,73,1)), color-stop(100%,rgba(21,16,13,1)));
+	background: -webkit-radial-gradient(top right, ellipse cover,  rgba(122,94,73,1) 0%,rgba(21,16,13,1) 100%);
+	background: -o-radial-gradient(top right, ellipse cover,  rgba(122,94,73,1) 0%,rgba(21,16,13,1) 100%);
+	background: -webkit-radial-gradient(ellipse at top right, rgba(122,94,73,1) 0%, rgba(21,16,13,1) 100%);
+	background: -moz-radial-gradient(top right, ellipse, rgba(122,94,73,1) 0%, rgba(21,16,13,1) 100%);
+	background: -o-radial-gradient(ellipse at top right, rgba(122,94,73,1) 0%, rgba(21,16,13,1) 100%);
+	background: radial-gradient(ellipse at top right,  rgba(122,94,73,1) 0%,rgba(21,16,13,1) 100%);
+}
+
+.main > .watch,
+.main > .copy,
+.main > .logo {
+	opacity: 0;
+	-webkit-transform: translate3d( 0, 20px, 0 );
+	   -moz-transform: translate3d( 0, 20px, 0 );
+	        transform: translate3d( 0, 20px, 0 );
+	-webkit-transition: opacity 1s linear, -webkit-transform 1s ease;
+	   -moz-transition: opacity 1s linear, -moz-transform 1s ease;
+	     -o-transition: opacity 1s linear, -o-transform 1s ease;
+	        transition: opacity 1s linear, transform 1s ease;
+}
+
+
+.main > .watch {
+	top: 6.52%;
+	left: 13.75%;
+	width: 72.19%;
+	height: 50%;
+	background-image: url( ../img/intro-watch.png );
+}
+
+.main > .copy {
+	top: 61.88%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 92.19%;
+	height: 7.17%;
+	background-image: url( ../img/intro-copy.png );
+}
+
+.main > .logo {
+	top: 73%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 38.13%;
+	height: 8.7%;
+	background-image: url( ../img/logo.png );
+}
+
+
+
+.main > .button-wrapper > div:nth-child(1) {
+	background-image: url( ../img/cta-explore.png );
+}
+.main > .button-wrapper > div:nth-child(2) {
+	background-image: url( ../img/cta-watchvideo.png );
+}

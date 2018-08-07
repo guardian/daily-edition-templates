@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <div class="container">
+          <!-- Gallery section start-->
+            <section class="slideshow">
+              <div class="next"></div>
+              <div class="prev"></div>
+              <div class="container-gallery">
+                <div style="display: inline-block;">
+                  <img src="../images/gallery/AdUnit--Tablet-Gallery1.jpg"/>
+                </div>
+                <div>
+                  <img src="../images/gallery/AdUnit--Tablet-Gallery2.jpg"/>
+                </div>
+                <div>
+                  <img src="../images/gallery/AdUnit--Tablet-Gallery3.jpg"/>
+                </div>
+                <div>
+                  <img src="../images/gallery/AdUnit--Tablet-Gallery4.jpg"/>
+                </div>
+                <div>
+                  <img src="../images/gallery/AdUnit--Tablet-Gallery5.jpg"/>
+                </div>
+                <div>
+                  <img src="../images/gallery/AdUnit--Tablet-Gallery6.jpg"/>
+                </div>
+              </div>
+              <!-- Landscape gallery -->
+               <div class="container-gallery-landscape">
+                <div style="display: inline-block;">
+                  <img src="../images/gallery/AdUnit -Tablet-Gallery1.jpg"/>
+                </div>
+                <div>
+                  <img src="../images/gallery/AdUnit -Tablet-Gallery2.jpg"/>
+                </div>
+                <div>
+                  <img src="../images/gallery/AdUnit -Tablet-Gallery3.jpg"/>
+                </div>
+                <div>
+                  <img src="../images/gallery/AdUnit -Tablet-Gallery4.jpg"/>
+                </div>
+                <div>
+                  <img src="../images/gallery/AdUnit -Tablet-Gallery5.jpg"/>
+                </div>
+                <div>
+                  <img src="../images/gallery/AdUnit -Tablet-Gallery6.jpg"/>
+                </div>
+              </div>
+            </section>
+            <!-- Gallery section end -->
+            <div class="tabs">
+	            <a href="http://www.fiat.co.uk/testdrive">
+	                <div class="tab-1 col-xs-4"></div>
+	            </a>
+	            <a href="http://www.fiat.co.uk/uk/fiat-500">
+	                <div class="tab-2 col-xs-4"></div>
+	            </a>
+	            <a href="exterior.html">
+	                <div class="tab-4 col-xs-4"></div>
+	            </a>
+        	</div>
+        </div>
+    </div>
+     <script type = "text/javascript">
+        var currentIndex = 0,
+          items = $('.container-gallery div'),
+          itemsLandscape = $('.container-gallery-landscape div'),
+          itemAmt = items.length;
+
+        function movingItems() {
+          var item = $('.container-gallery div').eq(currentIndex);
+          var itemLandscape = $('.container-gallery-landscape div').eq(currentIndex);
+          items.hide();
+          itemsLandscape.hide();
+          item.css('display','inline-block');
+          itemLandscape.css('display','inline-block');
+        }
+
+        $('.next').click(function() {
+          currentIndex += 1;
+          if (currentIndex > itemAmt - 1) {
+            currentIndex = 0;
+          }
+          movingItems();
+        });
+
+        $('.prev').click(function() {
+          currentIndex -= 1;
+          if (currentIndex < 0) {
+            currentIndex = itemAmt - 1;
+          }
+          movingItems();
+        });
+    </script>
+</body>
+</html>

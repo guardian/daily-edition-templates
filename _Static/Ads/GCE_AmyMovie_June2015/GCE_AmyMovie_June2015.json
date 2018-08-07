@@ -1,0 +1,21 @@
+{
+  "type":"rotate",
+  "campaignID":"GCE_AmyMovie_June2015",
+  "stack":[{
+    "media":{
+      "type":"image",
+      "reference":"Amy_Grd_Obsvr_TabletPortrait_FP_V_2.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://amyfilmtickets.co.uk"
+    }]
+  },{
+    "media":{
+      "type":"image",
+      "reference":"Amy_Grd_Obsvr_TabletLandScape_FP_V_2.jpg"
+    },
+    "hotspots":[{
+      "targetURL":"http://amyfilmtickets.co.uk"
+    }]
+  }]
+}

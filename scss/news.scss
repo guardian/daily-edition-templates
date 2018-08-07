@@ -1,0 +1,25 @@
+/*Specific to news article */
+.picture {
+  &__caption-container--news {
+    background-color: $news-main;
+    color: white;
+  }
+}
+
+.byline {
+  &__author--news {
+    color: $news-main;
+  }
+
+  &__location--news {
+    color: $news-main;
+  }
+}
+
+.arrow-up--news {
+  border-bottom: 25px solid $news-main;
+}
+
+.section--news {
+  color: $news-main;
+}
