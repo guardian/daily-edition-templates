@@ -1,0 +1,26 @@
+/*Specific to culture article */
+
+.byline {
+  &__author--culture {
+    color: $culture-main;
+  }
+
+  &__location--culture {
+    color: $culture-main;
+  }
+}
+
+.arrow-up--culture {
+  border-bottom: 25px solid $culture-main;
+}
+
+.section--culture {
+  color: $culture-main;
+}
+
+.picture {
+  &__caption-container--culture {
+    background-color: $culture-dark;
+    color: white;
+  }
+}
