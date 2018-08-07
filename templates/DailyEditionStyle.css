@@ -347,7 +347,7 @@ p {
   margin: 0;
   z-index: 1000;
   position: absolute;
-  bottom: 60px; }
+  bottom: 64px; }
 
 /*Specific to news article */
 .byline__author--news {
