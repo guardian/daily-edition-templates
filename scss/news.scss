@@ -1,10 +1,4 @@
 /*Specific to news article */
-.picture {
-  &__caption-container--news {
-    background-color: $news-main;
-    color: white;
-  }
-}
 
 .byline {
   &__author--news {
@@ -22,4 +16,11 @@
 
 .section--news {
   color: $news-main;
+}
+
+.picture {
+  &__caption-container--news {
+    background-color: $news-main;
+    color: white;
+  }
 }
