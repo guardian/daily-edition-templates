@@ -1,25 +1,25 @@
 /*Specific to lifestyle article */
 
 .byline {
-  &__author--sport {
+  &__author--lifestyle {
     color: $lifestyle-main;
   }
 
-  &__location--sport {
+  &__location--lifestyle {
     color: $lifestyle-main;
   }
 }
 
-.arrow-up--sport {
+.arrow-up--lifestyle {
   border-bottom: 25px solid $lifestyle-main;
 }
 
-.section--sport {
+.section--lifestyle {
   color: $lifestyle-main;
 }
 
 .picture {
-  &__caption-container--sport {
+  &__caption-container--lifestyle {
     background-color: $lifestyle-main;
     color: white;
   }
