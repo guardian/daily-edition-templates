@@ -2,7 +2,7 @@
 .luther-document a:visited,
 .luther-document a:active,
 .luther-document a:hover {
-  color: rgb(0, 86, 137);
+  color: $news-main;
   text-decoration: none;
   border-bottom: none;
 }
@@ -51,8 +51,9 @@
 }
 
 body {
-  background: url(../_images/sandstone.png);
-  color: #333;
+  /* commenting out for the new re-design */
+  /* background: url(../_images/sandstone.png); */
+  color: #121212;
 }
 
 /* Removed for digital CMS -  147 - 19px on the left of the article
@@ -252,20 +253,22 @@ body {
 .galleryimage a {
   display: block;
   background-repeat: no-repeat;
-  height:290px;
-  width:484px;
+  height:370px;
+  width:620px;
 }
 
 .gallerycamera {
   position:absolute;
-  top: 105px;
-  left: 202px;
+  max-width: 80px;
+  min-width:80px;
+  top: 145px;
+  left: 300px;
 }
 .gallerycount {
   color:black;
   position:absolute;
-  top: 160px;
-  left: 221px;
+  top: 200px;
+  left: 320px;
   width:40px;
   height: 24px;
   font-family: DE5 Display Egyptian SemiBold;

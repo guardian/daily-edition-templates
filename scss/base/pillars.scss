@@ -1,0 +1,77 @@
+$pillars: (
+    news: (
+        captionBackground: $news-main,
+        link-color: $news-main,
+        byline-color: $news-main,
+        arrow-up-color: $news-main,
+        section-color: $news-main,
+        captionFont-color: $brightness-100
+    ),
+    opinion: (
+        captionBackground: $opinion-main,
+        link-color: $opinion-main,
+        byline-color: $opinion-main,
+        arrow-up-color: $opinion-main,
+        section-color: $opinion-main,
+        captionFont-color: $brightness-100
+    ),
+    sport: (
+        captionBackground: $highlight-main,
+        arrow-up-color: $highlight-main,
+        link-color: $sport-main,
+        byline-color: $sport-main,
+        section-color: $sport-main,
+        captionFont-color: $brightness-7
+    ),
+    culture: (
+        captionBackground: $culture-main,
+        link-color: $culture-main,
+        byline-color: $culture-main,
+        arrow-up-color: $culture-main,
+        section-color: $culture-main,
+        captionFont-color: $brightness-100
+    ),
+    lifestyle: (
+        captionBackground: $lifestyle-main,
+        link-color: $lifestyle-main,
+        byline-color: $lifestyle-main,
+        arrow-up-color: $lifestyle-main,
+        section-color: $lifestyle-main,
+        captionFont-color: $brightness-100
+    )
+);
+
+@mixin colours($palette) {
+  $captionBackground: map-get($palette, captionBackground);
+  $captionFont-color: map-get($palette, captionFont-color);
+  $link-color: map-get($palette, link-color);
+  $byline-color: map-get($palette, byline-color);
+  $arrow-up-color: map-get($palette, arrow-up-color);
+  $section-color: map-get($palette, section-color);
+    .picture__caption-container {
+      background-color: $captionBackground;
+      color: $captionFont-color;
+    }
+
+    a {
+      color: $link-color;
+    }
+
+    .byline {
+      color: $byline-color;
+    }
+
+    .arrow-up {
+      border-bottom: 25px solid $arrow-up-color;
+    }
+    
+    .section {
+      color: $section-color;
+    }
+}
+
+@each $pillar, $palette in $pillars {
+    .Article__pillar--#{$pillar} {
+        @include colours($palette);
+    }
+}

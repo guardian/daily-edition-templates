@@ -4,6 +4,7 @@
 @import "base/typography";
 @import "base/rules";
 @import "base/vars";
+@import "base/pillars";
 @include fontList(ios);
 /* common css to standard article*/
 ///////////////////////////////////////////////////
@@ -117,10 +118,12 @@ p {
   }
 
   &__caption-container {
+    position: relative;
     width: $width-content;
     z-index: 1000;
     background-color: $brightness-46;
     color: white;
+    padding-top: 10px;
   }
 
   &__caption {
@@ -156,5 +159,5 @@ p {
   margin: 0;
   z-index: 1000;
   position: absolute;
-  bottom: 64px;
+  bottom: 74px;
 }
