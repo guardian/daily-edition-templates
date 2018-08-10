@@ -6,7 +6,8 @@ $pillars: (
         bylineComment-color:$news-main,
         arrow-up-color: $news-main,
         section-color: $news-main,
-        captionFont-color: $brightness-100
+        captionFont-color: $brightness-100,
+        caps-color: $news-main
     ),
     opinion: (
         captionBackground: $opinion-main,
@@ -15,7 +16,8 @@ $pillars: (
         bylineComment-color:$opinion-main,
         arrow-up-color: $opinion-main,
         section-color: $opinion-main,
-        captionFont-color: $brightness-100
+        captionFont-color: $brightness-100,
+        caps-color: $opinion-main
     ),
     sport: (
         captionBackground: $highlight-main,
@@ -24,7 +26,8 @@ $pillars: (
         byline-color: $sport-main,
         bylineComment-color:$sport-main,
         section-color: $sport-main,
-        captionFont-color: $brightness-7
+        captionFont-color: $brightness-7,
+        caps-color: $sport-main
     ),
     culture: (
         captionBackground: $culture-main,
@@ -33,7 +36,8 @@ $pillars: (
         bylineComment-color:$culture-main,
         arrow-up-color: $culture-main,
         section-color: $culture-main,
-        captionFont-color: $brightness-100
+        captionFont-color: $brightness-100,
+        caps-color: $culture-main
     ),
     lifestyle: (
         captionBackground: $lifestyle-main,
@@ -42,7 +46,8 @@ $pillars: (
         bylineComment-color:$lifestyle-main,
         arrow-up-color: $lifestyle-main,
         section-color: $lifestyle-main,
-        captionFont-color: $brightness-100
+        captionFont-color: $brightness-100,
+        caps-color: $lifestyle-main
     )
 );
 
@@ -54,6 +59,7 @@ $pillars: (
   $bylineComment-color: map-get($palette, bylineComment-color);
   $arrow-up-color: map-get($palette, arrow-up-color);
   $section-color: map-get($palette, section-color);
+  $caps-color: map-get($palette, caps-color);
     .picture__caption-container {
       background-color: $captionBackground;
       color: $captionFont-color;
@@ -76,6 +82,11 @@ $pillars: (
     }
     .byline--comment {
       color: $bylineComment-color;
+    }
+    .guardian-body-text--caps {
+      p:first-child:first-letter {
+        color: $caps-color;
+      }
     }
 }
 

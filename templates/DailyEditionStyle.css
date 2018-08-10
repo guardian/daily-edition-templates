@@ -113,6 +113,9 @@ input, select {
 .Article__pillar--news .byline--comment {
   color: #c70000; }
 
+.Article__pillar--news .guardian-body-text--caps p:first-child:first-letter {
+  color: #c70000; }
+
 .Article__pillar--opinion .picture__caption-container {
   background-color: #e05e00;
   color: #ffffff; }
@@ -130,6 +133,9 @@ input, select {
   color: #e05e00; }
 
 .Article__pillar--opinion .byline--comment {
+  color: #e05e00; }
+
+.Article__pillar--opinion .guardian-body-text--caps p:first-child:first-letter {
   color: #e05e00; }
 
 .Article__pillar--sport .picture__caption-container {
@@ -151,6 +157,9 @@ input, select {
 .Article__pillar--sport .byline--comment {
   color: #0084c6; }
 
+.Article__pillar--sport .guardian-body-text--caps p:first-child:first-letter {
+  color: #0084c6; }
+
 .Article__pillar--culture .picture__caption-container {
   background-color: #a1845c;
   color: #ffffff; }
@@ -170,6 +179,9 @@ input, select {
 .Article__pillar--culture .byline--comment {
   color: #a1845c; }
 
+.Article__pillar--culture .guardian-body-text--caps p:first-child:first-letter {
+  color: #a1845c; }
+
 .Article__pillar--lifestyle .picture__caption-container {
   background-color: #bb3b80;
   color: #ffffff; }
@@ -187,6 +199,9 @@ input, select {
   color: #bb3b80; }
 
 .Article__pillar--lifestyle .byline--comment {
+  color: #bb3b80; }
+
+.Article__pillar--lifestyle .guardian-body-text--caps p:first-child:first-letter {
   color: #bb3b80; }
 
 @font-face {
@@ -500,16 +515,20 @@ p {
   background-repeat: repeat-x;
   background-position-x: 0; }
 
-.dropcaps {
-  float: left;
-  display: inline-block;
-  box-sizing: border-box;
+.guardian-body-text--caps {
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 48px;
   clear: both; }
-  .dropcaps p {
+  .guardian-body-text--caps p {
+    padding-bottom: 22px;
+    padding-top: 0; }
+  .guardian-body-text--caps p:first-child:first-letter {
     font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
     font-size: 80px;
     line-height: 64px;
-    color: #0084c6;
     font-weight: lighter;
-    padding-bottom: 0;
-    padding-right: 10px; }
+    padding-bottom: 4;
+    padding-right: 8px;
+    float: left; }
