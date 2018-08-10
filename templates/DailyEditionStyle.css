@@ -80,6 +80,18 @@ input, select {
   background-position-x: 0;
   padding-top: 16px; }
 
+.multiline--opinion {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMXB4IiBoZWlnaHQ9IjEzcHgiIHZpZXdCb3g9IjAgMCAxIDEzIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPiAgICAgICAgPHRpdGxlPlN0YW5kYXJkX2FydGljbGU8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gICAgPGRlZnM+PC9kZWZzPiAgICA8ZyBpZD0iQXJ0aWNsZV90ZW1wbGF0ZXMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9IlN0YW5kYXJkX2FydGljbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMS4wMDAwMDAsIC0yNjguMDAwMDAwKSIgZmlsbD0iIzk5OTk5OSI+ICAgICAgICAgICAgPGcgaWQ9ImFydGljbGVfYm9keSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjEuMDAwMDAwLCA5NS4wMDAwMDApIj4gICAgICAgICAgICAgICAgPGcgaWQ9IjQtcnVsZXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAxNzMuMDAwMDAwKSI+ICAgICAgICAgICAgICAgICAgICA8cmVjdCBpZD0icnVsZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjY0OSIgaGVpZ2h0PSIxIj48L3JlY3Q+ICAgICAgICAgICAgICAgICAgICA8cmVjdCBpZD0icnVsZSIgeD0iMCIgeT0iNCIgd2lkdGg9IjY0OSIgaGVpZ2h0PSIxIj48L3JlY3Q+ICAgICAgICAgICAgICAgICAgICA8cmVjdCBpZD0icnVsZSIgeD0iMCIgeT0iOCIgd2lkdGg9IjY0OSIgaGVpZ2h0PSIxIj48L3JlY3Q+ICAgICAgICAgICAgICAgICAgICA8cmVjdCBpZD0icnVsZSIgeD0iMCIgeT0iMTIiIHdpZHRoPSI2NDkiIGhlaWdodD0iMSI+PC9yZWN0PiAgICAgICAgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+");
+  background-repeat: repeat-x;
+  background-position-x: 0;
+  padding-top: 16px; }
+
+.multiline--culture {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMXB4IiBoZWlnaHQ9IjEzcHgiIHZpZXdCb3g9IjAgMCAxIDEzIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPiAgICAgICAgPHRpdGxlPlN0YW5kYXJkX2FydGljbGU8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gICAgPGRlZnM+PC9kZWZzPiAgICA8ZyBpZD0iQXJ0aWNsZV90ZW1wbGF0ZXMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9IlN0YW5kYXJkX2FydGljbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMS4wMDAwMDAsIC0yNjguMDAwMDAwKSIgZmlsbD0iIzk5OTk5OSI+ICAgICAgICAgICAgPGcgaWQ9ImFydGljbGVfYm9keSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjEuMDAwMDAwLCA5NS4wMDAwMDApIj4gICAgICAgICAgICAgICAgPGcgaWQ9IjQtcnVsZXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAxNzMuMDAwMDAwKSI+ICAgICAgICAgICAgICAgICAgICA8cmVjdCBpZD0icnVsZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjY0OSIgaGVpZ2h0PSIxIj48L3JlY3Q+ICAgICAgICAgICAgICAgICAgICA8cmVjdCBpZD0icnVsZSIgeD0iMCIgeT0iNCIgd2lkdGg9IjY0OSIgaGVpZ2h0PSIxIj48L3JlY3Q+ICAgICAgICAgICAgICAgICAgICA8cmVjdCBpZD0icnVsZSIgeD0iMCIgeT0iOCIgd2lkdGg9IjY0OSIgaGVpZ2h0PSIxIj48L3JlY3Q+ICAgICAgICAgICAgICAgICAgICA8cmVjdCBpZD0icnVsZSIgeD0iMCIgeT0iMTIiIHdpZHRoPSI2NDkiIGhlaWdodD0iMSI+PC9yZWN0PiAgICAgICAgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+");
+  background-repeat: repeat-x;
+  background-position-x: 0;
+  padding-top: 16px; }
+
 .multiline--sport {
   background-image: url("data:image/svg+xml,%3Csvg%20width%3D%229%22%20height%3D%2212%22%20viewBox%3D%220%200%209%2012%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22%23DFDFDF%22%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%221.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%224.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%227.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%2210.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%224.5%22%20cy%3D%221.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%224.5%22%20cy%3D%224.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%224.5%22%20cy%3D%227.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%224.5%22%20cy%3D%2210.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%221.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%224.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%227.5%22%20r%3D%221%22/%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%2210.5%22%20r%3D%221%22/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: repeat-x;
@@ -412,7 +424,7 @@ p {
 /* section */
 .section {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 800;
   font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif; }
 
 /* headline */
@@ -550,7 +562,7 @@ p {
   display: flex;
   flex-direction: row; }
   .comment-standfirst-container img {
-    width: 150px;
+    width: 170px;
     z-index: 1000;
     top: 211px;
     margin-left: -180px;
@@ -565,6 +577,26 @@ p {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMXB4IiBoZWlnaHQ9IjFweCIgdmlld0JveD0iMCAwIDEgMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5BcnRpY2xlX2NvbW1lbnQ8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gICAgPGRlZnM+PC9kZWZzPiAgICA8ZyBpZD0iQXJ0aWNsZV90ZW1wbGF0ZXMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9IkFydGljbGVfY29tbWVudCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxLjAwMDAwMCwgLTM0MC4wMDAwMDApIj4gICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlLTMiIGZpbGw9IiNGRUY5RjUiIHg9IjAiIHk9Ijc4IiB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIyMDkzIj48L3JlY3Q+ICAgICAgICAgICAgPGcgaWQ9ImFydGljbGVfYm9keSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAuMDAwMDAwLCA5NC4wMDAwMDApIiBzdHJva2U9IiNDQkM4QzYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+ICAgICAgICAgICAgICAgIDxnIGlkPSJoZWFkZXIiPiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9IlNwb3J0X3J1bGVzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgMTYxLjAwMDAwMCkiPiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0wLjk1NzIyNzEzOSw4NS41IEw2NDguMTgxNTI4LDg1LjUiIGlkPSJMaW5lLTItQ29weS0zNyI+PC9wYXRoPiAgICAgICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+");
   background-repeat: repeat-x;
   background-position-x: 0; }
+
+.section__feature {
+  border-bottom: 1px solid #dcdcdc;
+  width: 620px;
+  padding-bottom: 5px; }
+
+.section__container {
+  background-color: #bb3b80;
+  display: inline;
+  color: white;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px; }
+
+.section__series {
+  font-weight: 300;
+  color: #121212;
+  font-style: italic;
+  padding-left: 10px; }
 
 .headline--feature {
   font-weight: 900;

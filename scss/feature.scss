@@ -1,3 +1,26 @@
+.section {
+  &__feature{
+    border-bottom: 1px solid $brightness-86;
+    width: $width-content;
+    padding-bottom: 5px;
+  }
+  &__container {
+    background-color: $lifestyle-main;
+    display: inline;
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+  }
+  &__series {
+    font-weight: 300;
+    color: #121212;
+    font-style: italic;
+    padding-left: 10px;
+  }
+}
+
 .headline--feature {
   font-weight: 900;
   padding-bottom: 30px;
@@ -57,7 +80,6 @@
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  // border-bottom: 15px solid $lifestyle-main;
   float: left;
   margin: 0;
   z-index: 1000;
