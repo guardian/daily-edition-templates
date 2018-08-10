@@ -532,3 +532,55 @@ p {
     padding-bottom: 4;
     padding-right: 8px;
     float: left; }
+
+.headline--feature {
+  font-weight: 900;
+  color: #7d0068;
+  padding-bottom: 30px; }
+
+.standfirst--feature {
+  padding-bottom: 0; }
+  .standfirst--feature p {
+    padding: 0; }
+
+.byline--feature {
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 4px;
+  margin-bottom: 22px; }
+
+.picture__caption-container-simple {
+  position: relative;
+  width: 620px;
+  z-index: 1000; }
+
+.picture__caption--simple {
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  font-size: 18px;
+  line-height: 22px;
+  display: inline; }
+  .picture__caption--simple p:first-child:first-letter {
+    padding-left: 25px; }
+  .picture__caption--simple--credit {
+    font-weight: bold; }
+  .picture__caption--simple--second {
+    font-family: "Guardian Agate Sans 1 Web", sans-serif;
+    color: #767676;
+    font-size: 14px; }
+    .picture__caption--simple--second p {
+      padding-left: 0;
+      padding-bottom: 10px; }
+
+.arrow-up-small {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #bb3b80;
+  float: left;
+  margin: 0;
+  z-index: 1000;
+  position: absolute;
+  bottom: 60px; }
