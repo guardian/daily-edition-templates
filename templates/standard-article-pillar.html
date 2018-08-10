@@ -15,105 +15,84 @@
 
 <body>
   <div class="luther-document">
-    {{#each story}}
-    {{#isFirstOfType 'headline' ../story @index}}
+    {{#each story}} {{#isFirstOfType 'headline' ../story @index}}
     <div class="Article {{insertPillarColourClass 'Article__pillar--' pillarid}}">
-    {{/isFirstOfType}}
-    {{/each}}
+      {{/isFirstOfType}} {{/each}}
       <div class="content">
         {{#each story}} {{#if_eq type 'label'}}
         <div class="section {{insertPillarColourClass 'section--' pillarid}}">
-            {{{text}}}
+          {{{text}}}
         </div>
         {{/if_eq}} {{#if_eq type 'headline'}}
         <div class="headline">
-            {{{text}}}
+          {{{text}}}
         </div>
         {{/if_eq}} {{#if_eq type 'standfirst'}}
         <div class="standfirst multiline">
-            {{{text}}}
+          {{{text}}}
         </div>
-        {{/if_eq}} {{#if_eq type 'video'}}
-
-        {{#isFirstOfType 'video' ../story @index}}
+        {{/if_eq}} {{#if_eq type 'video'}} {{#isFirstOfType 'video' ../story @index}}
         <div class="picture">
-            <div class="picture--first">
-                {{#if_eq videotype 'atom/youtube'}}
-                <div style="background-image: url('{{{posterfilename}}}'); height: 290px; width: 484px;">
-                    {{/if_eq}} {{{html}}} {{#if_eq videotype 'atom/youtube'}}
-                </div>
-                {{/if_eq}}
+          <div class="picture--first">
+            {{#if_eq videotype 'atom/youtube'}}
+            <div style="background-image: url('{{{posterfilename}}}'); height: 290px; width: 484px;">
+              {{/if_eq}} {{{html}}} {{#if_eq videotype 'atom/youtube'}}
             </div>
-            <div class="picture__caption">
-              <p>{{{productioncaption}}} <span class="picture__caption--credit">{{{productioncopyright}}}</span></p>
-            </div>
+            {{/if_eq}}
+          </div>
+          <div class="picture__caption">
+            <p>{{{productioncaption}}} <span class="picture__caption--credit">{{{productioncopyright}}}</span></p>
+          </div>
         </div>
-        {{/isFirstOfType}}
-
-        {{/if_eq}} {{#if_eq type 'gallery'}}
-
-        {{#isFirstOfType 'gallery' ../story @index}}
+        {{/isFirstOfType}} {{/if_eq}} {{#if_eq type 'gallery'}} {{#isFirstOfType 'gallery' ../story @index}}
         <div class="picture">
-            <div class="picture--first">
-              <div class="galleryimage">
-                  <a href="{{{galleryhref}}}">
+          <div class="picture--first">
+            <div class="galleryimage">
+              <a href="{{{galleryhref}}}">
                       <img src="{{{galleryimage}}}">
                       <img src="gallerycamera.png" alt="Camera icon" class="gallerycamera">
                       <span class="gallerycount">{{{gallerycount}}}</span>
                   </a>
-              </div>
             </div>
+          </div>
+          <div class="picture__caption">
+            <p>{{{productioncaption}}} <span class="picture__caption--credit">{{{productioncopyright}}}</span></p>
+          </div>
+        </div>
+        {{/isFirstOfType}} {{/if_eq}} {{#if_eq type 'image'}} {{#isFirstOfType 'image' ../story @index}}
+        <div class="picture">
+          <div class="picture--first">
+            {{{html}}}
+          </div>
+          <div class="picture__caption-container {{insertPillarColourClass 'picture__caption-container--' pillarid}}">
+            <div class="arrow-up {{insertPillarColourClass 'arrow-up--' pillarid}}"></div>
             <div class="picture__caption">
               <p>{{{productioncaption}}} <span class="picture__caption--credit">{{{productioncopyright}}}</span></p>
             </div>
-        </div>
-        {{/isFirstOfType}}
-
-        {{/if_eq}} {{#if_eq type 'image'}} {{#isFirstOfType 'image' ../story @index}}
-        <div class="picture">
-          <div class="picture--first">
-              {{{html}}}
-          </div>
-          <div class="picture__caption-container {{insertPillarColourClass 'picture__caption-container--' pillarid}}">
-              <div class="arrow-up {{insertPillarColourClass 'arrow-up--' pillarid}}"></div>
-              <div class="picture__caption">
-                <p>{{{productioncaption}}} <span class="picture__caption--credit">{{{productioncopyright}}}</span></p>
-            </div>
           </div>
         </div>
-        {{/isFirstOfType}} {{/if_eq}}
-        {{/each}}
+        {{/isFirstOfType}} {{/if_eq}} {{/each}}
 
         <div class="guardian-body-text">
-          {{insertCrossRef 'body'}}
-          {{#each story}}
-           {{#if_eq type 'byline'}}
-            <div class="byline">
-                <div class="multiline"></div>
-                <span class="byline__author {{insertPillarColourClass 'byline__author--' pillarid}}">{{{text}}}</span>
-                <!--                        <br>-->
-                <!--                        <span class="byline__location {{insertPillarColourClass 'byline__location--' pillarid}}">at La Rosiére</span>-->
-            </div>
-            {{/if_eq}}
-            {{#if_eq type 'other'}} {{{text}}} {{/if_eq}}
-            {{#if_eq type 'bodytext'}}
-              {{{text}}}
-            {{/if_eq}}
-            {{#if_eq type 'image'}}
-            {{#isNotFirstOfType 'image' ../story @index}}
-            <div class="picture">
-                <div class="picture--second">
-                    {{{html}}}
-                </div>
-                <div class="picture__caption picture__caption--second">
-                  <p>{{{productioncaption}}} {{{productioncopyright}}}</p>
-                </div>
-            </div>
-            {{/isNotFirstOfType}}
-            {{/if_eq}}
-          {{/each}}
+          {{insertCrossRef 'body'}} {{#each story}} {{#if_eq type 'byline'}}
+          <div class="byline">
+            <div class="multiline"></div>
+            <span class="byline__author {{insertPillarColourClass 'byline__author--' pillarid}}">{{{text}}}</span>
+            <!--                        <br>-->
+            <!--                        <span class="byline__location {{insertPillarColourClass 'byline__location--' pillarid}}">at La Rosiére</span>-->
           </div>
+          {{/if_eq}} {{#if_eq type 'other'}} {{{text}}} {{/if_eq}} {{#if_eq type 'bodytext'}} {{{text}}} {{/if_eq}} {{#if_eq type 'image'}} {{#isNotFirstOfType 'image' ../story @index}}
+          <div class="picture">
+            <div class="picture--second">
+              {{{html}}}
+            </div>
+            <div class="picture__caption picture__caption--second">
+              <p>{{{productioncaption}}} {{{productioncopyright}}}</p>
+            </div>
+          </div>
+          {{/isNotFirstOfType}} {{/if_eq}} {{/each}}
         </div>
+      </div>
       <!-- content -->
     </div>
     <!-- Article -->

@@ -40,26 +40,3 @@
   background-repeat: repeat-x;
   background-position-x: 0;
 }
-
-.guardian-body-text--caps {
-  font-family: $egyptian-text;
-  font-size: 18px;
-  line-height: 22px;
-  margin-right: 48px;
-  clear: both;
-
-  p {
-    padding-bottom: 22px;
-    padding-top: 0;
-  }
-
-  p:first-child:first-letter {
-    font-family: $egyptian-display;
-    font-size: 80px;
-    line-height: 64px;
-    font-weight: lighter;
-    padding-bottom: 4;
-    padding-right: 8px;
-    float: left;
-  }
-}

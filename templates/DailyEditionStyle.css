@@ -107,6 +107,9 @@ input, select {
 .Article__pillar--news .arrow-up {
   border-bottom: 25px solid #c70000; }
 
+.Article__pillar--news .arrow-up-small {
+  border-bottom: 15px solid #c70000; }
+
 .Article__pillar--news .section {
   color: #c70000; }
 
@@ -115,6 +118,9 @@ input, select {
 
 .Article__pillar--news .guardian-body-text--caps p:first-child:first-letter {
   color: #c70000; }
+
+.Article__pillar--news .headline--feature {
+  color: #ab0613; }
 
 .Article__pillar--opinion .picture__caption-container {
   background-color: #e05e00;
@@ -129,6 +135,9 @@ input, select {
 .Article__pillar--opinion .arrow-up {
   border-bottom: 25px solid #e05e00; }
 
+.Article__pillar--opinion .arrow-up-small {
+  border-bottom: 15px solid #e05e00; }
+
 .Article__pillar--opinion .section {
   color: #e05e00; }
 
@@ -137,6 +146,9 @@ input, select {
 
 .Article__pillar--opinion .guardian-body-text--caps p:first-child:first-letter {
   color: #e05e00; }
+
+.Article__pillar--opinion .headline--feature {
+  color: #bd5318; }
 
 .Article__pillar--sport .picture__caption-container {
   background-color: #ffe500;
@@ -151,6 +163,9 @@ input, select {
 .Article__pillar--sport .arrow-up {
   border-bottom: 25px solid #ffe500; }
 
+.Article__pillar--sport .arrow-up-small {
+  border-bottom: 15px solid #ffe500; }
+
 .Article__pillar--sport .section {
   color: #0084c6; }
 
@@ -159,6 +174,9 @@ input, select {
 
 .Article__pillar--sport .guardian-body-text--caps p:first-child:first-letter {
   color: #0084c6; }
+
+.Article__pillar--sport .headline--feature {
+  color: #005689; }
 
 .Article__pillar--culture .picture__caption-container {
   background-color: #a1845c;
@@ -173,6 +191,9 @@ input, select {
 .Article__pillar--culture .arrow-up {
   border-bottom: 25px solid #a1845c; }
 
+.Article__pillar--culture .arrow-up-small {
+  border-bottom: 15px solid #a1845c; }
+
 .Article__pillar--culture .section {
   color: #a1845c; }
 
@@ -181,6 +202,9 @@ input, select {
 
 .Article__pillar--culture .guardian-body-text--caps p:first-child:first-letter {
   color: #a1845c; }
+
+.Article__pillar--culture .headline--feature {
+  color: #6b5840; }
 
 .Article__pillar--lifestyle .picture__caption-container {
   background-color: #bb3b80;
@@ -195,6 +219,9 @@ input, select {
 .Article__pillar--lifestyle .arrow-up {
   border-bottom: 25px solid #bb3b80; }
 
+.Article__pillar--lifestyle .arrow-up-small {
+  border-bottom: 15px solid #bb3b80; }
+
 .Article__pillar--lifestyle .section {
   color: #bb3b80; }
 
@@ -203,6 +230,9 @@ input, select {
 
 .Article__pillar--lifestyle .guardian-body-text--caps p:first-child:first-letter {
   color: #bb3b80; }
+
+.Article__pillar--lifestyle .headline--feature {
+  color: #7d0068; }
 
 @font-face {
   font-family: "Guardian Icons";
@@ -479,6 +509,27 @@ p {
   position: absolute;
   top: -25px; }
 
+.guardian-body-text--caps {
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 48px;
+  clear: both; }
+  .guardian-body-text--caps p {
+    padding-bottom: 22px;
+    padding-top: 0; }
+  .guardian-body-text--caps p:first-child:first-letter {
+    font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+    font-size: 80px;
+    line-height: 64px;
+    font-weight: lighter;
+    padding-bottom: 4;
+    padding-right: 8px;
+    float: left; }
+
+.bold-caps p:first-child:first-letter {
+  font-weight: bold; }
+
 .body--background-comment-template {
   background-color: #fef9f5; }
 
@@ -515,27 +566,8 @@ p {
   background-repeat: repeat-x;
   background-position-x: 0; }
 
-.guardian-body-text--caps {
-  font-family: "Guardian Text Egyptian Web", Georgia, serif;
-  font-size: 18px;
-  line-height: 22px;
-  margin-right: 48px;
-  clear: both; }
-  .guardian-body-text--caps p {
-    padding-bottom: 22px;
-    padding-top: 0; }
-  .guardian-body-text--caps p:first-child:first-letter {
-    font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
-    font-size: 80px;
-    line-height: 64px;
-    font-weight: lighter;
-    padding-bottom: 4;
-    padding-right: 8px;
-    float: left; }
-
 .headline--feature {
   font-weight: 900;
-  color: #7d0068;
   padding-bottom: 30px; }
 
 .standfirst--feature {
@@ -578,7 +610,6 @@ p {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 15px solid #bb3b80;
   float: left;
   margin: 0;
   z-index: 1000;

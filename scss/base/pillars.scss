@@ -7,7 +7,8 @@ $pillars: (
         arrow-up-color: $news-main,
         section-color: $news-main,
         captionFont-color: $brightness-100,
-        caps-color: $news-main
+        caps-color: $news-main,
+        headlineFeature-color: $news-dark
     ),
     opinion: (
         captionBackground: $opinion-main,
@@ -17,7 +18,8 @@ $pillars: (
         arrow-up-color: $opinion-main,
         section-color: $opinion-main,
         captionFont-color: $brightness-100,
-        caps-color: $opinion-main
+        caps-color: $opinion-main,
+        headlineFeature-color: $opinion-dark
     ),
     sport: (
         captionBackground: $highlight-main,
@@ -27,7 +29,8 @@ $pillars: (
         bylineComment-color:$sport-main,
         section-color: $sport-main,
         captionFont-color: $brightness-7,
-        caps-color: $sport-main
+        caps-color: $sport-main,
+        headlineFeature-color: $sport-dark
     ),
     culture: (
         captionBackground: $culture-main,
@@ -37,7 +40,8 @@ $pillars: (
         arrow-up-color: $culture-main,
         section-color: $culture-main,
         captionFont-color: $brightness-100,
-        caps-color: $culture-main
+        caps-color: $culture-main,
+        headlineFeature-color: $culture-dark
     ),
     lifestyle: (
         captionBackground: $lifestyle-main,
@@ -47,7 +51,8 @@ $pillars: (
         arrow-up-color: $lifestyle-main,
         section-color: $lifestyle-main,
         captionFont-color: $brightness-100,
-        caps-color: $lifestyle-main
+        caps-color: $lifestyle-main,
+        headlineFeature-color: $lifestyle-dark
     )
 );
 
@@ -60,6 +65,7 @@ $pillars: (
   $arrow-up-color: map-get($palette, arrow-up-color);
   $section-color: map-get($palette, section-color);
   $caps-color: map-get($palette, caps-color);
+  $headlineFeature-color: map-get($palette, headlineFeature-color);
     .picture__caption-container {
       background-color: $captionBackground;
       color: $captionFont-color;
@@ -77,9 +83,14 @@ $pillars: (
       border-bottom: 25px solid $arrow-up-color;
     }
 
+    .arrow-up-small {
+      border-bottom: 15px solid $arrow-up-color;
+    }
+
     .section {
       color: $section-color;
     }
+
     .byline--comment {
       color: $bylineComment-color;
     }
@@ -87,6 +98,9 @@ $pillars: (
       p:first-child:first-letter {
         color: $caps-color;
       }
+    }
+    .headline--feature {
+      color: $headlineFeature-color;
     }
 }
 
