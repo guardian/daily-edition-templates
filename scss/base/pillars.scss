@@ -3,41 +3,56 @@ $pillars: (
         captionBackground: $news-main,
         link-color: $news-main,
         byline-color: $news-main,
+        bylineComment-color:$news-main,
         arrow-up-color: $news-main,
         section-color: $news-main,
-        captionFont-color: $brightness-100
+        captionFont-color: $brightness-100,
+        caps-color: $news-main,
+        headlineFeature-color: $news-dark
     ),
     opinion: (
         captionBackground: $opinion-main,
         link-color: $opinion-main,
         byline-color: $opinion-main,
+        bylineComment-color:$opinion-main,
         arrow-up-color: $opinion-main,
         section-color: $opinion-main,
-        captionFont-color: $brightness-100
+        captionFont-color: $brightness-100,
+        caps-color: $opinion-main,
+        headlineFeature-color: $opinion-dark
     ),
     sport: (
         captionBackground: $highlight-main,
         arrow-up-color: $highlight-main,
         link-color: $sport-main,
         byline-color: $sport-main,
+        bylineComment-color:$sport-main,
         section-color: $sport-main,
-        captionFont-color: $brightness-7
+        captionFont-color: $brightness-7,
+        caps-color: $sport-main,
+        headlineFeature-color: $sport-dark
     ),
     culture: (
         captionBackground: $culture-main,
         link-color: $culture-main,
         byline-color: $culture-main,
+        bylineComment-color:$culture-main,
         arrow-up-color: $culture-main,
         section-color: $culture-main,
-        captionFont-color: $brightness-100
+        captionFont-color: $brightness-100,
+        caps-color: $culture-main,
+        headlineFeature-color: $culture-dark
     ),
     lifestyle: (
         captionBackground: $lifestyle-main,
         link-color: $lifestyle-main,
         byline-color: $lifestyle-main,
+        bylineComment-color:$lifestyle-main,
         arrow-up-color: $lifestyle-main,
         section-color: $lifestyle-main,
-        captionFont-color: $brightness-100
+        captionFont-color: $brightness-100,
+        caps-color: $lifestyle-main,
+        headlineFeature-color: $lifestyle-dark
     )
 );
 
@@ -46,8 +61,11 @@ $pillars: (
   $captionFont-color: map-get($palette, captionFont-color);
   $link-color: map-get($palette, link-color);
   $byline-color: map-get($palette, byline-color);
+  $bylineComment-color: map-get($palette, bylineComment-color);
   $arrow-up-color: map-get($palette, arrow-up-color);
   $section-color: map-get($palette, section-color);
+  $caps-color: map-get($palette, caps-color);
+  $headlineFeature-color: map-get($palette, headlineFeature-color);
     .picture__caption-container {
       background-color: $captionBackground;
       color: $captionFont-color;
@@ -64,9 +82,25 @@ $pillars: (
     .arrow-up {
       border-bottom: 25px solid $arrow-up-color;
     }
-    
+
+    .arrow-up-small {
+      border-bottom: 15px solid $arrow-up-color;
+    }
+
     .section {
       color: $section-color;
+    }
+
+    .byline--comment {
+      color: $bylineComment-color;
+    }
+    .guardian-body-text--caps {
+      p:first-child:first-letter {
+        color: $caps-color;
+      }
+    }
+    .headline--feature {
+      color: $headlineFeature-color;
     }
 }
 

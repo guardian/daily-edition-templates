@@ -1,0 +1,88 @@
+.section {
+  &__feature{
+    border-bottom: 1px solid $brightness-86;
+    width: $width-content;
+    padding-bottom: 5px;
+  }
+  &__container {
+    background-color: $lifestyle-main;
+    display: inline;
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+  }
+  &__series {
+    font-weight: 300;
+    color: #121212;
+    font-style: italic;
+    padding-left: 10px;
+  }
+}
+
+.headline--feature {
+  font-weight: 900;
+  padding-bottom: 30px;
+}
+
+.standfirst--feature {
+  p {
+    padding: 0;
+  }
+  padding-bottom: 0;
+}
+
+.byline--feature {
+  font-family: $egyptian-text;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 4px;
+  margin-bottom: 22px;
+}
+
+.picture {
+  &__caption-container-simple {
+    position: relative;
+    width: $width-content;
+    z-index: 1000;
+  }
+  &__caption--simple {
+    font-family: $egyptian-text;
+    font-size: 18px;
+    line-height: 22px;
+    display: inline;
+
+    p:first-child:first-letter {
+      padding-left: 25px;
+    }
+
+    &--credit {
+      font-weight: bold;
+    }
+
+    &--second {
+      font-family: $agate-sans;
+      color: $brightness-46;
+      font-size: 14px;
+
+      p {
+        padding-left: 0;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.arrow-up-small {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  float: left;
+  margin: 0;
+  z-index: 1000;
+  position: absolute;
+  bottom: 60px;
+}
