@@ -20,10 +20,11 @@
 .comment-standfirst-container {
   display: flex;
   flex-direction: row;
+  position: relative;
     img {
-      width: 170px;
+      width: 180px;
       z-index: 1000;
-      top: 211px;
+      bottom: 0;
       margin-left: -180px;
       position: absolute;
     }

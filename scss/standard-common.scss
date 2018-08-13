@@ -111,6 +111,13 @@ p {
     display: block;
   }
 
+  &--wide img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
   &__caption-container {
     position: relative;
     width: $width-content;

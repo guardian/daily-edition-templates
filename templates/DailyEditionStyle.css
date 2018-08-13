@@ -484,6 +484,11 @@ p {
     margin: 0;
     padding: 0;
     display: block; }
+  .picture--wide img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block; }
   .picture__caption-container {
     position: relative;
     width: 620px;
@@ -560,11 +565,12 @@ p {
 
 .comment-standfirst-container {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  position: relative; }
   .comment-standfirst-container img {
-    width: 170px;
+    width: 180px;
     z-index: 1000;
-    top: 211px;
+    bottom: 0;
     margin-left: -180px;
     position: absolute; }
   .comment-standfirst-container p {
