@@ -111,12 +111,24 @@ p {
     display: block;
   }
 
-  &--wide img {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: block;
-  }
+  @media (orientation: landscape) {
+    &--wide img {
+      width: 86vw;
+      margin: 0;
+      padding: 0;
+      display: block;
+     }
+    }
+
+  @media (orientation: portrait) {
+    &--wide img {
+      width: 96vw;
+      margin: 0;
+      padding: 0;
+      display: block;
+     }
+    }
+
 
   &__caption-container {
     position: relative;

@@ -484,11 +484,18 @@ p {
     margin: 0;
     padding: 0;
     display: block; }
-  .picture--wide img {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: block; }
+  @media (orientation: landscape) {
+    .picture--wide img {
+      width: 86vw;
+      margin: 0;
+      padding: 0;
+      display: block; } }
+  @media (orientation: portrait) {
+    .picture--wide img {
+      width: 96vw;
+      margin: 0;
+      padding: 0;
+      display: block; } }
   .picture__caption-container {
     position: relative;
     width: 620px;
