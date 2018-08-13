@@ -128,7 +128,7 @@ input, select {
 .Article__pillar--news .byline--comment {
   color: #c70000; }
 
-.Article__pillar--news .guardian-body-text--caps p:first-child:first-letter {
+.Article__pillar--news .guardian-body-text--caps p:first-of-type:first-letter {
   color: #c70000; }
 
 .Article__pillar--news .headline--feature {
@@ -159,7 +159,7 @@ input, select {
 .Article__pillar--opinion .byline--comment {
   color: #e05e00; }
 
-.Article__pillar--opinion .guardian-body-text--caps p:first-child:first-letter {
+.Article__pillar--opinion .guardian-body-text--caps p:first-of-type:first-letter {
   color: #e05e00; }
 
 .Article__pillar--opinion .headline--feature {
@@ -190,7 +190,7 @@ input, select {
 .Article__pillar--sport .byline--comment {
   color: #0084c6; }
 
-.Article__pillar--sport .guardian-body-text--caps p:first-child:first-letter {
+.Article__pillar--sport .guardian-body-text--caps p:first-of-type:first-letter {
   color: #0084c6; }
 
 .Article__pillar--sport .headline--feature {
@@ -221,7 +221,7 @@ input, select {
 .Article__pillar--arts .byline--comment {
   color: #a1845c; }
 
-.Article__pillar--arts .guardian-body-text--caps p:first-child:first-letter {
+.Article__pillar--arts .guardian-body-text--caps p:first-of-type:first-letter {
   color: #a1845c; }
 
 .Article__pillar--arts .headline--feature {
@@ -252,7 +252,7 @@ input, select {
 .Article__pillar--lifestyle .byline--comment {
   color: #bb3b80; }
 
-.Article__pillar--lifestyle .guardian-body-text--caps p:first-child:first-letter {
+.Article__pillar--lifestyle .guardian-body-text--caps p:first-of-type:first-letter {
   color: #bb3b80; }
 
 .Article__pillar--lifestyle .headline--feature {
@@ -479,11 +479,10 @@ p {
   width: 35%;
   margin-right: 16px;
   margin-bottom: 16px;
-  clear: both; }
+  clear: both;
+  font-style: italic; }
   .byline__author {
-    font-weight: bold; }
-  .byline__location {
-    font-style: italic; }
+    font-style: normal; }
 
 /* images */
 .picture {
@@ -560,6 +559,7 @@ p {
   .guardian-body-text--caps p:first-of-type:first-letter {
     font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
     font-size: 80px;
+    text-transform: uppercase;
     line-height: 64px;
     font-weight: lighter;
     padding-bottom: 4;
@@ -614,10 +614,7 @@ p {
 .section__container {
   display: inline;
   color: white;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 5px; }
+  padding: 10px 20px 5px; }
 
 .section__series {
   font-weight: 300;
@@ -680,3 +677,43 @@ p {
   z-index: 1000; }
   .review--4-stars img {
     width: 100%; }
+
+.picture {
+  position: relative;
+  margin-bottom: 0; }
+  @media (orientation: landscape) {
+    .picture--fullscreen img {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      display: block; } }
+  @media (orientation: portrait) {
+    .picture--fullscreen img {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      display: block; } }
+
+.content--immersive {
+  padding-top: 0; }
+
+.header--immersive {
+  width: 620px;
+  position: absolute;
+  z-index: 1000; }
+  @media (orientation: landscape) {
+    .header--immersive {
+      bottom: 134px; } }
+  @media (orientation: portrait) {
+    .header--immersive {
+      bottom: 134px; } }
+
+.section__immersive .section__container {
+  background-color: #c70000;
+  color: white;
+  padding: 6px 6px 0px 0px; }
+
+.headline--immersive {
+  background-color: #121212; }
+  .headline--immersive p {
+    color: white; }

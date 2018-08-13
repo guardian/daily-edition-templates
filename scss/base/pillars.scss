@@ -102,7 +102,7 @@ $pillars: (
       color: $bylineComment-color;
     }
     .guardian-body-text--caps {
-      p:first-child:first-letter {
+      p:first-of-type:first-letter {
         color: $caps-color;
       }
     }

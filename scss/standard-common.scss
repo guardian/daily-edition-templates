@@ -81,14 +81,15 @@ p {
   margin-right: 16px;
   margin-bottom: 16px;
   clear: both;
+  font-style: italic;
 
   &__author {
-    font-weight: bold;
+    font-style: normal;
   }
-
-  &__location {
-    font-style: italic;
-  }
+  //
+  // &__location {
+  //   font-style: italic;
+  // }
 }
 /* images */
 /////////////////////////////////////////
@@ -155,6 +156,7 @@ p {
     }
 
     &--second {
+
       font-family: $agate-sans;
       color: $brightness-46;
       font-size: 14px;
@@ -194,9 +196,10 @@ p {
     padding-top: 0;
   }
 
-  p:first-of-type:first-letter {
+   p:first-of-type:first-letter {
     font-family: $egyptian-display;
     font-size: 80px;
+    text-transform: uppercase;
     line-height: 64px;
     font-weight: lighter;
     padding-bottom: 4;

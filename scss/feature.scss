@@ -1,17 +1,16 @@
 .section {
-  &__feature{
+  &__feature {
     border-bottom: 1px solid $brightness-86;
     width: $width-content;
     padding-bottom: 5px;
   }
+
   &__container {
     display: inline;
     color: white;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 5px;
+    padding: 10px 20px 5px;
   }
+
   &__series {
     font-weight: 300;
     color: #121212;
@@ -47,6 +46,7 @@
     width: $width-content;
     z-index: 1000;
   }
+
   &__caption--simple {
     font-family: $egyptian-text;
     font-size: 18px;
@@ -89,6 +89,7 @@
 .review--4-stars {
   position: absolute;
   z-index: 1000;
+
   img {
     width: 100%;
   }
