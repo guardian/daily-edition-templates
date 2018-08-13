@@ -194,7 +194,7 @@ p {
     padding-top: 0;
   }
 
-  p:first-child:first-letter {
+  p:first-of-type:first-letter {
     font-family: $egyptian-display;
     font-size: 80px;
     line-height: 64px;

@@ -5,7 +5,6 @@
     padding-bottom: 5px;
   }
   &__container {
-    background-color: $lifestyle-main;
     display: inline;
     color: white;
     padding-top: 10px;
@@ -43,7 +42,7 @@
 }
 
 .picture {
-  &__caption-container-simple {
+  &__caption-container--simple {
     position: relative;
     width: $width-content;
     z-index: 1000;
@@ -84,5 +83,5 @@
   margin: 0;
   z-index: 1000;
   position: absolute;
-  bottom: 60px;
+  top: 12px;
 }

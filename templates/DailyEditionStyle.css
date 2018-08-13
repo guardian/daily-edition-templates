@@ -86,7 +86,7 @@ input, select {
   background-position-x: 0;
   padding-top: 16px; }
 
-.multiline--culture {
+.multiline--arts {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMXB4IiBoZWlnaHQ9IjEzcHgiIHZpZXdCb3g9IjAgMCAxIDEzIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPiAgICAgICAgPHRpdGxlPlN0YW5kYXJkX2FydGljbGU8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gICAgPGRlZnM+PC9kZWZzPiAgICA8ZyBpZD0iQXJ0aWNsZV90ZW1wbGF0ZXMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9IlN0YW5kYXJkX2FydGljbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMS4wMDAwMDAsIC0yNjguMDAwMDAwKSIgZmlsbD0iIzk5OTk5OSI+ICAgICAgICAgICAgPGcgaWQ9ImFydGljbGVfYm9keSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjEuMDAwMDAwLCA5NS4wMDAwMDApIj4gICAgICAgICAgICAgICAgPGcgaWQ9IjQtcnVsZXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAxNzMuMDAwMDAwKSI+ICAgICAgICAgICAgICAgICAgICA8cmVjdCBpZD0icnVsZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjY0OSIgaGVpZ2h0PSIxIj48L3JlY3Q+ICAgICAgICAgICAgICAgICAgICA8cmVjdCBpZD0icnVsZSIgeD0iMCIgeT0iNCIgd2lkdGg9IjY0OSIgaGVpZ2h0PSIxIj48L3JlY3Q+ICAgICAgICAgICAgICAgICAgICA8cmVjdCBpZD0icnVsZSIgeD0iMCIgeT0iOCIgd2lkdGg9IjY0OSIgaGVpZ2h0PSIxIj48L3JlY3Q+ICAgICAgICAgICAgICAgICAgICA8cmVjdCBpZD0icnVsZSIgeD0iMCIgeT0iMTIiIHdpZHRoPSI2NDkiIGhlaWdodD0iMSI+PC9yZWN0PiAgICAgICAgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+");
   background-repeat: repeat-x;
   background-position-x: 0;
@@ -134,6 +134,9 @@ input, select {
 .Article__pillar--news .headline--feature {
   color: #ab0613; }
 
+.Article__pillar--news .section__container {
+  background-color: #c70000; }
+
 .Article__pillar--opinion .picture__caption-container {
   background-color: #e05e00;
   color: #ffffff; }
@@ -161,6 +164,9 @@ input, select {
 
 .Article__pillar--opinion .headline--feature {
   color: #bd5318; }
+
+.Article__pillar--opinion .section__container {
+  background-color: #e05e00; }
 
 .Article__pillar--sport .picture__caption-container {
   background-color: #ffe500;
@@ -190,33 +196,39 @@ input, select {
 .Article__pillar--sport .headline--feature {
   color: #005689; }
 
-.Article__pillar--culture .picture__caption-container {
+.Article__pillar--sport .section__container {
+  background-color: #0084c6; }
+
+.Article__pillar--arts .picture__caption-container {
   background-color: #a1845c;
   color: #ffffff; }
 
-.Article__pillar--culture a {
+.Article__pillar--arts a {
   color: #a1845c; }
 
-.Article__pillar--culture .byline {
+.Article__pillar--arts .byline {
   color: #a1845c; }
 
-.Article__pillar--culture .arrow-up {
+.Article__pillar--arts .arrow-up {
   border-bottom: 25px solid #a1845c; }
 
-.Article__pillar--culture .arrow-up-small {
+.Article__pillar--arts .arrow-up-small {
   border-bottom: 15px solid #a1845c; }
 
-.Article__pillar--culture .section {
+.Article__pillar--arts .section {
   color: #a1845c; }
 
-.Article__pillar--culture .byline--comment {
+.Article__pillar--arts .byline--comment {
   color: #a1845c; }
 
-.Article__pillar--culture .guardian-body-text--caps p:first-child:first-letter {
+.Article__pillar--arts .guardian-body-text--caps p:first-child:first-letter {
   color: #a1845c; }
 
-.Article__pillar--culture .headline--feature {
+.Article__pillar--arts .headline--feature {
   color: #6b5840; }
+
+.Article__pillar--arts .section__container {
+  background-color: #a1845c; }
 
 .Article__pillar--lifestyle .picture__caption-container {
   background-color: #bb3b80;
@@ -245,6 +257,9 @@ input, select {
 
 .Article__pillar--lifestyle .headline--feature {
   color: #7d0068; }
+
+.Article__pillar--lifestyle .section__container {
+  background-color: #bb3b80; }
 
 @font-face {
   font-family: "Guardian Icons";
@@ -542,7 +557,7 @@ p {
   .guardian-body-text--caps p {
     padding-bottom: 22px;
     padding-top: 0; }
-  .guardian-body-text--caps p:first-child:first-letter {
+  .guardian-body-text--caps p:first-of-type:first-letter {
     font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
     font-size: 80px;
     line-height: 64px;
@@ -597,7 +612,6 @@ p {
   padding-bottom: 5px; }
 
 .section__container {
-  background-color: #bb3b80;
   display: inline;
   color: white;
   padding-top: 10px;
@@ -628,7 +642,7 @@ p {
   margin-top: 4px;
   margin-bottom: 22px; }
 
-.picture__caption-container-simple {
+.picture__caption-container--simple {
   position: relative;
   width: 620px;
   z-index: 1000; }
@@ -659,4 +673,4 @@ p {
   margin: 0;
   z-index: 1000;
   position: absolute;
-  bottom: 60px; }
+  top: 12px; }
