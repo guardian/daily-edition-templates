@@ -674,3 +674,9 @@ p {
   z-index: 1000;
   position: absolute;
   top: 12px; }
+
+.review--4-stars {
+  position: absolute;
+  z-index: 1000; }
+  .review--4-stars img {
+    width: 100%; }
