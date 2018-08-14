@@ -101,11 +101,17 @@ $pillars: (
     .byline--comment {
       color: $bylineComment-color;
     }
-    .guardian-body-text--caps {
-      p:first-of-type:first-letter {
-        color: $caps-color;
-      }
+    .standfirst + .byline--feature + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+      color: $caps-color;
     }
+    .standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
+      color: $caps-color;
+    }
+    .standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+      color: $caps-color;
+    }
+
+
     .headline--feature {
       color: $headlineFeature-color;
     }

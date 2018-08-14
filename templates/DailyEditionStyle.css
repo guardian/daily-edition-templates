@@ -128,7 +128,13 @@ input, select {
 .Article__pillar--news .byline--comment {
   color: #c70000; }
 
-.Article__pillar--news .guardian-body-text--caps p:first-of-type:first-letter {
+.Article__pillar--news .standfirst + .byline--feature + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+  color: #c70000; }
+
+.Article__pillar--news .standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
+  color: #c70000; }
+
+.Article__pillar--news .standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
   color: #c70000; }
 
 .Article__pillar--news .headline--feature {
@@ -159,7 +165,13 @@ input, select {
 .Article__pillar--opinion .byline--comment {
   color: #e05e00; }
 
-.Article__pillar--opinion .guardian-body-text--caps p:first-of-type:first-letter {
+.Article__pillar--opinion .standfirst + .byline--feature + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+  color: #e05e00; }
+
+.Article__pillar--opinion .standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
+  color: #e05e00; }
+
+.Article__pillar--opinion .standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
   color: #e05e00; }
 
 .Article__pillar--opinion .headline--feature {
@@ -190,7 +202,13 @@ input, select {
 .Article__pillar--sport .byline--comment {
   color: #0084c6; }
 
-.Article__pillar--sport .guardian-body-text--caps p:first-of-type:first-letter {
+.Article__pillar--sport .standfirst + .byline--feature + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+  color: #0084c6; }
+
+.Article__pillar--sport .standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
+  color: #0084c6; }
+
+.Article__pillar--sport .standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
   color: #0084c6; }
 
 .Article__pillar--sport .headline--feature {
@@ -221,7 +239,13 @@ input, select {
 .Article__pillar--arts .byline--comment {
   color: #a1845c; }
 
-.Article__pillar--arts .guardian-body-text--caps p:first-of-type:first-letter {
+.Article__pillar--arts .standfirst + .byline--feature + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+  color: #a1845c; }
+
+.Article__pillar--arts .standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
+  color: #a1845c; }
+
+.Article__pillar--arts .standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
   color: #a1845c; }
 
 .Article__pillar--arts .headline--feature {
@@ -252,7 +276,13 @@ input, select {
 .Article__pillar--lifestyle .byline--comment {
   color: #bb3b80; }
 
-.Article__pillar--lifestyle .guardian-body-text--caps p:first-of-type:first-letter {
+.Article__pillar--lifestyle .standfirst + .byline--feature + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+  color: #bb3b80; }
+
+.Article__pillar--lifestyle .standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
+  color: #bb3b80; }
+
+.Article__pillar--lifestyle .standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
   color: #bb3b80; }
 
 .Article__pillar--lifestyle .headline--feature {
@@ -552,6 +582,7 @@ p {
   font-size: 18px;
   line-height: 22px;
   margin-right: 48px;
+  margin-top: 6px;
   clear: both; }
   .guardian-body-text--caps p {
     padding-bottom: 22px;
@@ -720,7 +751,8 @@ p {
   line-height: 64px;
   font-weight: lighter;
   padding-right: 8px;
-  float: left; }
+  float: left;
+  font-weight: bold; }
 
 .standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
   font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
@@ -729,7 +761,8 @@ p {
   line-height: 64px;
   font-weight: lighter;
   padding-right: 8px;
-  float: left; }
+  float: left;
+  font-weight: bold; }
 
 .standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
   font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
@@ -738,47 +771,48 @@ p {
   line-height: 64px;
   font-weight: lighter;
   padding-right: 8px;
-  float: left; }
-
-.bold-caps p:first-child:first-letter {
+  float: left;
   font-weight: bold; }
 
-.picture {
-  position: relative;
-  margin-bottom: 0; }
-  @media (orientation: landscape) {
-    .picture--fullscreen img {
-      width: 100vw;
-      margin: 0;
-      padding: 0;
-      display: block; } }
-  @media (orientation: portrait) {
-    .picture--fullscreen img {
-      width: 100vw;
-      margin: 0;
-      padding: 0;
-      display: block; } }
+.picture--fullscreen {
+  margin-bottom: 0;
+  position: relative; }
+  .picture--fullscreen img {
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: block; }
 
 .content--immersive {
-  padding-top: 0; }
-
-.header--immersive {
-  width: 620px;
   position: absolute;
-  z-index: 1000; }
+  width: 620px;
+  margin-left: 20px; }
   @media (orientation: landscape) {
-    .header--immersive {
-      bottom: 134px; } }
+    .content--immersive {
+      top: 67vh;
+      padding-left: 128px; } }
   @media (orientation: portrait) {
-    .header--immersive {
-      bottom: 134px; } }
+    .content--immersive {
+      top: 36vh; } }
+
+@media (orientation: landscape) {
+  .immersive-main {
+    border-right: 1px solid #999999; } }
+
+@media (orientation: portrait) {
+  .immersive-main {
+    padding-top: 6px;
+    border-right: 1px solid #999999; } }
 
 .section__immersive .section__container {
   background-color: #c70000;
   color: white;
-  padding: 6px 6px 0px 0px; }
+  padding: 6px 6px 0 6px; }
 
 .headline--immersive {
-  background-color: #121212; }
+  background-color: #121212;
+  padding-left: 6px; }
   .headline--immersive p {
-    color: white; }
+    color: white;
+    font-weight: bold; }
