@@ -463,6 +463,7 @@ p {
   font-size: 18px;
   line-height: 22px;
   margin-right: 48px;
+  margin-top: 6px;
   clear: both; }
   .guardian-body-text p {
     padding-bottom: 22px;
@@ -514,7 +515,6 @@ p {
     position: relative;
     width: 620px;
     z-index: 1000;
-    background-color: #767676;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px; }
@@ -529,7 +529,7 @@ p {
       font-weight: bold; }
     .picture__caption--second {
       font-family: "Guardian Agate Sans 1 Web", sans-serif;
-      color: #767676;
+      color: #767676 !important;
       font-size: 14px; }
       .picture__caption--second p {
         padding-left: 0;
@@ -556,18 +556,6 @@ p {
   .guardian-body-text--caps p {
     padding-bottom: 22px;
     padding-top: 0; }
-  .guardian-body-text--caps p:first-of-type:first-letter {
-    font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
-    font-size: 80px;
-    text-transform: uppercase;
-    line-height: 64px;
-    font-weight: lighter;
-    padding-bottom: 4;
-    padding-right: 8px;
-    float: left; }
-
-.bold-caps p:first-child:first-letter {
-  font-weight: bold; }
 
 .body--background-comment-template {
   background-color: #fef9f5; }
@@ -605,6 +593,24 @@ p {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMXB4IiBoZWlnaHQ9IjFweCIgdmlld0JveD0iMCAwIDEgMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5BcnRpY2xlX2NvbW1lbnQ8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gICAgPGRlZnM+PC9kZWZzPiAgICA8ZyBpZD0iQXJ0aWNsZV90ZW1wbGF0ZXMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9IkFydGljbGVfY29tbWVudCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxLjAwMDAwMCwgLTM0MC4wMDAwMDApIj4gICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlLTMiIGZpbGw9IiNGRUY5RjUiIHg9IjAiIHk9Ijc4IiB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIyMDkzIj48L3JlY3Q+ICAgICAgICAgICAgPGcgaWQ9ImFydGljbGVfYm9keSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAuMDAwMDAwLCA5NC4wMDAwMDApIiBzdHJva2U9IiNDQkM4QzYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+ICAgICAgICAgICAgICAgIDxnIGlkPSJoZWFkZXIiPiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9IlNwb3J0X3J1bGVzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgMTYxLjAwMDAwMCkiPiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0wLjk1NzIyNzEzOSw4NS41IEw2NDguMTgxNTI4LDg1LjUiIGlkPSJMaW5lLTItQ29weS0zNyI+PC9wYXRoPiAgICAgICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+");
   background-repeat: repeat-x;
   background-position-x: 0; }
+
+.comment-standfirst-container + .multiline + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+  font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 64px;
+  font-weight: lighter;
+  padding-right: 8px;
+  float: left; }
+
+.comment-standfirst-container + .multiline + .guardian-body-text--caps > p:first-of-type:first-letter {
+  font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 64px;
+  font-weight: lighter;
+  padding-right: 8px;
+  float: left; }
 
 .section__feature {
   border-bottom: 1px solid #dcdcdc;
@@ -672,11 +678,70 @@ p {
   position: absolute;
   top: 12px; }
 
-.review--4-stars {
+.review--stars-1 {
   position: absolute;
-  z-index: 1000; }
-  .review--4-stars img {
-    width: 100%; }
+  z-index: 1000;
+  background: url(stars/1-stars.svg);
+  width: 171px;
+  height: 40px; }
+
+.review--stars-2 {
+  position: absolute;
+  z-index: 1000;
+  background: url(stars/2-stars.svg);
+  width: 171px;
+  height: 40px; }
+
+.review--stars-3 {
+  position: absolute;
+  z-index: 1000;
+  background: url(stars/3-stars.svg);
+  width: 171px;
+  height: 40px; }
+
+.review--stars-4 {
+  position: absolute;
+  z-index: 1000;
+  background: url(stars/4-stars.svg);
+  width: 171px;
+  height: 40px; }
+
+.review--stars-5 {
+  position: absolute;
+  z-index: 1000;
+  background: url(stars/5-stars.svg);
+  width: 171px;
+  height: 40px; }
+
+.standfirst + .byline--feature + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+  font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 64px;
+  font-weight: lighter;
+  padding-right: 8px;
+  float: left; }
+
+.standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
+  font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 64px;
+  font-weight: lighter;
+  padding-right: 8px;
+  float: left; }
+
+.standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+  font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 64px;
+  font-weight: lighter;
+  padding-right: 8px;
+  float: left; }
+
+.bold-caps p:first-child:first-letter {
+  font-weight: bold; }
 
 .picture {
   position: relative;
