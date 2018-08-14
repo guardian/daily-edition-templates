@@ -1,0 +1,55 @@
+.picture {
+  position: relative;
+  margin-bottom: 0;
+  @media (orientation: landscape) {
+    &--fullscreen img {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      display: block;
+     }
+    }
+
+  @media (orientation: portrait) {
+    &--fullscreen img {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      display: block;
+     }
+    }
+  }
+
+.content--immersive {
+  padding-top: 0;
+
+}
+
+.header--immersive {
+  width: $width-content;
+  position: absolute;
+  z-index: 1000;
+  @media (orientation: landscape) {
+      bottom: 134px;
+    }
+
+  @media (orientation: portrait) {
+    bottom: 134px;
+    }
+
+}
+
+.section__immersive {
+  .section__container {
+    background-color: $news-main;
+    color: white;
+    padding: 6px 6px 0px 0px;
+  }
+}
+
+.headline--immersive {
+  background-color: $brightness-7;
+  p {
+    color: white;
+  }
+}

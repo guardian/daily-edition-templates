@@ -59,6 +59,7 @@ p {
   font-size: 18px;
   line-height: 22px;
   margin-right: 48px;
+  margin-top: 6px;
   clear: both;
 
   p {
@@ -81,14 +82,15 @@ p {
   margin-right: 16px;
   margin-bottom: 16px;
   clear: both;
+  font-style: italic;
 
   &__author {
-    font-weight: bold;
+    font-style: normal;
   }
-
-  &__location {
-    font-style: italic;
-  }
+  //
+  // &__location {
+  //   font-style: italic;
+  // }
 }
 /* images */
 /////////////////////////////////////////
@@ -111,18 +113,29 @@ p {
     display: block;
   }
 
-  &--wide img {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: block;
-  }
+  @media (orientation: landscape) {
+    &--wide img {
+      width: 86vw;
+      margin: 0;
+      padding: 0;
+      display: block;
+     }
+    }
+
+  @media (orientation: portrait) {
+    &--wide img {
+      width: 96vw;
+      margin: 0;
+      padding: 0;
+      display: block;
+     }
+    }
+
 
   &__caption-container {
     position: relative;
     width: $width-content;
     z-index: 1000;
-    background-color: $brightness-46;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -143,8 +156,9 @@ p {
     }
 
     &--second {
+
       font-family: $agate-sans;
-      color: $brightness-46;
+      color: $brightness-46 !important;
       font-size: 14px;
 
       p {
@@ -176,25 +190,8 @@ p {
   line-height: 22px;
   margin-right: 48px;
   clear: both;
-
   p {
     padding-bottom: 22px;
     padding-top: 0;
-  }
-
-  p:first-child:first-letter {
-    font-family: $egyptian-display;
-    font-size: 80px;
-    line-height: 64px;
-    font-weight: lighter;
-    padding-bottom: 4;
-    padding-right: 8px;
-    float: left;
-  }
-}
-
-.bold-caps {
-  p:first-child:first-letter {
-    font-weight: bold;
   }
 }

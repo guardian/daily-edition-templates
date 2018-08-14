@@ -1,18 +1,16 @@
 .section {
-  &__feature{
+  &__feature {
     border-bottom: 1px solid $brightness-86;
     width: $width-content;
     padding-bottom: 5px;
   }
+
   &__container {
-    background-color: $lifestyle-main;
     display: inline;
     color: white;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 5px;
+    padding: 10px 20px 5px;
   }
+
   &__series {
     font-weight: 300;
     color: #121212;
@@ -43,11 +41,12 @@
 }
 
 .picture {
-  &__caption-container-simple {
+  &__caption-container--simple {
     position: relative;
     width: $width-content;
     z-index: 1000;
   }
+
   &__caption--simple {
     font-family: $egyptian-text;
     font-size: 18px;
@@ -84,5 +83,81 @@
   margin: 0;
   z-index: 1000;
   position: absolute;
-  bottom: 60px;
+  top: 12px;
+}
+
+.review--stars-1 {
+    position: absolute;
+    z-index: 1000;
+    background: url(stars/1-stars.svg);
+    width: 171px;
+    height: 40px;
+}
+.review--stars-2 {
+    position: absolute;
+    z-index: 1000;
+    background: url(stars/2-stars.svg);
+    width: 171px;
+    height: 40px;
+}
+.review--stars-3 {
+    position: absolute;
+    z-index: 1000;
+    background: url(stars/3-stars.svg);
+    width: 171px;
+    height: 40px;
+}
+.review--stars-4 {
+    position: absolute;
+    z-index: 1000;
+    background: url(stars/4-stars.svg);
+    width: 171px;
+    height: 40px;
+}
+.review--stars-5 {
+    position: absolute;
+    z-index: 1000;
+    background: url(stars/5-stars.svg);
+    width: 171px;
+    height: 40px;
+}
+
+
+//a convoluted but the only way we could fint to target the first letter in this way because the system needed something much more specific
+// then the ususal p:first-of-type:first-letter in order to not give a dropcaup to every p tag
+//these combinations cover all the options within 'feature'
+.standfirst + .byline--feature + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+    font-family: $egyptian-display;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 64px;
+    font-weight: lighter;
+    padding-right: 8px;
+    float: left;
+}
+
+.standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
+    font-family: $egyptian-display;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 64px;
+    font-weight: lighter;
+    padding-right: 8px;
+    float: left;
+}
+
+.standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+    font-family: $egyptian-display;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 64px;
+    font-weight: lighter;
+    padding-right: 8px;
+    float: left;
+}
+
+.bold-caps {
+  p:first-child:first-letter {
+    font-weight: bold;
+  }
 }
