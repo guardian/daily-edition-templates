@@ -110,8 +110,12 @@ $pillars: (
     .standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
       color: $caps-color;
     }
-
-
+    .comment-standfirst-container + .multiline + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
+      color: $caps-color;
+    }
+    .comment-standfirst-container + .multiline + .guardian-body-text--caps > p:first-of-type:first-letter {
+      color: $caps-color;
+    }
     .headline--feature {
       color: $headlineFeature-color;
     }

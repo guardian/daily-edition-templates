@@ -11,16 +11,16 @@
 }
 
 .content--immersive {
-  position: absolute;
+  // position: absolute;
   width: $width-content;
   margin-left: 20px;
   // padding-left: 20px;
   @media (orientation: landscape) {
-    top: 67vh;
+    top: 75vh;
     padding-left: 128px;
   }
   @media (orientation: portrait) {
-    top: 36vh;
+    top: 42vh;
   }
 }
 
@@ -46,8 +46,7 @@
 .headline--immersive {
   background-color: $brightness-7;
   padding-left: 6px;
-  p {
-    color: white;
-    font-weight: bold;
-  }
+  padding-right: 20px;
+  color: white;
+  font-weight: bold;
 }
