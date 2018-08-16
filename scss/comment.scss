@@ -1,6 +1,19 @@
-.body--background-comment-template {
+.Article.Article__pillar--opinion {
+&:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: '';
   background-color: $opinion-faded;
+  z-index: -1;
 }
+}
+
+// .body--background-comment-template {
+//   background-color: $opinion-faded;
+// }
 
 .headline--comment {
   font-weight: 200;

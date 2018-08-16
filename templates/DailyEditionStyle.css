@@ -618,8 +618,15 @@ p {
     padding-top: 0;
     padding-right: 48px; }
 
-.body--background-comment-template {
-  background-color: #fef9f5; }
+.Article.Article__pillar--opinion:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: '';
+  background-color: #fef9f5;
+  z-index: -1; }
 
 .headline--comment {
   font-weight: 200;
@@ -814,16 +821,21 @@ p {
     padding: 0;
     display: block; }
 
+.immersive-container {
+  background-image: url(assets/immersive-img.png);
+  background-repeat: no-repeat;
+  background-size: contain; }
+
 .content--immersive {
-  width: 620px;
-  margin-left: 20px; }
+  position: relative;
+  width: 620px; }
   @media (orientation: landscape) {
     .content--immersive {
-      top: 75vh;
-      padding-left: 128px; } }
+      top: 68vh;
+      padding-left: -17px; } }
   @media (orientation: portrait) {
     .content--immersive {
-      top: 42vh; } }
+      top: -12vh; } }
 
 @media (orientation: landscape) {
   .immersive-main {
@@ -831,17 +843,31 @@ p {
 
 @media (orientation: portrait) {
   .immersive-main {
+    margin-left: 20px;
     padding-top: 6px;
     border-right: 1px solid #999999; } }
 
 .section__immersive .section__container {
   background-color: #c70000;
   color: white;
-  padding: 6px 6px 0 6px; }
+  padding: 0px 10px 0px 20px; }
 
 .headline--immersive {
   background-color: #121212;
-  padding-left: 6px;
+  padding-left: 20px;
   padding-right: 20px;
   color: white;
   font-weight: bold; }
+
+.picture--immersive img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 620px; }
+
+@media (orientation: portrait) {
+  .picture--immersive img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 600px; } }
