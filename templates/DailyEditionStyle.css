@@ -515,7 +515,7 @@ p {
 /* section */
 .section {
   font-size: 22px;
-  font-weight: 800;
+  font-weight: 600;
   font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif; }
 
 /* headline */
@@ -913,3 +913,49 @@ p {
 .picture__caption--cartoon {
   color: white;
   margin-bottom: 20px; }
+
+.header--interview {
+  position: absolute;
+  z-index: 100;
+  width: 620px; }
+
+.picture--interview {
+  top: 88px; }
+
+.section__container {
+  position: relative; }
+  .section__container--interview {
+    padding: 6px 6px 6px 6px; }
+
+.interview-main {
+  margin-top: 90px; }
+
+.standfirst--interview {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold; }
+
+.headline--interview {
+  position: relative;
+  font-weight: 600;
+  margin-top: 6px;
+  margin-left: 5px;
+  padding-bottom: 0;
+  line-height: 55px; }
+  .headline--interview span {
+    color: white;
+    background: #121212;
+    box-shadow: 5px 0 0 #121212, -5px 0 0 #121212; }
+
+.byline--interview {
+  position: relative;
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 28px;
+  margin-top: 2px;
+  margin-left: 5px; }
+  .byline--interview span {
+    background: #ffe500;
+    box-shadow: 5px 0 0 #ffe500, -5px 0 0 #ffe500;
+    padding: 5px 0; }
