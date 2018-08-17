@@ -1,0 +1,37 @@
+.cartoon-bg {
+  background-color: $brightness-7;
+}
+
+.section {
+  &__series {
+    color: white;
+  }
+}
+
+.headline {
+  &--cartoon {
+    color: white;
+  }
+}
+
+.content {
+  &--cartoon {
+    border-color: white;
+    padding-top: 0;
+    @media (orientation: landscape) {
+      height: 100%;
+    }
+    @media (orientation: portrait) {
+      height: 100vh;
+    }
+  }
+}
+
+.multiline--cartoon {
+  margin-bottom: 30px;
+}
+
+.picture__caption--cartoon {
+  color: white;
+  margin-bottom: 20px;
+}

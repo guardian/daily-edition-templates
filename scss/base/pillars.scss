@@ -58,6 +58,11 @@ $pillars: (
         caps-color: $lifestyle-main,
         headlineFeature-color: $lifestyle-dark,
         featureSectionContainer-color: $lifestyle-main
+    ),
+    cartoon: (
+        featureSectionContainer-color: white,
+        sectionFont: $brightness-7,
+        arrow-up-color: white,
     )
 );
 
@@ -72,6 +77,7 @@ $pillars: (
   $caps-color: map-get($palette, caps-color);
   $headlineFeature-color: map-get($palette, headlineFeature-color);
   $featureSectionContainer-color: map-get($palette, featureSectionContainer-color);
+  $sectionFont: map-get($palette, sectionFont);
 
     .picture__caption-container {
       background-color: $captionBackground;
@@ -122,6 +128,7 @@ $pillars: (
     .section {
       &__container {
         background-color: $featureSectionContainer-color;
+        color: $sectionFont;
       }
     }
 }
