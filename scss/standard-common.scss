@@ -43,6 +43,7 @@ p {
   line-height: 46px;
   color: $brightness-7;
   padding-bottom: 50px;
+  padding-right: 20px;
 }
 
 .standfirst {
@@ -52,6 +53,7 @@ p {
   color: $brightness-7;
   clear: both;
   padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .guardian-body-text {
@@ -137,8 +139,8 @@ p {
     width: $width-content;
     z-index: 1000;
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
   }
 
   &__caption {
@@ -188,10 +190,11 @@ p {
   font-family: $egyptian-text;
   font-size: 18px;
   line-height: 22px;
-  margin-right: 48px;
+  margin-top: 6px;
   clear: both;
   p {
     padding-bottom: 22px;
     padding-top: 0;
+    padding-right: 48px;
   }
 }

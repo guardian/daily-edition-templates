@@ -13,7 +13,8 @@
     <meta name="description" content="iPad standard news template">
 </head>
 
-<body class="body--background-comment-template">
+<!-- <body class="body--background-comment-template"> -->
+<body>
     <div class="luther-document">
         {{#each story}} {{#isFirstOfType 'headline' ../story @index}}
         <div class="Article {{insertPillarColourClass 'Article__pillar--' pillarid}}">
@@ -45,6 +46,8 @@
                         {{{html}}}
                     </div>
                 </div>
+                <div class="multiline {{insertPillarColourClass 'multiline--' pillarid}}">
+                </div>
                 {{/isBylineImage}}
                 {{/if_eq}}
                 {{/hasBylineImage}}
@@ -52,21 +55,21 @@
                 {{#if_eq type 'standfirst'}}
                 <div class="comment-standfirst-container">
                     <div class="standfirst oneline">
-                        <p>{{{text}}}</p>
+                        {{{text}}}
                     </div>
+                </div>
+                <div class="multiline {{insertPillarColourClass 'multiline--' pillarid}}">
                 </div>
                 {{/if_eq}}
                 {{/hasNoBylineImage}}
                 {{/containsType}} {{/each}}
-                <div class="multiline {{'multiline--' pillarid}}">
-                </div>
 
                 {{#each story}} {{#isMainImage ../story @index}}
-                <div class="picture {{insertPillarColourClass}}">
+                <div class="picture">
                     <div class="picture--first">
                         {{{html}}}
                     </div>
-                    <div class="picture__caption-container  {{insertPillarColourClass 'picture__caption-container--' pillarid}}">
+                    <div class="picture__caption-container {{insertPillarColourClass 'picture__caption-container--' pillarid}}">
                         <div class="arrow-up"></div>
                         <div class="picture__caption">
                             <p>{{{productioncaption}}} <span class="picture__caption--credit">{{{productioncopyright}}}</span></p>

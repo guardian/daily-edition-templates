@@ -134,6 +134,7 @@
     font-weight: lighter;
     padding-right: 8px;
     float: left;
+    font-weight: bold;
 }
 
 .standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
@@ -144,6 +145,7 @@
     font-weight: lighter;
     padding-right: 8px;
     float: left;
+    font-weight: bold;
 }
 
 .standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
@@ -154,10 +156,5 @@
     font-weight: lighter;
     padding-right: 8px;
     float: left;
-}
-
-.bold-caps {
-  p:first-child:first-letter {
     font-weight: bold;
-  }
 }
