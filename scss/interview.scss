@@ -1,0 +1,69 @@
+
+.header--interview {
+    position: absolute;
+    z-index: 100;
+    width: $width-content;
+}
+
+.picture--interview {
+    top: 88px;
+}
+
+.section__container {
+  position: relative;
+  &--interview {
+    padding: 6px 6px 6px 6px;
+  }
+}
+
+.interview-main {
+  margin-top: 90px;
+}
+
+.standfirst--interview {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding-bottom: 0;
+}
+
+.headline--interview {
+  position: relative;
+  font-weight: 600;
+  margin-top: 6px;
+  margin-left: 5px;
+  padding-bottom: 0;
+  font-size: 34px;
+  line-height: 43px;
+  span {
+    color: white;
+    background: $brightness-7;
+    box-shadow:5px 0 0 $brightness-7, -5px 0 0 $brightness-7;
+  }
+}
+
+.byline--interview {
+  position: relative;
+  font-family: $egyptian-text;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 28px;
+  margin-top: 2px;
+  margin-left: 5px;
+  span {
+    background:$highlight-main;
+    box-shadow:5px 0 0 $highlight-main, -5px 0 0 $highlight-main;
+    padding: 5px 0;
+  }
+}
+
+.standfirst--interview + .multiline + .guardian-body-text--caps > p:first-of-type:first-letter {
+    font-family: $egyptian-display;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 64px;
+    font-weight: lighter;
+    padding-right: 8px;
+    float: left;
+    font-weight: bold;
+}

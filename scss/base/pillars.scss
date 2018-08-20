@@ -9,7 +9,8 @@ $pillars: (
         captionFont-color: $brightness-100,
         caps-color: $news-main,
         headlineFeature-color: $news-dark,
-        featureSectionContainer-color: $news-main
+        featureSectionContainer-color: $news-main,
+        sectionContainerInterview: $news-dark
     ),
     opinion: (
         captionBackground: $opinion-main,
@@ -21,7 +22,8 @@ $pillars: (
         captionFont-color: $brightness-100,
         caps-color: $opinion-main,
         headlineFeature-color: $opinion-dark,
-        featureSectionContainer-color: $opinion-main
+        featureSectionContainer-color: $opinion-main,
+        sectionContainerInterview: $opinion-dark
     ),
     sport: (
         captionBackground: $highlight-main,
@@ -33,7 +35,8 @@ $pillars: (
         captionFont-color: $brightness-7,
         caps-color: $sport-main,
         headlineFeature-color: $sport-dark,
-        featureSectionContainer-color: $sport-main
+        featureSectionContainer-color: $sport-main,
+        sectionContainerInterview: $sport-dark
     ),
     arts: (
         captionBackground: $culture-main,
@@ -45,7 +48,8 @@ $pillars: (
         captionFont-color: $brightness-100,
         caps-color: $culture-main,
         headlineFeature-color: $culture-dark,
-        featureSectionContainer-color: $culture-main
+        featureSectionContainer-color: $culture-main,
+        sectionContainerInterview: $culture-dark
     ),
     lifestyle: (
         captionBackground: $lifestyle-main,
@@ -57,7 +61,8 @@ $pillars: (
         captionFont-color: $brightness-100,
         caps-color: $lifestyle-main,
         headlineFeature-color: $lifestyle-dark,
-        featureSectionContainer-color: $lifestyle-main
+        featureSectionContainer-color: $lifestyle-main,
+        sectionContainerInterview: $lifestyle-dark
     ),
     cartoon: (
         featureSectionContainer-color: white,
@@ -78,6 +83,7 @@ $pillars: (
   $headlineFeature-color: map-get($palette, headlineFeature-color);
   $featureSectionContainer-color: map-get($palette, featureSectionContainer-color);
   $sectionFont: map-get($palette, sectionFont);
+  $sectionContainerInterview: map-get($palette, sectionContainerInterview);
 
     .picture__caption-container {
       background-color: $captionBackground;
@@ -122,6 +128,9 @@ $pillars: (
     .comment-standfirst-container + .multiline + .guardian-body-text--caps > p:first-of-type:first-letter {
       color: $caps-color;
     }
+    .standfirst--interview + .multiline + .guardian-body-text--caps > p:first-of-type:first-letter {
+      color: $caps-color;
+    }
     .headline--feature {
       color: $headlineFeature-color;
     }
@@ -130,6 +139,9 @@ $pillars: (
         background-color: $featureSectionContainer-color;
         color: $sectionFont;
       }
+    }
+    .section__container--interview {
+      background-color: $sectionContainerInterview;
     }
 }
 
