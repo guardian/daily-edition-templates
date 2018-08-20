@@ -24,6 +24,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: bold;
+  padding-bottom: 0;
 }
 
 .headline--interview {
@@ -32,7 +33,8 @@
   margin-top: 6px;
   margin-left: 5px;
   padding-bottom: 0;
-  line-height: 55px;
+  font-size: 34px;
+  line-height: 43px;
   span {
     color: white;
     background: $brightness-7;
@@ -53,4 +55,15 @@
     box-shadow:5px 0 0 $highlight-main, -5px 0 0 $highlight-main;
     padding: 5px 0;
   }
+}
+
+.standfirst--interview + .multiline + .guardian-body-text--caps > p:first-of-type:first-letter {
+    font-family: $egyptian-display;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 64px;
+    font-weight: lighter;
+    padding-right: 8px;
+    float: left;
+    font-weight: bold;
 }
