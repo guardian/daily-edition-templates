@@ -664,16 +664,6 @@ p {
     padding-top: 0;
     padding-right: 48px; }
 
-.Article.Article__pillar--opinion:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  content: '';
-  background-color: #fef9f5;
-  z-index: -1; }
-
 .headline--comment {
   font-weight: 200;
   padding-bottom: 0; }
