@@ -918,9 +918,6 @@ p {
     display: block;
     width: 600px; } }
 
-.cartoon-bg {
-  background-color: #121212; }
-
 .section__series {
   color: white; }
 
@@ -950,7 +947,7 @@ p {
   width: 620px; }
 
 .picture--interview {
-  top: 88px; }
+  top: 76px; }
 
 .section__container {
   position: relative; }
