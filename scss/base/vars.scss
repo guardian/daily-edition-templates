@@ -5,3 +5,19 @@ $titlepiece: 'Titlepiece', 'Guardian Egyptian Web', sans-serif;
 $agate-sans: 'Guardian Agate Sans 1 Web', sans-serif;
 $icon: 'Guardian Icons', Georgia, serif;
 $guardian-sans: 'Guardian Text Sans Web', sans-serif;
+
+$vertical-base: 6px;
+$horizontal-base: 10px;
+
+@function vertical($value) {
+    @return $vertical-base * $value;
+}
+@function horizotal($value) {
+    @return $horizontal-base * $value;
+}
+
+/**
+padding-example {
+    padding-top: vertical(2);
+}
+**/

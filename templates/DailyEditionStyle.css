@@ -112,6 +112,11 @@ input, select {
   background-position-x: 0;
   padding-top: 16px; }
 
+/**
+padding-example {
+    padding-top: vertical(2);
+}
+**/
 .Article__pillar--news .picture__caption-container {
   background-color: #c70000;
   color: #ffffff; }
@@ -577,6 +582,17 @@ p {
     padding-bottom: 22px;
     padding-top: 0; }
 
+.guardian-body-text--caps {
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 6px;
+  clear: both; }
+  .guardian-body-text--caps p {
+    padding-bottom: 22px;
+    padding-top: 0;
+    padding-right: 48px; }
+
 /* byline */
 .byline {
   font-family: "Guardian Text Egyptian Web", Georgia, serif;
@@ -652,17 +668,6 @@ p {
   z-index: 1000;
   position: absolute;
   top: -25px; }
-
-.guardian-body-text--caps {
-  font-family: "Guardian Text Egyptian Web", Georgia, serif;
-  font-size: 18px;
-  line-height: 22px;
-  margin-top: 6px;
-  clear: both; }
-  .guardian-body-text--caps p {
-    padding-bottom: 22px;
-    padding-top: 0;
-    padding-right: 48px; }
 
 .headline--comment {
   font-weight: 200;

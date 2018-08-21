@@ -70,6 +70,19 @@ p {
   }
 }
 
+.guardian-body-text--caps {
+  font-family: $egyptian-text;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 6px;
+  clear: both;
+  p {
+    padding-bottom: 22px;
+    padding-top: 0;
+    padding-right: 48px;
+  }
+}
+
 /* byline */
 /////////////////////////////////////////
 
@@ -184,17 +197,4 @@ p {
   z-index: 1000;
   position: absolute;
   top: -25px;
-}
-
-.guardian-body-text--caps {
-  font-family: $egyptian-text;
-  font-size: 18px;
-  line-height: 22px;
-  margin-top: 6px;
-  clear: both;
-  p {
-    padding-bottom: 22px;
-    padding-top: 0;
-    padding-right: 48px;
-  }
 }
