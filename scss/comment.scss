@@ -7,7 +7,7 @@
   font-family: $egyptian-display;
   font-style: italic;
   padding-top: 0;
-  padding-bottom: 30px;
+  padding-bottom: vertical(5);
   font-size: 44px;
   line-height: 46px;
   font-weight: lighter;
@@ -18,14 +18,14 @@
   flex-direction: row;
   position: relative;
     img {
-      width: 200px;
+      width: horizotal(20);
       z-index: 1000;
       bottom: 0;
       margin-left: -180px;
       position: absolute;
     }
     p {
-      padding-top: 6px;
+      padding-top: vertical(1);
       width: 70%;
       z-index: -200;
       position: relative;
@@ -48,7 +48,7 @@
     text-transform: uppercase;
     line-height: 64px;
     font-weight: lighter;
-    padding-right: 8px;
+    padding-right: horizotal(1);
     float: left;
 }
 
@@ -58,6 +58,6 @@
     text-transform: uppercase;
     line-height: 64px;
     font-weight: lighter;
-    padding-right: 8px;
+    padding-right: horizotal(1);
     float: left;
 }
