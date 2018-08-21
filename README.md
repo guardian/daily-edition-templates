@@ -21,7 +21,7 @@ The 'finals' folder contains templates which will not run locally but are used o
 All the other html templates will run locally and will give you an example of how each template should look.
 
 - **Standard news template** (standard-article-pillar). To see an example of how this template looks go to `/news.html` or `/sport.html`
-- **Feature template** (feature-pillar, feature-recipe-pillar, feature-review-pillar). To see an example of how this template looks go to`/feature.html
+- **Feature template** (feature-pillar). To see an example of how this template looks go to`/feature.html
 - **Feature Recipe template** (feature-recipe-pillar). To see an example of how this template looks go to`/feature-recipe.html`
 - **Feature Review template** (feature-review-pillar). To see an example of how this template looks go to `feature-review.html`
 - **Comment template** (comment-pillar, opinion-pillar). To see an example of how this template looks go to `/comment-sport.html`.
@@ -32,8 +32,8 @@ All the other html templates will run locally and will give you an example of ho
 ## Sass files
 
 ### Base
-- Has all the base sass files inclusing variables for colours, typography, spacing, reset and rules (which are the multiline according to sections).
-- There is also a file called `pillars.scss` - this file facilitate the change of coulour by pillar using sass variables and a function that iterates on the colour palette and checks gives the whole page a colour accoding to pillar name (news, opinion, sport, arts, lifestyle, cartoon)
+- Has all the base sass files inclusing variables for colours, typography, spacing, reset and rules (which are the multiline according to the pillar).
+- There is also a file called `pillars.scss` - this file facilitate the change of coulour by pillar using sass variables and a function that iterates on the colour palette which checks what pillar that template belongs to and gives the whole page a colour accoding to the pillar's name (news, opinion, sport, arts, lifestyle, cartoon)
 
 ### scss folder
 The rest of the folder contains files that are either common to all templates or unique to specific templates.
