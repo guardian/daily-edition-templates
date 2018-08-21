@@ -20,11 +20,11 @@
   position: relative;
   width: $width-content;
   @media (orientation: landscape) {
-    top: 68vh;
+    top: 70vh;
     padding-left: -17px;
   }
   @media (orientation: portrait) {
-    top: -12vh;
+    top: 40vh;
   }
 }
 
