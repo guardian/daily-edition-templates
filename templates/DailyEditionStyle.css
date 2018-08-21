@@ -709,7 +709,7 @@ p {
   text-transform: uppercase;
   line-height: 64px;
   font-weight: lighter;
-  padding-right: 8px;
+  padding-right: 10px;
   float: left; }
 
 .comment-standfirst-container + .multiline + .guardian-body-text--caps > p:first-of-type:first-letter {
@@ -718,18 +718,21 @@ p {
   text-transform: uppercase;
   line-height: 64px;
   font-weight: lighter;
-  padding-right: 8px;
+  padding-right: 10px;
   float: left; }
 
 .section__feature {
   border-bottom: 1px solid #dcdcdc;
   width: 620px;
-  padding-bottom: 5px; }
+  padding-bottom: 6px; }
 
 .section__container {
   display: inline;
   color: white;
-  padding: 10px 20px 5px; }
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 20px;
+  padding-left: 20px; }
 
 .section__series {
   font-weight: 300;
@@ -751,8 +754,8 @@ p {
   font-weight: bold;
   font-size: 22px;
   line-height: 26px;
-  margin-top: 4px;
-  margin-bottom: 22px; }
+  margin-top: 6px;
+  margin-bottom: 24px; }
 
 .picture__caption-container--simple {
   position: relative;
@@ -765,7 +768,7 @@ p {
   line-height: 22px;
   display: inline; }
   .picture__caption--simple p:first-child:first-letter {
-    padding-left: 25px; }
+    padding-left: 30px; }
   .picture__caption--simple--credit {
     font-weight: bold; }
   .picture__caption--simple--second {
@@ -774,7 +777,7 @@ p {
     font-size: 14px; }
     .picture__caption--simple--second p {
       padding-left: 0;
-      padding-bottom: 10px; }
+      padding-bottom: 12px; }
 
 .arrow-up-small {
   width: 0;
@@ -828,7 +831,7 @@ p {
   text-transform: uppercase;
   line-height: 64px;
   font-weight: lighter;
-  padding-right: 8px;
+  padding-right: 10px;
   float: left;
   font-weight: bold; }
 
@@ -838,7 +841,7 @@ p {
   text-transform: uppercase;
   line-height: 64px;
   font-weight: lighter;
-  padding-right: 8px;
+  padding-right: 10px;
   float: left;
   font-weight: bold; }
 
@@ -848,7 +851,7 @@ p {
   text-transform: uppercase;
   line-height: 64px;
   font-weight: lighter;
-  padding-right: 8px;
+  padding-right: 10px;
   float: left;
   font-weight: bold; }
 
@@ -934,7 +937,7 @@ p {
 
 .picture__caption--cartoon {
   color: white;
-  margin-bottom: 20px; }
+  margin-bottom: 18px; }
 
 .header--interview {
   position: absolute;

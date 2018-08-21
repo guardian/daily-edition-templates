@@ -2,26 +2,29 @@
   &__feature {
     border-bottom: 1px solid $brightness-86;
     width: $width-content;
-    padding-bottom: 5px;
+    padding-bottom: vertical(1);
   }
 
   &__container {
     display: inline;
     color: white;
-    padding: 10px 20px 5px;
+    padding-top: vertical(1);
+    padding-bottom: vertical(1);
+    padding-right: horizotal(2);
+    padding-left: horizotal(2);
   }
 
   &__series {
     font-weight: 300;
     color: #121212;
     font-style: italic;
-    padding-left: 10px;
+    padding-left: horizotal(1);
   }
 }
 
 .headline--feature {
   font-weight: 900;
-  padding-bottom: 30px;
+  padding-bottom: vertical(5);
 }
 
 .standfirst--feature {
@@ -36,8 +39,8 @@
   font-weight: bold;
   font-size: 22px;
   line-height: 26px;
-  margin-top: 4px;
-  margin-bottom: 22px;
+  margin-top: vertical(1);
+  margin-bottom: vertical(4);
 }
 
 .picture {
@@ -54,7 +57,7 @@
     display: inline;
 
     p:first-child:first-letter {
-      padding-left: 25px;
+      padding-left: horizotal(3);
     }
 
     &--credit {
@@ -68,7 +71,7 @@
 
       p {
         padding-left: 0;
-        padding-bottom: 10px;
+        padding-bottom: vertical(2);
       }
     }
   }
@@ -83,7 +86,7 @@
   margin: 0;
   z-index: 1000;
   position: absolute;
-  top: 12px;
+  top: vertical(2);
 }
 
 .review--stars-1 {
@@ -132,7 +135,7 @@
     text-transform: uppercase;
     line-height: 64px;
     font-weight: lighter;
-    padding-right: 8px;
+    padding-right: horizotal(1);
     float: left;
     font-weight: bold;
 }
@@ -143,7 +146,7 @@
     text-transform: uppercase;
     line-height: 64px;
     font-weight: lighter;
-    padding-right: 8px;
+    padding-right: horizotal(1);
     float: left;
     font-weight: bold;
 }
@@ -154,7 +157,7 @@
     text-transform: uppercase;
     line-height: 64px;
     font-weight: lighter;
-    padding-right: 8px;
+    padding-right: horizotal(1);
     float: left;
     font-weight: bold;
 }
