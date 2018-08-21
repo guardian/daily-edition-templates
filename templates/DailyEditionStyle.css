@@ -559,7 +559,7 @@ p {
   font-size: 44px;
   line-height: 46px;
   color: #121212;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
   padding-right: 20px; }
 
 .standfirst {
@@ -568,18 +568,18 @@ p {
   line-height: 28px;
   color: #121212;
   clear: both;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   padding-right: 20px; }
 
 .guardian-body-text {
   font-family: "Guardian Text Egyptian Web", Georgia, serif;
   font-size: 18px;
   line-height: 22px;
-  margin-right: 48px;
+  margin-right: 50px;
   margin-top: 6px;
   clear: both; }
   .guardian-body-text p {
-    padding-bottom: 22px;
+    padding-bottom: 24px;
     padding-top: 0; }
 
 .guardian-body-text--caps {
@@ -589,9 +589,9 @@ p {
   margin-top: 6px;
   clear: both; }
   .guardian-body-text--caps p {
-    padding-bottom: 22px;
+    padding-bottom: 24px;
     padding-top: 0;
-    padding-right: 48px; }
+    padding-right: 50px; }
 
 /* byline */
 .byline {
@@ -602,8 +602,8 @@ p {
   font-size: 18px;
   line-height: 22px;
   width: 35%;
-  margin-right: 16px;
-  margin-bottom: 16px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   clear: both;
   font-style: italic; }
   .byline__author {
@@ -646,7 +646,7 @@ p {
     line-height: 20px;
     display: inline; }
     .picture__caption p {
-      padding-left: 8px; }
+      padding-left: 10px; }
     .picture__caption--credit {
       font-weight: bold; }
     .picture__caption--second {
@@ -655,7 +655,7 @@ p {
       font-size: 14px; }
       .picture__caption--second p {
         padding-left: 0;
-        padding-bottom: 10px; }
+        padding-bottom: 6px; }
 
 .arrow-up {
   width: 0;
@@ -876,7 +876,7 @@ p {
   @media (orientation: landscape) {
     .content--immersive {
       top: 70vh;
-      padding-left: -17px; } }
+      padding-left: 128px; } }
   @media (orientation: portrait) {
     .content--immersive {
       top: 40vh; } }
@@ -892,7 +892,6 @@ p {
     border-right: 1px solid #999999; } }
 
 .section__immersive .section__container {
-  background-color: #c70000;
   color: white;
   padding: 0px 10px 0px 20px; }
 
@@ -950,14 +949,14 @@ p {
 .section__container {
   position: relative; }
   .section__container--interview {
-    padding: 6px 6px 6px 6px; }
+    padding: 6px; }
 
 .interview-main {
   margin-top: 90px; }
 
 .standfirst--interview {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 18px;
+  margin-bottom: 18px;
   font-weight: bold;
   padding-bottom: 0; }
 
@@ -993,6 +992,6 @@ p {
   text-transform: uppercase;
   line-height: 64px;
   font-weight: lighter;
-  padding-right: 8px;
+  padding-right: 10px;
   float: left;
   font-weight: bold; }
