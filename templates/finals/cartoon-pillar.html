@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>cartoon</title>
+  <link rel="stylesheet" href="_Static/Content/_css/reset.css" type="text/css">
+  <link rel="stylesheet" href="_Static/Content/_css/DailyEditionStyle.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="_Static/Content/_css/luther.css">
+  {{insertCSSLink sectioncss}}
+  {{insertCSSLink typecss}}
+  {{insertCSSLink pillarcss}}
+  <script type="text/javascript" src="_Static/Common/_js/zepto.min.js"></script>
+  <script type="text/javascript" src="_Static/Content/_js/octopus.js"></script>
+  <meta name="viewport" content="width=768, initial-scale=1, maximum-scale=2" />
+  <meta name="description" content="iPad standard news template">
+</head>
+
+<body>
+  <div class="luther-document">
+    <div class="Article Article__pillar--cartoon">
+      <div class="content content--cartoon">
+        {{#each story}}
+        {{#containsType 'secondlabel' ../story}}
+
+        {{#if_eq type 'label'}}
+        <div class="section section__feature">
+          <div class="section__container">
+            {{{text}}}
+          </div>
+        {{/if_eq}}
+        {{#if_eq type 'secondlabel'}}
+          <span class="section__series">
+              {{{text}}}
+          </span>
+        </div>
+        {{/if_eq}}
+
+        {{/containsType}}
+
+        {{#doesNotContainType 'secondlabel' ../story}}
+
+        {{#if_eq type 'label'}}
+        <div class="section section__feature">
+          <div class="section__container">
+            {{{text}}}
+          </div>
+        </div>
+        {{/if_eq}}
+
+        {{/doesNotContainType}}
+
+        {{#if_eq type 'headline'}}
+        <div class="headline headline--cartoon">
+          {{{text}}}
+        </div>
+        {{/if_eq}}
+
+
+        {{#if_eq type 'image'}}
+        {{#isFirstOfType 'image' ../story @index}}
+        <div class="multiline--cartoon"></div>
+        <div class="picture">
+          <div class="picture--wide">
+            {{{html}}}
+          </div>
+          <div class="picture__caption-container--simple">
+              <div class="arrow-up-small"></div>
+              <div class="picture__caption--simple picture__caption--cartoon">
+                  <p>{{{productioncaption}}} <span class="picture__caption--credit">{{{productioncopyright}}}</span></p>
+              </div>
+              <div class="multiline--cartoon"></div>
+          </div>
+        </div>
+        {{/isFirstOfType}}
+        {{/if_eq}}
+        {{/each}}
+      </div>
+      <!-- content -->
+    </div>
+    <!-- Article -->
+  </div>
+  <!-- luther-document -->
+</body>
+
+</html>

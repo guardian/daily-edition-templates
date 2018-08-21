@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>interview</title>
+  <link rel="stylesheet" href="_Static/Content/_css/reset.css" type="text/css">
+  <link rel="stylesheet" href="_Static/Content/_css/DailyEditionStyle.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="_Static/Content/_css/luther.css">
+  {{insertCSSLink sectioncss}}
+  {{insertCSSLink typecss}}
+  {{insertCSSLink pillarcss}}
+  <script type="text/javascript" src="_Static/Common/_js/zepto.min.js"></script>
+  <script type="text/javascript" src="_Static/Content/_js/octopus.js"></script>
+  <meta name="viewport" content="width=768, initial-scale=1, maximum-scale=2" />
+  <meta name="description" content="iPad standard news template">
+</head>
+
+<body>
+  <div class="luther-document">
+    {{#each story}}
+    {{#isFirstOfType 'headline' ../story @index}}
+    <div class="Article {{insertPillarColourClass 'Article__pillar--' pillarid}}">
+    {{/isFirstOfType}}
+    {{/each}}
+      <div class="content">
+      {{#each story}}
+        {{#containsType 'label' ../story}}
+        {{#if_eq type 'label'}}
+        <div class="header--interview">
+          <div class="section section--interview">
+            <div class="section__container section__container--interview">
+            <span>{{{text}}}</span>
+            </div>
+          </div>
+        {{/if_eq}}
+        {{#containsType 'byline' ../story}}
+          {{#if_eq type 'headline'}}
+          <div class="headline headline--interview">
+            <span>{{{text}}}</span>
+          </div>
+          {{/if_eq}}
+
+          {{#if_eq type 'byline'}}
+          <div class="byline--interview">
+            <span>{{{text}}}</span>
+          </div>
+        </div>
+          {{/if_eq}}
+
+        {{/containsType}}
+        {{#doesNotContainType 'byline' ../story}}
+
+        {{#if_eq type 'headline'}}
+        <div class="headline headline--interview">
+          <span>{{{text}}}</span>
+        </div>
+      </div>
+        {{/if_eq}}
+
+        {{/doesNotContainType}}
+
+        {{/containsType}}
+
+        {{#doesNotContainType 'label' ../story}}
+
+        {{#containsType 'byline' ../story}}
+          {{#if_eq type 'headline'}}
+          <div class="header--interview">
+          <div class="headline headline--interview">
+            <span>{{{text}}}</span>
+          </div>
+          {{/if_eq}}
+
+          {{#if_eq type 'byline'}}
+          <div class="byline--interview">
+            <span>{{{text}}}</span>
+          </div>
+        </div>
+          {{/if_eq}}
+
+        {{/containsType}}
+        {{#doesNotContainType 'byline' ../story}}
+
+        {{#if_eq type 'headline'}}
+        <div class="header--interview">
+        <div class="headline headline--interview">
+          <span>{{{text}}}</span>
+        </div>
+      </div>
+        {{/if_eq}}
+
+        {{/doesNotContainType}}
+
+        {{/doesNotContainType}}
+
+        {{#if_eq type 'image'}}
+        {{#isFirstOfType 'image' ../story @index}}
+        <div class="picture picture--interview">
+            <div class="picture--wide">
+                {{{html}}}
+            </div>
+            <div class="picture__caption-container">
+                <div class="arrow-up"></div>
+                <div class="picture__caption">
+                    <p>{{{productioncaption}}} <span class="picture__caption--credit">{{{productioncopyright}}}</span></p>
+                </div>
+            </div>
+        </div>
+        {{/isFirstOfType}}
+        {{/if_eq}}
+
+        {{/each}}
+
+        <div class="interview-main">
+          {{#each story}}
+
+          {{#if_eq type 'standfirst'}}
+          <div class="standfirst standfirst--interview">
+            {{{text}}}
+          </div>
+          {{/if_eq}}
+
+          {{/each}}
+
+          <div class="multiline {{insertPillarColourClass 'multiline--' pillarid}}"></div>
+          <div class="guardian-body-text--caps bold-caps">
+            {{insertCrossRef 'body'}}
+            {{#each story}}
+
+            {{#if_eq type 'other'}} {{{text}}} {{/if_eq}}
+            {{#if_eq type 'bodytext'}} {{{text}}} {{/if_eq}}
+
+            {{#if_eq type 'image'}}
+            {{#isNotFirstOfType 'image' ../story @index}}
+            <div class="picture">
+              <div class="picture--second">
+                {{{html}}}
+              </div>
+              <div class="picture__caption picture__caption--second">
+                <p>{{{productioncaption}}} {{{productioncopyright}}}</p>
+              </div>
+            </div>
+            {{/isNotFirstOfType}}
+            {{/if_eq}}
+
+            {{/each}}
+          </div>
+        </div>
+
+      </div>
+      <!-- content -->
+    </div>
+    <!-- Article -->
+  </div>
+  <!-- luther-document -->
+</body>
+
+</html>
