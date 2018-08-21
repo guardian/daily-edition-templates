@@ -11,12 +11,12 @@ The Guardian Daily Edition frontend repo.
 ## Setup
 * Clone the repo `git clone https://github.com/guardian/daily-edition-templates.git`
 * Install Node.js dependencies by running `npm install`
-* Run `grunt` to complie and run the server
+* Run `grunt` to complie and run
 * That's it! visit http://localhost:8000 (+ /[name of the template]) from your browser
 
 ## Templates
 These are the templates for the articles in the Daily Edition.
-The 'finals' folder contains template which will not run on this server but are used on the Octopus system with CAPI.
+The 'finals' folder contains template which will not run locally but are used on the Octopus system with CAPI.
 
 The other html template will run locally and will give you an example of how each template should look.
 
