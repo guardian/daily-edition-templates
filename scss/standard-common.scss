@@ -16,14 +16,14 @@ body {
 }
 
 p {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: vertical(2);
+  padding-bottom: vertical(2);
 }
 /* wrapper for left content */
 .content {
   width: $width-content;
-  padding-left: 20px;
-  padding-top: 20px;
+  padding-left: horizotal(2);
+  padding-top: horizotal(2);
   border-right: 1px solid $brightness-60;
   @media (orientation: landscape) {
     padding-left: 128px;
@@ -42,8 +42,8 @@ p {
   font-size: 44px;
   line-height: 46px;
   color: $brightness-7;
-  padding-bottom: 50px;
-  padding-right: 20px;
+  padding-bottom: vertical(8);
+  padding-right: horizotal(2);
 }
 
 .standfirst {
@@ -52,20 +52,20 @@ p {
   line-height: 28px;
   color: $brightness-7;
   clear: both;
-  padding-bottom: 20px;
-  padding-right: 20px;
+  padding-bottom: vertical(3);
+  padding-right: horizotal(2);
 }
 
 .guardian-body-text {
   font-family: $egyptian-text;
   font-size: 18px;
   line-height: 22px;
-  margin-right: 48px;
-  margin-top: 6px;
+  margin-right: horizotal(5);
+  margin-top: vertical(1);
   clear: both;
 
   p {
-    padding-bottom: 22px;
+    padding-bottom: vertical(4);
     padding-top: 0;
   }
 }
@@ -74,12 +74,12 @@ p {
   font-family: $egyptian-text;
   font-size: 18px;
   line-height: 22px;
-  margin-top: 6px;
+  margin-top: vertical(1);
   clear: both;
   p {
-    padding-bottom: 22px;
+    padding-bottom: vertical(4);
     padding-top: 0;
-    padding-right: 48px;
+    padding-right: horizotal(5);
   }
 }
 
@@ -94,24 +94,20 @@ p {
   font-size: 18px;
   line-height: 22px;
   width: 35%;
-  margin-right: 16px;
-  margin-bottom: 16px;
+  margin-right: horizotal(2);
+  margin-bottom: horizotal(2);
   clear: both;
   font-style: italic;
 
   &__author {
     font-style: normal;
   }
-  //
-  // &__location {
-  //   font-style: italic;
-  // }
 }
 /* images */
 /////////////////////////////////////////
 
 .picture {
-  margin-bottom: 6px;
+  margin-bottom: vertical(1);
   position: relative;
 
   &--first img {
@@ -163,7 +159,7 @@ p {
     display: inline;
 
     p {
-      padding-left: 8px;
+      padding-left: horizotal(1);
     }
 
     &--credit {
@@ -178,7 +174,7 @@ p {
 
       p {
         padding-left: 0;
-        padding-bottom: 10px;
+        padding-bottom: vertical(1);
       }
     }
   }
