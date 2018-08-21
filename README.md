@@ -16,9 +16,9 @@ The Guardian Daily Edition frontend repo.
 
 ## Templates
 These are the templates for the articles in the Daily Edition.
-The 'finals' folder contains template which will not run locally but are used on the Octopus system with CAPI.
+The 'finals' folder contains templates which will not run locally but are used on the Octopus system with CAPI.
 
-The other html template will run locally and will give you an example of how each template should look.
+All the other html templates will run locally and will give you an example of how each template should look.
 
 - **Standard news template** (standard-article-pillar). To see an example of how this template looks go to `/news.html` or `/sport.html`
 - **Feature template** (feature-pillar, feature-recipe-pillar, feature-review-pillar). To see an example of how this template looks go to`/feature.html
