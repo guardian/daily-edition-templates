@@ -128,7 +128,7 @@ padding-example {
   color: #c70000; }
 
 .Article__pillar--news .arrow-up {
-  border-bottom: 25px solid #c70000; }
+  border-bottom: 14px solid #c70000; }
 
 .Article__pillar--news .arrow-up-small {
   border-bottom: 15px solid #c70000; }
@@ -177,7 +177,7 @@ padding-example {
   color: #e05e00; }
 
 .Article__pillar--opinion .arrow-up {
-  border-bottom: 25px solid #e05e00; }
+  border-bottom: 14px solid #e05e00; }
 
 .Article__pillar--opinion .arrow-up-small {
   border-bottom: 15px solid #e05e00; }
@@ -226,7 +226,7 @@ padding-example {
   color: #0084c6; }
 
 .Article__pillar--sport .arrow-up {
-  border-bottom: 25px solid #ffe500; }
+  border-bottom: 14px solid #ffe500; }
 
 .Article__pillar--sport .arrow-up-small {
   border-bottom: 15px solid #ffe500; }
@@ -275,7 +275,7 @@ padding-example {
   color: #a1845c; }
 
 .Article__pillar--arts .arrow-up {
-  border-bottom: 25px solid #a1845c; }
+  border-bottom: 14px solid #a1845c; }
 
 .Article__pillar--arts .arrow-up-small {
   border-bottom: 15px solid #a1845c; }
@@ -324,7 +324,7 @@ padding-example {
   color: #bb3b80; }
 
 .Article__pillar--lifestyle .arrow-up {
-  border-bottom: 25px solid #bb3b80; }
+  border-bottom: 14px solid #bb3b80; }
 
 .Article__pillar--lifestyle .arrow-up-small {
   border-bottom: 15px solid #bb3b80; }
@@ -363,7 +363,7 @@ padding-example {
   background-color: #7d0068; }
 
 .Article__pillar--cartoon .arrow-up {
-  border-bottom: 25px solid white; }
+  border-bottom: 14px solid white; }
 
 .Article__pillar--cartoon .arrow-up-small {
   border-bottom: 15px solid white; }
@@ -534,24 +534,26 @@ body {
   color: #121212; }
 
 p {
-  padding-top: 12px;
-  padding-bottom: 12px; }
+  padding-top: 6px;
+  padding-bottom: 6px; }
 
 /* wrapper for left content */
 .content {
-  width: 620px;
+  width: 531px;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
   border-right: 1px solid #999999; }
   @media (orientation: landscape) {
     .content {
-      padding-left: 128px; } }
+      padding-left: 128px;
+      width: 620px; } }
 
 /* section */
 .section {
   font-size: 22px;
   font-weight: 600;
-  font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif; }
+  font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+  margin-top: -8px; }
 
 /* headline */
 .headline {
@@ -570,12 +572,14 @@ p {
   clear: both;
   padding-bottom: 18px;
   padding-right: 20px; }
+  .standfirst p {
+    padding: 0; }
 
 .guardian-body-text {
   font-family: "Guardian Text Egyptian Web", Georgia, serif;
   font-size: 18px;
   line-height: 22px;
-  margin-right: 50px;
+  margin-right: 30px;
   margin-top: 6px;
   clear: both; }
   .guardian-body-text p {
@@ -604,6 +608,7 @@ p {
   width: 35%;
   margin-right: 20px;
   margin-bottom: 20px;
+  margin-top: 3px;
   clear: both;
   font-style: italic; }
   .byline__author {
@@ -614,15 +619,21 @@ p {
   margin-bottom: 6px;
   position: relative; }
   .picture--first img {
-    width: 620px;
+    width: 531px;
     margin: 0;
     padding: 0;
     display: block; }
+    @media (orientation: landscape) {
+      .picture--first img {
+        width: 620px; } }
   .picture--second img {
-    width: 620px;
+    width: 531px;
     margin: 0;
     padding: 0;
     display: block; }
+    @media (orientation: landscape) {
+      .picture--second img {
+        width: 620px; } }
   @media (orientation: landscape) {
     .picture--wide img {
       width: 86vw;
@@ -637,9 +648,12 @@ p {
       display: block; } }
   .picture__caption-container {
     position: relative;
-    width: 620px;
+    width: 531px;
     z-index: 1000;
     color: white; }
+    @media (orientation: landscape) {
+      .picture__caption-container {
+        width: 620px; } }
   .picture__caption {
     font-family: "Guardian Text Egyptian Web", Georgia, serif;
     font-size: 16px;
@@ -660,14 +674,15 @@ p {
 .arrow-up {
   width: 0;
   height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 25px solid #767676;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 14px solid #767676;
   float: left;
   margin: 0;
   z-index: 1000;
   position: absolute;
-  top: -25px; }
+  top: -14px;
+  left: 6px; }
 
 .headline--comment {
   font-weight: 200;
@@ -731,8 +746,8 @@ p {
   color: white;
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-right: 20px;
-  padding-left: 20px; }
+  padding-right: 10px;
+  padding-left: 10px; }
 
 .section__series {
   font-weight: 300;
