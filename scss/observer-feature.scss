@@ -1,19 +1,7 @@
 .section {
-  &__feature {
-    border-bottom: 1px solid $brightness-60;
-    padding-bottom: vertical(1);
-  }
-
-  &__container {
-    display: inline;
-    padding-top: vertical(1);
-    padding-bottom: vertical(1);
-  }
-
   &__series {
     font-size: 20px;
     font-weight: 200;
-    //color: $brightness-7;
     padding-left: horizotal(0.5);
   }
 }
@@ -23,39 +11,20 @@
   padding-bottom: vertical(4);
 }
 
-.standfirst--feature {
-  padding-bottom: 0;
-  p {
-    padding: 0;
-  }
-}
-
 .byline--feature {
-  font-family: $egyptian-display;
+  font-family: $sole-display;
   font-weight: 200;
-  font-style: italic;
-  font-size: 22px;
-  line-height: 26px;
-  margin-bottom: vertical(3);
-  padding-right: horizotal(1);
-  color: $brightness-7;
-}
-
-.byline--feature::before {
-  display: block;
-  content: '';
-  width: horizotal(4);
-  border-top: 0.0625rem solid $brightness-86;
-  margin-top: vertical(1);
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: vertical(0.3);
+  //margin-bottom: vertical(1);
 }
 
 .byline--feature .byline__author {
-  font-style: normal;
-  font-weight: 600;
-  color: $brightness-7;
-  font-size: 22px;
-  line-height: 26px;
-}
+    font-style: normal;
+    font-weight: 900;
+    color: $brightness-7;
+  }
 
 .picture {
   &__caption-container--simple {
@@ -65,7 +34,7 @@
   }
 
   &__caption--simple {
-    font-family: $egyptian-display;
+    font-family: $sole-display;
     font-size: 18px;
     line-height: 22px;
     display: inline;
@@ -109,7 +78,6 @@
     background: url(stars/1-stars.svg);
     width: 171px;
     height: 40px;
-    //margin-top: 11px;
 }
 .review--stars-2 {
     position: absolute;
@@ -117,7 +85,6 @@
     background: url(stars/2-stars.svg);
     width: 171px;
     height: 40px;
-    //margin-top: 11px;
 }
 .review--stars-3 {
     position: absolute;
@@ -125,7 +92,6 @@
     background: url(stars/3-stars.svg);
     width: 171px;
     height: 40px;
-    //margin-top: 11px;
 }
 .review--stars-4 {
     position: absolute;
@@ -133,7 +99,6 @@
     background: url(stars/4-stars.svg);
     width: 171px;
     height: 40px;
-    //margin-top: 11px;
 }
 .review--stars-5 {
     position: absolute;
@@ -141,49 +106,6 @@
     background: url(stars/5-stars.svg);
     width: 171px;
     height: 40px;
-    //margin-top: 11px;
-}
-
-/////Review star when no pic is showing /////////
-.review--stars-nopic-1 {
-    position: relative;
-    z-index: 1000;
-    background: url(stars/1-stars.svg);
-    width: 171px;
-    height: 40px;
-    margin-bottom: vertical(4);
-}
-.review--stars-nopic-2 {
-    position: relative;
-    z-index: 1000;
-    background: url(stars/2-stars.svg);
-    width: 171px;
-    height: 40px;
-    margin-bottom: vertical(4);
-}
-.review--stars-nopic-3 {
-    position: relative;
-    z-index: 1000;
-    background: url(stars/3-stars.svg);
-    width: 171px;
-    height: 40px;
-    margin-bottom: vertical(4);
-}
-.review--stars-nopic-4 {
-    position: relative;
-    z-index: 1000;
-    background: url(stars/4-stars.svg);
-    width: 171px;
-    height: 40px;
-    margin-bottom: vertical(4);
-}
-.review--stars-nopic-5 {
-    position: relative;
-    z-index: 1000;
-    background: url(stars/5-stars.svg);
-    width: 171px;
-    height: 40px;
-    margin-bottom: vertical(4);
 }
 
 
@@ -191,33 +113,30 @@
 // then the ususal p:first-of-type:first-letter in order to not give a dropcaup to every p tag
 //these combinations cover all the options within 'feature'
 .standfirst + .byline--feature + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $egyptian-display;
-    font-size: 86px;
+    font-family: $sole-display;
+    font-size: 90px;
     text-transform: uppercase;
-    line-height: 67px;
-    font-weight: lighter;
+    line-height: 70px;
     padding-right: horizotal(1);
     float: left;
     font-weight: bold;
 }
 
 .standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $egyptian-display;
-    font-size: 86px;
+    font-family: $sole-display;
+    font-size: 90px;
     text-transform: uppercase;
-    line-height: 67px;
-    font-weight: lighter;
+    line-height: 70px;
     padding-right: horizotal(1);
     float: left;
     font-weight: bold;
 }
 
 .standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $egyptian-display;
-    font-size: 86px;
+    font-family: $sole-display;
+    font-size: 90px;
     text-transform: uppercase;
-    line-height: 67px;
-    font-weight: lighter;
+    line-height: 70px;
     padding-right: horizotal(1);
     float: left;
     font-weight: bold;

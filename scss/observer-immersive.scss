@@ -38,18 +38,7 @@
   .byline--feature {
     margin-top: vertical(0.5);
     padding-right: horizotal(1);
-    color: $brightness-7;
   }
-
-  .byline--feature::before {
-    border-top: 0;
-    margin-top: 0;
-  }
-
-  .byline__author {
-    color: $brightness-7;
-  }
-
   .standfirst--feature {
     font-weight: 100;
     p {
@@ -62,6 +51,7 @@
     font-size: 28px;
     line-height: 32px;
     font-weight: 200;
+    padding-bottom: vertical(1);
   }
 
   h2 strong {
@@ -69,39 +59,35 @@
     font-size: 28px;
     line-height: 32px;
   }
-
-  .guardian-body-text--caps {
-    margin-top: vertical(4);
-  }
 }
 
 .section__immersive {
   font-weight: 700;
   letter-spacing: 0.5px;
-  line-height: 33px;
+  line-height: 32px;
 
   .section__container {
-    color: white;
-    padding: 0px horizotal(1) horizotal(0.3) horizotal(2);
-      @media (orientation: landscape) {
-        color: white;
-        padding: 0px horizotal(1) horizotal(0.3) horizotal(0.5);
-      }
+    //color: white;
+    //padding: 0px horizotal(1) horizotal(0.3) horizotal(2);
+    //  @media (orientation: landscape) {
+    //    color: white;
+    //    padding: 0px horizotal(1) horizotal(0.3) horizotal(0.5);
+    //  }
   }
 }
 
 .headline--immersive {
-  background-color: $brightness-7;
-  padding-left: horizotal(2);
-  padding-right: horizotal(2);
+  //background-color: $brightness-7;
+  //padding-left: horizotal(2);
+  //padding-right: horizotal(2);
   color: white;
   font-weight: bold;
-  padding-bottom: vertical(5);
+  //padding-bottom: vertical(5);
 
-    @media (orientation: landscape) {
-      padding-left: horizotal(0.5);
-        padding-right: horizotal(1);
-    }
+  //  @media (orientation: landscape) {
+  //    padding-left: horizotal(0.5);
+  //      padding-right: horizotal(1);
+  //  }
 }
 
 .picture--immersive {
@@ -112,37 +98,11 @@
     width: $width-content;
   }
   @media (orientation: portrait) {
-    img {
-      margin: 0;
-      padding: 6px 0 0 0;
-      display: block;
-      width: $width-content-portrait;
-    }
+  img {
+    margin: 0;
+    padding: 6px 0 0 0;
+    display: block;
+    width: $width-content-portrait;
   }
-
-  .picture--thumbnail {
-    .picture__caption-container--simple {
-      max-width: 140px;
-    }
   }
-
-}
-
-.text-paragraph-line::before{
-  display: block;
-  content: '';
-  width: horizotal(7);
-  border-top: 0.0625rem solid $brightness-86;
-  padding-top: vertical(0.5);
-}
-
-.text-paragraph-line p:first-of-type:first-letter {
-    font-family: $egyptian-display;
-    font-size: 86px;
-    text-transform: uppercase;
-    line-height: 67px;
-    font-weight: lighter;
-    padding-right: horizotal(1);
-    float: left;
-    font-weight: bold;
 }

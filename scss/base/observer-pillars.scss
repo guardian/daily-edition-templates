@@ -1,68 +1,68 @@
 $pillars: (
     news: (
-        captionBackground: $news-dark,
-        link-color: $news-main,
-        byline-color: $news-main,
-        bylineComment-color:$news-main,
-        arrow-up-color: $news-dark,
-        section-color: $news-main,
+        captionBackground: $obs-news-sub,
+        link-color: $obs-news-dark,
+        byline-color: $obs-news-dark,
+        bylineComment-color:$obs-news-main,
+        arrow-up-color: $obs-news-sub,
+        section-color: $obs-news-main,
         captionFont-color: $brightness-100,
-        caps-color: $news-main,
+        caps-color: $obs-news-main,
         headlineFeature-color: $brightness-7,
-        featureSectionContainer-color: $news-main,
-        sectionContainerInterview: $news-dark
+        featureSectionContainer-color: $obs-news-main,
+        sectionContainerInterview: $obs-news-sub
     ),
     opinion: (
-        captionBackground: $opinion-dark,
-        link-color: $opinion-main,
-        byline-color: $opinion-main,
-        bylineComment-color:$opinion-main,
-        arrow-up-color: $opinion-dark,
-        section-color: $opinion-main,
+        captionBackground: $obs-opinion-main,
+        link-color: $obs-opinion-sub,
+        byline-color: $obs-opinion-sub,
+        bylineComment-color:$obs-opinion-sub,
+        arrow-up-color: $obs-opinion-main,
+        section-color: $obs-opinion-sub,
         captionFont-color: $brightness-100,
-        caps-color: $opinion-main,
-        headlineFeature-color: $opinion-dark,
-        featureSectionContainer-color: $opinion-main,
-        sectionContainerInterview: $opinion-dark
+        caps-color: $obs-opinion-sub,
+        headlineFeature-color: $brightness-7,
+        featureSectionContainer-color: $obs-opinion-main,
+        sectionContainerInterview: $obs-opinion-sub
     ),
     sport: (
         captionBackground: $highlight-main,
         arrow-up-color: $highlight-main,
-        link-color: $sport-main,
-        byline-color: $sport-main,
-        bylineComment-color:$sport-main,
-        section-color: $sport-main,
+        link-color: $obs-sport-main,
+        byline-color: $obs-sport-main,
+        bylineComment-color:$obs-sport-main,
+        section-color: $obs-sport-main,
         captionFont-color: $brightness-7,
-        caps-color: $sport-main,
-        headlineFeature-color: $sport-dark,
-        featureSectionContainer-color: $sport-main,
-        sectionContainerInterview: $sport-dark
+        caps-color: $obs-sport-main,
+        headlineFeature-color: $brightness-7,
+        featureSectionContainer-color: $obs-sport-main,
+        sectionContainerInterview: $obs-sport-main
     ),
     arts: (
-        captionBackground: $culture-dark,
-        link-color: $culture-dark,
-        byline-color: $culture-main,
-        bylineComment-color:$culture-main,
-        arrow-up-color: $culture-dark,
-        section-color: $culture-main,
+        captionBackground: $obs-culture-dark,
+        link-color: $obs-culture-main,
+        byline-color: $obs-culture-main,
+        bylineComment-color:$obs-culture-main,
+        arrow-up-color: $obs-culture-dark,
+        section-color: $obs-culture-main,
         captionFont-color: $brightness-100,
-        caps-color: $culture-main,
-        headlineFeature-color: $culture-dark,
-        featureSectionContainer-color: $culture-main,
-        sectionContainerInterview: $culture-dark
+        caps-color: $obs-culture-main,
+        headlineFeature-color: $brightness-7,
+        featureSectionContainer-color: $obs-culture-main,
+        sectionContainerInterview: $obs-culture-main
     ),
     lifestyle: (
-        captionBackground: $lifestyle-main,
-        link-color: $lifestyle-main,
-        byline-color: $lifestyle-main,
-        bylineComment-color:$lifestyle-main,
-        arrow-up-color: $lifestyle-main,
-        section-color: $lifestyle-main,
+        captionBackground: $obs-lifestyle-sub,
+        link-color: $obs-lifestyle-sub,
+        byline-color: $obs-lifestyle-main,
+        bylineComment-color:$obs-lifestyle-main,
+        arrow-up-color: $obs-lifestyle-sub,
+        section-color: $obs-lifestyle-sub,
         captionFont-color: $brightness-100,
-        caps-color: $lifestyle-main,
-        headlineFeature-color: $lifestyle-dark,
-        featureSectionContainer-color: $lifestyle-main,
-        sectionContainerInterview: $lifestyle-dark
+        caps-color: $obs-lifestyle-sub,
+        headlineFeature-color: $obs-lifestyle-main,
+        featureSectionContainer-color: $obs-lifestyle-main,
+        sectionContainerInterview: $obs-lifestyle-sub
     ),
     cartoon: (
         featureSectionContainer-color: $brightness-100,
@@ -103,7 +103,7 @@ $pillars: (
     }
 
     .byline__author {
-      color: $section-color;
+      color: $byline-color;
     }
 
     .arrow-up {
@@ -146,8 +146,6 @@ $pillars: (
     .headline--feature {
       color: $headlineFeature-color;
     }
-
-
     .section {
       &__container {
         //background-color: $featureSectionContainer-color;
@@ -161,9 +159,14 @@ $pillars: (
       background-color: $sectionContainerInterview;
     }
 
+    .headline--analysis-lines {
+      background-color: $section-color;
+    }
+
     .picture__caption--second p::before {
       border-bottom: 12px solid $section-color;
     }
+
 }
 
 @each $pillar, $palette in $pillars {

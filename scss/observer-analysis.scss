@@ -1,0 +1,38 @@
+
+.headline--analysis {
+  font-family: $sole-display;
+  font-size: 46px;
+  line-height: 53px;
+  font-weight: 200;
+  color: $brightness-7;
+  padding-bottom: vertical(8);
+  margin-top: -3px;
+}
+
+
+
+.Article__pillar--news .headline--analysis {
+  background: repeating-linear-gradient(to bottom, $obs-news-main, $obs-news-main 1px, #F5FCFF 1px, #F5FCFF 53px);
+  background-position-y: 4px;
+}
+
+.Article__pillar--opinion .headline--analysis {
+  background: repeating-linear-gradient(to bottom, $obs-opinion-main, $obs-opinion-main 1px, #FAF4F7 1px, #FAF4F7 53px);
+  background-position-y: 4px;
+}
+
+.Article__pillar--sport .headline--analysis {
+  font-weight: 200;
+  background: repeating-linear-gradient(to bottom, $obs-sport-main, $obs-sport-main 1px, #F5FDFF 1px, #F5FDFF 53px);
+  background-position-y: 4px;
+}
+
+.Article__pillar--arts .headline--analysis {
+  background: repeating-linear-gradient(to bottom, $obs-culture-main, $obs-culture-main 1px, #FEF8F6 1px, #FEF8F6 53px);
+  background-position-y: 4px;
+}
+
+.Article__pillar--lifestyle .headline--analysis {
+  background: repeating-linear-gradient(to bottom, $obs-lifestyle-main, $obs-lifestyle-main 1px, #FEFAF6 1px, #FEFAF6 53px);
+  background-position-y: 4px;
+}

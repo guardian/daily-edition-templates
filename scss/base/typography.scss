@@ -55,205 +55,254 @@ $fontMap: (
     // Icon font
     GuardianIcons: (
         family: 'Guardian Icons',
-        android-src: 'url("fonts/icons.otf")',
-        ios-src: 'url("fonts/icons.otf")'
+        android-src: 'local("GuardianIcons-Regular")',
+        ios-src: 'local("GuardianIcons-Regular")'
     ),
 
     // Headline
     GHGuardianHeadlineLight: (
         family: 'Guardian Headline',
         weight: 200,
-        android-src: 'url("fonts/GHGuardianHeadline-Light.ttf")',
-        ios-src: 'url("fonts/GHGuardianHeadline-Light.ttf")'
+        android-src: 'local("GHGuardianHeadline-Light"), local("DE1DisplayEgyptianThin")',
+        ios-src: 'local("GHGuardianHeadline-Light"), local("DE1DisplayEgyptianThin")'
     ),
     GHGuardianHeadlineLightItalic: (
         family: 'Guardian Headline',
         weight: 200,
         style: 'italic',
-        android-src: 'url("fonts/GHGuardianHeadline-LightItalic.ttf")',
-        ios-src: 'url("fonts/GHGuardianHeadline-LightItalic.ttf")'
+        android-src: 'local("GHGuardianHeadline-LightItalic"), local("DE1DisplayEgyptianThin-Italic")',
+        ios-src: 'local("GHGuardianHeadline-LightItalic"), local("DE1DisplayEgyptianThin-Italic")'
     ),
     GHGuardianHeadlineRegular: (
         family: 'Guardian Headline',
         weight: 400,
-        android-src: 'url("fonts/GHGuardianHeadline-Regular.ttf")',
-        ios-src: 'url("fonts/GHGuardianHeadline-Regular.ttf")'
+        android-src: 'local("GHGuardianHeadline-Regular"), local("DE3DisplayEgyptian")',
+        ios-src: 'local("GHGuardianHeadline-Regular"), local("DE3DisplayEgyptian")'
     ),
     GHGuardianHeadlineRegularItalic: (
         family: 'Guardian Headline',
         weight: 400,
         style: 'italic',
-        android-src: 'url("fonts/GHGuardianHeadline-RegularItalic.ttf")',
-        ios-src: 'url("fonts/GHGuardianHeadline-RegularItalic.ttf")'
+        android-src: 'local("GHGuardianHeadline-RegularItalic"), local("DE3DisplayEgyptian-Italic")',
+        ios-src: 'local("GHGuardianHeadline-RegularItalic"), local("DE3DisplayEgyptian-Italic")'
     ),
     GHGuardianHeadlineMedium: (
         family: 'Guardian Headline',
         weight: 500,
-        android-src: 'url("fonts/GHGuardianHeadline-Medium.ttf")',
-        ios-src: 'url("fonts/GHGuardianHeadline-Medium.ttf")'
+        android-src: 'local("GHGuardianHeadline-Medium"), local("DE4DisplayEgyptianMedium")',
+        ios-src: 'local("GHGuardianHeadline-Medium"), local("DE4DisplayEgyptianMedium")'
     ),
     GHGuardianHeadlineMediumItalic: (
         family: 'Guardian Headline',
         weight: 500,
         style: 'italic',
-        android-src: 'url("fonts/GHGuardianHeadline-MediumItalic.ttf")',
-        ios-src: 'url("fonts/GHGuardianHeadline-MediumItalic.ttf")'
+        android-src: 'local("GHGuardianHeadline-MediumItalic"), local("DE5DisplayEgyptianSemiBold")',
+        ios-src: 'local("GHGuardianHeadline-MediumItalic"), local("DE5DisplayEgyptianSemiBold")'
     ),
     GHGuardianHeadlineSemibold: (
         family: 'Guardian Headline',
         weight: 600,
-        android-src: 'url("fonts/GHGuardianHeadline-Semibold.ttf")',
-        ios-src: 'url("fonts/GHGuardianHeadline-Semibold.ttf")'
+        android-src: 'local("GHGuardianHeadline-Semibold"), local("DE5DisplayEgyptianSemiBold")',
+        ios-src: 'local("GHGuardianHeadline-Semibold"), local("DE5DisplayEgyptianSemiBold")'
     ),
     GHGuardianHeadlineSemiboldItalic: (
         family: 'Guardian Headline',
         weight: 600,
         style: 'italic',
-        android-src: 'url("fonts/GHGuardianHeadline-SemiboldItalic.ttf")',
-        ios-src: 'url("fonts/GHGuardianHeadline-SemiboldItalic.ttf")'
+        android-src: 'local("GHGuardianHeadline-SemiboldItalic"), local("DE5DisplayEgyptianSemiBold-Italic")',
+        ios-src: 'local("GHGuardianHeadline-SemiboldItalic"), local("DE5DisplayEgyptianSemiBold-Italic")'
     ),
     GHGuardianHeadlineBold: (
         family: 'Guardian Headline',
         weight: 700,
-        android-src: 'url("fonts/GHGuardianHeadline-Bold.ttf")',
-        ios-src: 'url("fonts/GHGuardianHeadline-Bold.ttf")'
+        android-src: 'local("GHGuardianHeadline-Bold"), local("DE6DisplayEgyptianBold")',
+        ios-src: 'local("GHGuardianHeadline-Bold"), local("DE6DisplayEgyptianBold")'
     ),
     GHGuardianHeadlineBoldItalic: (
         family: 'Guardian Headline',
         weight: 700,
         style: 'italic',
-        android-src: 'url("fonts/GHGuardianHeadline-BoldItalic.ttf")',
-        ios-src: 'url("fonts/GHGuardianHeadline-BoldItalic.ttf")'
+        android-src: 'local("GHGuardianHeadline-BoldItalic"), local("DE6DisplayEgyptianBold-Italic")',
+        ios-src: 'local("GHGuardianHeadline-BoldItalic"), local("DE6DisplayEgyptianBold-Italic")'
     ),
     GHGuardianHeadlineBlack: (
         family: 'Guardian Headline',
         weight: 900,
-        android-src: 'url("fonts/GHGuardianHeadline-Black.ttf")',
-        ios-src: 'url("fonts/GHGuardianHeadline-Black.ttf")'
+        android-src: 'local("GHGuardianHeadline-Black"), local("DE7DisplayEgyptianBlack")',
+        ios-src: 'local("GHGuardianHeadline-Black"), local("DE7DisplayEgyptianBlack")'
     ),
     GHGuardianHeadlineBlackItalic: (
         family: 'Guardian Headline',
         weight: 900,
         style: 'italic',
-        android-src: 'url("fonts/GHGuardianHeadline-BlackItalic.ttf")',
-        ios-src: 'url("fonts/GHGuardianHeadline-BlackItalic.ttf")'
+        android-src: 'local("GHGuardianHeadline-BlackItalic"), local("DE7DisplayEgyptianBlack-Italic")',
+        ios-src: 'local("GHGuardianHeadline-BlackItalic"), local("DE7DisplayEgyptianBlack-Italic")'
     ),
 
 
     // Text Egyptian
     GuardianTextEgyptianWeb: (
         family: 'Guardian Text Egyptian Web',
-        android-src: 'url("fonts/egyptiantext-regular.otf")',
-        ios-src: 'url("fonts/egyptiantext-regular.otf")'
+        android-src: 'local("GuardianTextEgyptian-Reg"), local("WT1WebText-Regular")',
+        ios-src: 'local("GuardianTextEgyptian-Reg"), local("WT1WebText-Regular")'
     ),
     GuardianTextEgyptianWebBold: (
         family: 'Guardian Text Egyptian Web',
         weight: 'bold',
-        android-src: 'url("fonts/egyptiantext-medium.otf")',
-        ios-src: 'url("fonts/egyptiantext-medium.otf")'
+        android-src: 'local("GuardianTextEgyptian-Bold"), local("WT1WebText-Bold")',
+        ios-src: 'local("GuardianTextEgyptian-Bold"), local("WT1WebText-Bold")'
     ),
     GuardianTextEgyptianWebItalic: (
         family: 'Guardian Text Egyptian Web',
         style: 'italic',
-        android-src: 'url("fonts/egyptiantext-regularitalic.otf")',
-        ios-src: 'url("fonts/egyptiantext-regularitalic.otf")'
+        android-src: 'local("GuardianTextEgyptian-RegIt"), local("WT1WebText-Italic")',
+        ios-src: 'local("GuardianTextEgyptian-RegIt"), local("WT1WebText-Italic")'
     ),
     GuardianTextEgyptianWebBoldItalic: (
         family: 'Guardian Text Egyptian Web',
         style: 'italic',
         weight: 'bold',
-        android-src: 'url("fonts/egyptiantext-mediumitalic.otf")',
-        ios-src: 'url("fonts/egyptiantext-mediumitalic.otf")'
+        android-src: 'local("GuardianTextEgyptian-BoldIt"), local("WT1WebText-BoldItalic")',
+        ios-src: 'local("GuardianTextEgyptian-BoldIt"), local("WT1WebText-BoldItalic")'
     ),
 
-    // Text Sans
-    GuardianTextSansWeb200: (
+    GuardianTextSansWeb400: (
         family: 'Guardian Text Sans Web',
-        weight: 200,
-        android-src: 'url("fonts/GuardianSansWeb-Light.ttf")',
-        ios-src: 'url("fonts/GuardianSansWeb-Light.ttf")'
-    ),
-    GuardianTextSansWeb300: (
-        family: 'Guardian Text Sans Web',
-        weight: 300,
-        android-src: 'url("fonts/GuardianSansWeb-Regular.ttf")',
-        ios-src: 'url("fonts/GuardianSansWeb-Regular.ttf")'
+        weight: 400,
+        android-src: 'local("GuardianTextSans-Regular"), local("AS32AgateSans")',
+        ios-src: 'local("GuardianTextSans-Regular"), local("AS32AgateSans")'
     ),
     GuardianTextSansWeb600: (
         family: 'Guardian Text Sans Web',
         weight: 600,
-        android-src: 'url("fonts/GuardianSansWeb-Semibold.ttf")',
-        ios-src: 'url("fonts/GuardianSansWeb-Semibold.ttf")'
+        android-src: 'local("GuardianTextSans-Bold"), local("AS32AgateSans-Bold")',
+        ios-src: 'local("GuardianTextSans-Bold"), local("AS32AgateSans-Bold")'
     ),
-
-
-    // LEGACY FONTS:
-
-    // Titlepiece
-    Titlepiece: (
-        family: 'Titlepiece',
-        weight: 600,
-        android-src: 'url("fonts/titlepiece.otf")',
-        ios-src: 'url("fonts/titlepiece.otf")'
-    ),
-
-    // Display Egyptian
-    GuardianEgyptianWeb100: (
-        family: 'Guardian Egyptian Web',
-        weight: 100,
-        android-src: 'url("fonts/egyptiandisplay-thin.otf")',
-        ios-src: 'url("fonts/egyptiandisplay-thin.otf")'
-    ),
-    GuardianEgyptianWeb200: (
-        family: 'Guardian Egyptian Web',
-        weight: 200,
-        android-src: 'url("fonts/egyptiandisplay-light.otf")',
-        ios-src: 'url("fonts/egyptiandisplay-light.otf")'
-    ),
-    GuardianEgyptianWeb300: (
-        family: 'Guardian Egyptian Web',
-        weight: 300,
-        android-src: 'url("fonts/egyptiandisplay-regular.otf")',
-        ios-src: 'url("fonts/egyptiandisplay-regular.otf")'
-    ),
-    GuardianEgyptianWeb400: (
-        family: 'Guardian Egyptian Web',
+    GuardianTextSansWeb400Italic: (
+        family: 'Guardian Text Sans Web',
         weight: 400,
-        android-src: 'url("fonts/egyptiandisplay-medium.otf")',
-        ios-src: 'url("fonts/egyptiandisplay-medium.otf")'
+        style: 'italic',
+        android-src: 'local("GuardianTextSans-RegularIt"), local("AS32AgateSans-Italic")',
+        ios-src: 'local("GuardianTextSans-RegularIt"), local("AS32AgateSans-Italic")'
     ),
-    GuardianEgyptianWeb600: (
-        family: 'Guardian Egyptian Web',
+    GuardianTextSansWeb600Italic: (
+        family: 'Guardian Text Sans Web',
         weight: 600,
-        android-src: 'url("fonts/egyptiandisplay-bold.otf")',
-        ios-src: 'url("fonts/egyptiandisplay-bold.otf")'
+        style: 'italic',
+        android-src: 'local("GuardianTextSans-BoldIt"), local("AS32AgateSans-BoldItalic")',
+        ios-src: 'local("GuardianTextSans-BoldIt"), local("AS32AgateSans-BoldItalic")'
     ),
 
-    // Agate
-    GuardianAgateSansWeb: (
-        family: 'Guardian Agate Sans 1 Web',
-        android-src: 'url("fonts/agate-regular.otf")',
-        ios-src: 'url("fonts/agate-regular.otf")'
+    // Observer fonts ////////////////////////////////////////
+    // Headline
+    ObserverHeadlineLight: (
+        family: 'Observer Headline',
+        weight: 200,
+        android-src: 'local("SoleDisplay-Light")',
+        ios-src: 'local("SoleDisplay-Light")'
     ),
-    GuardianAgateSansWebBold: (
-        family: 'Guardian Agate Sans 1 Web',
-        weight: 'bold',
-        android-src: 'url("fonts/agate-bold.otf")',
-        ios-src: 'url("fonts/agate-bold.otf")'
-    ),
-    GuardianAgateSansWebItalic: (
-        family: 'Guardian Agate Sans 1 Web',
+    ObserverHeadlineLightItalic: (
+        family: 'Observer Headline',
+        weight: 200,
         style: 'italic',
-        android-src: 'url("fonts/agate-regularitalic.otf")',
-        ios-src: 'url("fonts/agate-regularitalic.otf")'
+        android-src: 'local("SoleDisplay-LightIt")',
+        ios-src: 'local("SoleDisplay-LightIt")'
     ),
-    GuardianAgateSansWebBoldItalic: (
-        family: 'Guardian Agate Sans 1 Web',
-        weight: 'bold',
+    ObserverHeadlineRegular: (
+        family: 'Observer Headline',
+        weight: 400,
+        android-src: 'local("SoleDisplay-Regular")',
+        ios-src: 'local("SoleDisplay-Regular")'
+    ),
+    ObserverHeadlineRegularItalic: (
+        family: 'Observer Headline',
+        weight: 400,
         style: 'italic',
-        android-src: 'url("fonts/agate-bolditalic.otf")',
-        ios-src: 'url("fonts/agate-bolditalic.otf")'
-    )
+        android-src: 'local("SoleDisplay-RegularIt")',
+        ios-src: 'local("SoleDisplay-RegularIt")'
+    ),
+    ObserverHeadlineMedium: (
+        family: 'Observer Headline',
+        weight: 500,
+        android-src: 'local("SoleDisplay-Medium")',
+        ios-src: 'local("SoleDisplay-Medium")'
+    ),
+    ObserverHeadlineMediumItalic: (
+        family: 'Observer Headline',
+        weight: 500,
+        style: 'italic',
+        android-src: 'local("SoleDisplay-MediumIt")',
+        ios-src: 'local("SoleDisplay-MediumIt")'
+    ),
+    ObserverHeadlineBold: (
+        family: 'Observer Headline',
+        weight: 600,
+        android-src: 'local("SoleDisplay-Bold")',
+        ios-src: 'local("SoleDisplay-Bold")'
+    ),
+    ObserverHeadlineBoldItalic: (
+        family: 'Observer Headline',
+        weight: 600,
+        style: 'italic',
+        android-src: 'local("SoleDisplay-BoldIt")',
+        ios-src: 'local("SoleDisplay-BoldIt")'
+    ),
+    ObserverHeadlineExtraBold: (
+        family: 'Observer Headline',
+        weight: 700,
+        android-src: 'local("SoleDisplay-ExtraBold")',
+        ios-src: 'local("SoleDisplay-ExtraBold")'
+    ),
+    ObserverHeadlineExtraBoldItalic: (
+        family: 'Observer Headline',
+        weight: 700,
+        style: 'italic',
+        android-src: 'local("SoleDisplay-ExtraBoldIt")',
+        ios-src: 'local("SoleDisplay-ExtraBoldIt")'
+    ),
+    ObserverHeadlineBlack: (
+        family: 'Observer Headline',
+        weight: 900,
+        android-src: 'local("SoleDisplay-Black")',
+        ios-src: 'local("SoleDisplay-Black")'
+    ),
+    ObserverHeadlineBlackItalic: (
+        family: 'Observer Headline',
+        weight: 900,
+        style: 'italic',
+        android-src: 'local("SoleDisplay-BlackIt")',
+        ios-src: 'local("SoleDisplay-BlackIt")'
+    ),
+
+    // Sole Body Text
+    ObserverTextSole: (
+        family: 'Observer Body Text',
+        android-src: 'local("SoleBodyText-Regular")',
+        ios-src: 'local("SoleBodyText-Regular")'
+    ),
+    ObserverTextSoleBold: (
+        family: 'Observer Body Text',
+        weight: 'bold',
+        android-src: 'local("SoleBodyText-Bold")',
+        ios-src: 'local("SoleBodyText-Bold")'
+    ),
+    ObserverTextSoleItalic: (
+        family: 'Observer Body Text',
+        style: 'italic',
+        android-src: 'local("SoleBodyText-RegularIt")',
+        ios-src: 'local("SoleBodyText-RegularIt")'
+    ),
+    ObserverTextSoleBoldItalic: (
+        family: 'Observer Body Text',
+        style: 'italic',
+        weight: 'bold',
+        android-src: 'local("SoleBodyText-BoldIt")',
+        ios-src: 'local("SoleBodyText-BoldIt")'
+    ),
+
+    // Sole Display Big
+
+
 );
 
 @mixin fontList($platform) {

@@ -1,0 +1,285 @@
+
+/* ============================== CrossRefs column */
+
+.CrossRefs {
+  position: absolute;
+  margin-left: 0px;
+  width: 158px;
+  float: right;
+  clear: left;
+
+  a:link, a:visited, a:active, a:hover {
+    color: $brightness-7;
+    text-decoration: none !important;
+    border-bottom: none !important;
+  }
+
+  ol {
+    list-style-type: none;
+    border-right: 1px solid #c3c3bb;
+  }
+
+  p, a, span {
+    font-family: $sole-display;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    text-decoration: none;
+  }
+
+  h3 {
+    font-family: $sole-display;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 20px;
+    color: $brightness-7;
+  }
+
+  li p::before {
+    display: none;
+  }
+}
+
+
+.CrossRefs .next-previous {
+    margin-bottom: 25px;
+
+    li {
+      padding-left: 0;
+      padding-right: 3px;
+      padding-top: 3px;
+      padding-bottom: 20px;
+      border-top: 1px solid rgb(195, 195, 187);
+      position: relative;
+    }
+
+    span.count {
+        font-family: $sole-display;
+        font-weight: 400;
+        font-size: 16px;
+        color: #121212;
+        float: right;
+    }
+
+    h3 {
+        padding-left: 24px;
+        float: left;
+    }
+
+    p {
+      clear: both;
+      padding-left: 1px;
+    }
+}
+
+.Article__pillar--news .CrossRefs .next-previous {
+  li.previous h3  {
+    background-image: url(../_images/prev-article-o-news.svg);
+  }
+
+  li.next h3 {
+    background-image: url(../_images/next-article-o-news.svg);
+  }
+}
+
+.Article__pillar--opinion .CrossRefs .next-previous {
+  li.previous h3  {
+    background-image: url(../_images/prev-article-o-opinion.svg);
+  }
+
+  li.next h3 {
+    background-image: url(../_images/next-article-o-opinion.svg);
+  }
+}
+
+.Article__pillar--sport .CrossRefs .next-previous {
+  li.previous h3  {
+    background-image: url(../_images/prev-article-o-sport.svg);
+  }
+
+  li.next h3 {
+    background-image: url(../_images/next-article-o-sport.svg);
+  }
+}
+
+.Article__pillar--arts .CrossRefs .next-previous {
+  li.previous h3  {
+    background-image: url(../_images/prev-article-o-arts.svg);
+  }
+
+  li.next h3 {
+    background-image: url(../_images/next-article-o-arts.svg);
+  }
+}
+
+.Article__pillar--lifestyle .CrossRefs .next-previous {
+  li.previous h3  {
+    background-image: url(../_images/prev-article-o-lifestyle.svg);
+  }
+
+  li.next h3 {
+    background-image: url(../_images/next-article-o-lifestyle.svg);
+  }
+}
+
+.CrossRefs .next-previous li.previous h3 {
+    background-image: url(../_images/prev-article.svg);
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 1px;
+
+}
+
+.CrossRefs .next-previous li.next h3 {
+    background-image: url(../_images/next-article.svg);
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 1px;
+
+}
+
+///packages /////////////////////////////////////////
+
+.CrossRefs .package-header {
+  background-image: repeating-linear-gradient(to bottom, #c3c3bb, #c3c3bb 0.0625rem, transparent 0.0625rem, transparent 0.25rem);
+  background-repeat: repeat-x;
+  background-position: top;
+  background-size: 0.0625rem 0.8125rem;
+  background-position-x: 0;
+  padding-top: 16px;
+  border-right: 1px solid #c3c3bb;
+}
+
+.CrossRefs .story-package {
+  opacity: 0;
+  border-top: 1px solid #c3c3bb;
+  border-right: 1px solid #c3c3bb;
+  font-family: $sole-display;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  li {
+    font-family: $sole-display;
+    font-weight: 200;
+    font-size: 17px;
+    line-height: 20px;
+    padding-left: 0;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgb(195, 195, 187);
+  }
+
+  li.current {
+    border-right: 3px solid $brightness-7;
+    margin-right: -1px;
+  }
+
+  li:first-child {
+      border-top: 0;
+  }
+}
+
+.Article__pillar--opinion .CrossRefs .story-package {
+    background: $brightness-100;
+}
+
+
+.CrossRefs h3.package-header {
+  opacity: 0;
+  font-family: $sole-display;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 16px;
+  padding-left: 0;
+  padding-right: 4px;
+  padding-bottom: 24px;
+  color: $brightness-7;
+}
+
+.CrossRefs .package-name {
+  font-family: $sole-display;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 19px;
+  display: block;
+  color: $brightness-7;
+  letter-spacing: 0.5;
+}
+
+.Article__pillar--news .CrossRefs .story-package li.current {
+    border-right: 3px solid $obs-news-main;
+}
+
+.Article__pillar--opinion .CrossRefs .story-package li.current {
+    border-right: 3px solid $obs-opinion-main;
+}
+
+.Article__pillar--sport .CrossRefs .story-package li.current {
+    border-right: 3px solid $obs-sport-main;
+}
+
+.Article__pillar--arts .CrossRefs .story-package li.current {
+    border-right: 3px solid $obs-culture-main;
+}
+
+.Article__pillar--lifestyle .CrossRefs .story-package li.current {
+    border-right: 3px solid $obs-lifestyle-sub;
+}
+
+.CrossRefs .story-package .section {
+    color: $brightness-7;
+    display: block;
+    font-family: $sole-display;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    padding-top: 7px;
+}
+
+///Weblinks ///////////////////////////////////////////////
+
+.CrossRefs .weblinks {
+  opacity: 0;
+  border-top: 1px solid #c3c3bb;
+  border-right: 1px solid #c3c3bb;
+  font-family: $sole-display;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  h3 {
+    border-top: 1px solid $brightness-93;
+    padding-left: 0;
+    padding-bottom: 24px;
+    padding-top: 2px;
+  }
+
+  li {
+      padding-left: 0;
+      padding-right: 3px;
+      padding-top: 6px;
+      padding-bottom: 20px;
+      border-top: 1px solid rgb(195, 195, 187);
+  }
+}
+
+.Article__pillar--opinion .CrossRefs .weblinks {
+  background: $brightness-100;
+}
+
+.CrossRefs .weblinks .date {
+    color: #999;
+}
+
+.CrossRefs .weblinks .section {
+    color: $brightness-7;
+    display: block;
+    font-family: $sole-display;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    padding-top: 3px;
+}

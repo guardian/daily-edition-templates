@@ -1,36 +1,25 @@
-
 .header--interview {
     position: absolute;
     z-index: 100;
     width: $width-content;
 }
 
-.picture--interview {
-    top: 117px;
+.interview-main {
+  margin-top: 117px;
 }
+
 
 .section__container--interview {
   color: $brightness-100;
-  //position: relative;
-  padding: vertical(1.2) vertical(1.2) 9px vertical(1.2);
-}
-
-.interview-main {
-  margin-top: 127px;
-
-  .guardian-body-text {
-    padding-top: 0;
-  }
-
-  .guardian-body-text--caps {
-    padding-top: 0;
-  }
+  padding-bottom: 9px;
+  font-weight: 600;
+  letter-spacing: 0.8;
 }
 
 .standfirst--interview {
   margin-top: vertical(3);
   margin-bottom: vertical(3);
-  font-size: 20px;
+  font-size: 22px;
   line-height: 26px;
   font-weight: 600;
   padding-bottom: 0;
@@ -41,20 +30,19 @@
 }
 
 .headline--interview {
-  font-size: 44px;
-  line-height: 47px;
+  font-size: 34px;
+  line-height: 41px;
   position: relative;
   font-weight: 600;
   margin-top: vertical(0.1);
   margin-left: horizotal(0.5);
   padding-bottom: 0;
-  font-size: 34px;
   width: $width-content-portrait;
   span {
     color: white;
     background: $brightness-7;
     box-shadow:5px 0 0 $brightness-7, -5px 0 0 $brightness-7;
-    padding-bottom: horizotal(0.5);
+    padding-bottom: horizotal(0.7);
   }
 }
 
@@ -64,33 +52,28 @@
   font-style: italic;
   font-size: 22px;
   line-height: 28px;
-  margin-top: 9px;
+  margin-top: 12px;
   margin-left: horizotal(0.5);
   span {
-    background:$highlight-main;
-    box-shadow:5px 0 0 $highlight-main, -5px 0 0 $highlight-main;
+    background:$obs-lifestyle-main;
+    box-shadow:5px 0 0 $obs-lifestyle-main, -5px 0 0 $obs-lifestyle-main;
     padding: 6px 0;
-  }
-
-  .byline__author {
-    font-style: italic;
-    font-weight: 200;
-    font-size: 22px;
-    line-height: 28px;
   }
 }
 
 .byline--interview .byline__author {
-    font-style: italic;
-    font-weight: 200;
-    color: $brightness-7;
-  }
+  color: $brightness-7;
+}
+
+.picture--interview {
+    top: 107px;
+}
 
 .standfirst--interview + .multiline + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $egyptian-display;
-    font-size: 84px;
+    font-family: $sole-display;
+    font-size: 92px;
     text-transform: uppercase;
-    line-height: 68px;
+    line-height: 70px;
     font-weight: lighter;
     padding-right: horizotal(1);
     float: left;

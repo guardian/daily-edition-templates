@@ -1,0 +1,63 @@
+
+.headline--analysis {
+  font-family: $egyptian-display;
+  font-size: 44px;
+  line-height: 53px;
+  font-weight: 200;
+  font-style: italic;
+  color: $brightness-7;
+  padding-bottom: vertical(8);
+  margin-top: -1px;
+}
+
+// .Article__pillar--news .headline--analysis {
+//   background: repeating-linear-gradient(to bottom, $news-main, $news-main 1px, #FFFAFA 1px, #FFFAFA 53px);
+//   background-position-y: 4px;
+// }
+//
+// .Article__pillar--opinion .headline--analysis {
+//   background: repeating-linear-gradient(to bottom, $opinion-main, $opinion-main 1px, #fef9f5 1px, #fef9f5 53px);
+//   background-position-y: 4px;
+// }
+//
+// .Article__pillar--sport .headline--analysis {
+//   font-weight: 200;
+//   background: repeating-linear-gradient(to bottom, $sport-main, $sport-main 1px, #F2F9FC 1px, #F2F9FC 53px);
+//   background-position-y: 4px;
+// }
+//
+// .Article__pillar--arts .headline--analysis {
+//   background: repeating-linear-gradient(to bottom, $culture-main, $culture-main 1px, #fbf6ef 1px, #fbf6ef 53px);
+//   background-position-y: 4px;
+// }
+//
+// .Article__pillar--lifestyle .headline--analysis {
+//   background: repeating-linear-gradient(to bottom, $lifestyle-main, $lifestyle-main 1px, #FCF8FA 1px, #FCF8FA 53px);
+//   background-position-y: 4px;
+// }
+
+.Article__pillar--news .headline--analysis {
+  background: repeating-linear-gradient(to bottom, $news-main, $news-main 1px, #FFF5F5 1px, #FFF5F5 53px);
+  background-position-y: 4px;
+}
+
+.Article__pillar--opinion .headline--analysis {
+  background: repeating-linear-gradient(to bottom, $opinion-main, $opinion-main 1px, #fef9f5 1px, #fef9f5 53px);
+  background-position-y: 4px;
+}
+
+.Article__pillar--sport .headline--analysis {
+  font-weight: 200;
+  background: repeating-linear-gradient(to bottom, $sport-main, $sport-main 1px, #F2F9FC 1px, #F2F9FC 53px);
+  background-position-y: 4px;
+}
+
+.Article__pillar--arts .headline--analysis {
+  background: repeating-linear-gradient(to bottom, $culture-main, $culture-main 1px, #fbf6ef 1px, #fbf6ef 53px);
+  background-position-y: 4px;
+}
+
+.Article__pillar--lifestyle .headline--analysis {
+  background: repeating-linear-gradient(to bottom, $lifestyle-main, $lifestyle-main 1px, #FCF8FA 1px, #FCF8FA 53px);
+  background-position-y: 4px;
+}

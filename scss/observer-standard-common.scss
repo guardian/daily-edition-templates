@@ -1,0 +1,312 @@
+@import "base/reset";
+@import "base/colour";
+@import "base/unit";
+@import "base/typography";
+@import "base/rules";
+@import "base/vars";
+//@import "base/pillars";
+@import "base/observer-pillars";
+@include fontList(ios);
+/* This overrides standard-common css for Observer standard article*/
+///////////////////////////////////////////////////
+body {
+  background-color: white;
+  color: $brightness-7;
+  orphans: 3;
+}
+
+p {
+  padding-top: vertical(1);
+  padding-bottom: vertical(1);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* wrapper for left content */
+.content {
+  width: $width-content-portrait;
+  padding-left: horizotal(2);
+  padding-top: horizotal(1);
+  padding-bottom: horizotal(1);
+  border-right: 1px solid $brightness-60;
+
+  @media (orientation: landscape) {
+    padding-left: 128px;
+    width: $width-content;
+  }
+}
+/* section */
+.section {
+  font-size: 22px;
+  font-weight: 900;
+  font-family: $sole-display;
+  margin-top: -8px;
+
+  &--news {
+    border-bottom: 1px solid $brightness-60;
+    padding-bottom: vertical(1);
+  }
+  &--sport {
+    border-bottom: 1px solid $brightness-60;
+    padding-bottom: vertical(1);
+  }
+  &--arts {
+    border-bottom: 1px solid $brightness-60;
+    padding-bottom: vertical(1);
+  }
+  &--opinion {
+    border-bottom: 1px solid $brightness-60;
+    padding-bottom: vertical(1);
+  }
+  &--lifestyle {
+    border-bottom: 1px solid $brightness-60;
+    padding-bottom: vertical(1);
+  }
+  &--cartoon {
+    border-bottom: 1px solid $brightness-60;
+    padding-bottom: vertical(1);
+  }
+}
+
+/* headline */
+.headline {
+  font-family: $sole-display;
+  font-size: 46px;
+  line-height: 48px;
+  font-weight: 500;
+  color: $brightness-7;
+  padding-bottom: vertical(8);
+  padding-right: horizotal(2);
+}
+
+.Article__pillar--sport .headline {
+  font-weight: 900;
+}
+
+.standfirst {
+  font-family: $sole-display;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 200;
+  color: $brightness-7;
+  clear: both;
+  padding-right: horizotal(2);
+  letter-spacing: -0.3;
+
+  p {
+      padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: 0.0625rem solid $brightness-86 !important;
+  }
+
+  a:hover {
+    text-decoration: none;
+    border-bottom: 0.0625rem solid !important;
+  }
+
+}
+
+.guardian-body-text {
+  font-family: $sole-body-text;
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: horizotal(1);
+  padding-top: vertical(2);
+  clear: both;
+
+  p {
+    padding-bottom: vertical(3);
+    padding-top: 0;
+  }
+
+  h2 {
+    font-family: $sole-display;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h2 strong {
+    font-family: $sole-display;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-top: vertical(0.5);
+  }
+
+  li p::before {
+    display: inline-block;
+    content: '';
+    -webkit-border-radius: vertical(3.2);
+    border-radius: vertical(3.2);
+    height: vertical(2.6);
+    width: vertical(2.6);
+    margin-right: vertical(1);
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: 0.0625rem solid $brightness-86 !important;
+  }
+
+  a:hover {
+    text-decoration: none;
+    border-bottom: 0.0625rem solid !important;
+  }
+}
+
+.guardian-body-text--caps {
+  font-family: $sole-body-text;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: vertical(2);
+  clear: both;
+
+  p {
+    padding-bottom: vertical(3);
+    padding-top: 0;
+    padding-right: horizotal(1);
+  }
+
+  h2 {
+    font-family: $sole-display;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h2 strong {
+    font-family: $sole-display;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-top: vertical(0.5);
+  }
+
+  li p::before {
+    display: inline-block;
+    content: '';
+    -webkit-border-radius: vertical(3.2);
+    border-radius: vertical(3.2);
+    height: vertical(2.6);
+    width: vertical(2.6);
+    margin-right: vertical(1);
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: 0.0625rem solid $brightness-86 !important;
+  }
+
+  a:hover {
+    text-decoration: none;
+    border-bottom: 0.0625rem solid !important;
+  }
+}
+
+.immersive-main .guardian-body-text--caps {
+  ul {
+    display: none;
+  }
+}
+
+/* byline */
+/////////////////////////////////////////
+
+.byline {
+  font-family: $sole-display;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 20px;
+  width: 35%;
+  margin-right: horizotal(2);
+  margin-bottom: horizotal(2);
+  margin-top: 4px;
+  clear: both;
+  font-style: italic;
+  font-weight: 100;
+  color: $brightness-7;
+
+  &__author {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 22px;
+  }
+}
+/* images */
+/////////////////////////////////////////
+
+.picture {
+
+  &__caption {
+    font-family: $sole-display;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline;
+    letter-spacing: 0.2;
+
+    p {
+      padding-top: vertical(0.5);
+      padding-left: horizotal(1);
+      padding-right: horizotal(1);
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 0.0625rem solid rgba(255,255,255,0.6) !important;
+    }
+
+    &--credit {
+      font-size: 16px;
+      font-weight: 200;
+      text-transform: none;
+      letter-spacing: 0.2;
+    }
+
+    &--second {
+      font-family: $sole-display;
+      font-style: italic;
+      color: $brightness-20 !important;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.5;
+
+      p {
+        padding-left: 0;
+        padding-bottom: vertical(2);
+      }
+
+      a {
+        color: $brightness-46 !important;
+        text-decoration: none;
+        border-bottom: 0.0625rem solid $brightness-46 !important;
+      }
+    }
+  }
+}
+
+
+//////text bullets ////////////
