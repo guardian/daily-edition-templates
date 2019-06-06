@@ -1,14 +1,15 @@
-
 /* ============================== CrossRefs column */
-
 .CrossRefs {
   position: absolute;
-  margin-left: 0px;
+  margin-left: 0;
   width: 158px;
   float: right;
   clear: left;
 
-  a:link, a:visited, a:active, a:hover {
+  a:active,
+  a:hover,
+  a:link,
+  a:visited {
     color: $brightness-7;
     text-decoration: none !important;
     border-bottom: none !important;
@@ -19,7 +20,9 @@
     border-right: 1px solid #c3c3bb;
   }
 
-  p, a, span {
+  a,
+  p,
+  span {
     font-family: $sole-display;
     font-weight: 400;
     font-size: 17px;
@@ -40,106 +43,98 @@
   }
 }
 
-
 .CrossRefs .next-previous {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 
-    li {
-      padding-left: 0;
-      padding-right: 3px;
-      padding-top: 3px;
-      padding-bottom: 20px;
-      border-top: 1px solid rgb(195, 195, 187);
-      position: relative;
-    }
+  li {
+    padding: 3px 3px 20px 0;
+    border-top: 1px solid rgb(195, 195, 187);
+    position: relative;
+  }
 
-    span.count {
-        font-family: $sole-display;
-        font-weight: 400;
-        font-size: 16px;
-        color: #121212;
-        float: right;
-    }
+  span.count {
+    font-family: $sole-display;
+    font-weight: 400;
+    font-size: 16px;
+    color: #121212;
+    float: right;
+  }
 
-    h3 {
-        padding-left: 24px;
-        float: left;
-    }
+  h3 {
+    padding-left: 24px;
+    float: left;
+  }
 
-    p {
-      clear: both;
-      padding-left: 1px;
-    }
+  p {
+    clear: both;
+    padding-left: 1px;
+  }
 }
 
 .Article__pillar--news .CrossRefs .next-previous {
-  li.previous h3  {
-    background-image: url(../_images/prev-article-o-news.svg);
+  li.previous h3 {
+    background-image: url("../_images/prev-article-o-news.svg");
   }
 
   li.next h3 {
-    background-image: url(../_images/next-article-o-news.svg);
+    background-image: url("../_images/next-article-o-news.svg");
   }
 }
 
 .Article__pillar--opinion .CrossRefs .next-previous {
-  li.previous h3  {
-    background-image: url(../_images/prev-article-o-opinion.svg);
+  li.previous h3 {
+    background-image: url("../_images/prev-article-o-opinion.svg");
   }
 
   li.next h3 {
-    background-image: url(../_images/next-article-o-opinion.svg);
+    background-image: url("../_images/next-article-o-opinion.svg");
   }
 }
 
 .Article__pillar--sport .CrossRefs .next-previous {
-  li.previous h3  {
-    background-image: url(../_images/prev-article-o-sport.svg);
+  li.previous h3 {
+    background-image: url("../_images/prev-article-o-sport.svg");
   }
 
   li.next h3 {
-    background-image: url(../_images/next-article-o-sport.svg);
+    background-image: url("../_images/next-article-o-sport.svg");
   }
 }
 
 .Article__pillar--arts .CrossRefs .next-previous {
-  li.previous h3  {
-    background-image: url(../_images/prev-article-o-arts.svg);
+  li.previous h3 {
+    background-image: url("../_images/prev-article-o-arts.svg");
   }
 
   li.next h3 {
-    background-image: url(../_images/next-article-o-arts.svg);
+    background-image: url("../_images/next-article-o-arts.svg");
   }
 }
 
 .Article__pillar--lifestyle .CrossRefs .next-previous {
-  li.previous h3  {
-    background-image: url(../_images/prev-article-o-lifestyle.svg);
+  li.previous h3 {
+    background-image: url("../_images/prev-article-o-lifestyle.svg");
   }
 
   li.next h3 {
-    background-image: url(../_images/next-article-o-lifestyle.svg);
+    background-image: url("../_images/next-article-o-lifestyle.svg");
   }
 }
 
 .CrossRefs .next-previous li.previous h3 {
-    background-image: url(../_images/prev-article.svg);
-    background-repeat: no-repeat;
-    background-size: 18px 18px;
-    background-position: 1px;
-
+  background-image: url("../_images/prev-article.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 1px;
 }
 
 .CrossRefs .next-previous li.next h3 {
-    background-image: url(../_images/next-article.svg);
-    background-repeat: no-repeat;
-    background-size: 18px 18px;
-    background-position: 1px;
-
+  background-image: url("../_images/next-article.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 1px;
 }
-
 ///packages /////////////////////////////////////////
-
 .CrossRefs .package-header {
   background-image: repeating-linear-gradient(to bottom, #c3c3bb, #c3c3bb 0.0625rem, transparent 0.0625rem, transparent 0.25rem);
   background-repeat: repeat-x;
@@ -164,10 +159,7 @@
     font-weight: 200;
     font-size: 17px;
     line-height: 20px;
-    padding-left: 0;
-    padding-right: 3px;
-    padding-top: 3px;
-    padding-bottom: 20px;
+    padding: 3px 3px 20px 0;
     border-top: 1px solid rgb(195, 195, 187);
   }
 
@@ -177,14 +169,13 @@
   }
 
   li:first-child {
-      border-top: 0;
+    border-top: 0;
   }
 }
 
 .Article__pillar--opinion .CrossRefs .story-package {
-    background: $brightness-100;
+  background: $brightness-100;
 }
-
 
 .CrossRefs h3.package-header {
   opacity: 0;
@@ -192,10 +183,7 @@
   font-weight: 200;
   font-size: 17px;
   line-height: 20px;
-  padding-top: 16px;
-  padding-left: 0;
-  padding-right: 4px;
-  padding-bottom: 24px;
+  padding: 16px 4px 24px 0;
   color: $brightness-7;
 }
 
@@ -210,37 +198,35 @@
 }
 
 .Article__pillar--news .CrossRefs .story-package li.current {
-    border-right: 3px solid $obs-news-main;
+  border-right: 3px solid $obs-news-main;
 }
 
 .Article__pillar--opinion .CrossRefs .story-package li.current {
-    border-right: 3px solid $obs-opinion-main;
+  border-right: 3px solid $obs-opinion-main;
 }
 
 .Article__pillar--sport .CrossRefs .story-package li.current {
-    border-right: 3px solid $obs-sport-main;
+  border-right: 3px solid $obs-sport-main;
 }
 
 .Article__pillar--arts .CrossRefs .story-package li.current {
-    border-right: 3px solid $obs-culture-main;
+  border-right: 3px solid $obs-culture-main;
 }
 
 .Article__pillar--lifestyle .CrossRefs .story-package li.current {
-    border-right: 3px solid $obs-lifestyle-sub;
+  border-right: 3px solid $obs-lifestyle-sub;
 }
 
 .CrossRefs .story-package .section {
-    color: $brightness-7;
-    display: block;
-    font-family: $sole-display;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 20px;
-    padding-top: 7px;
+  color: $brightness-7;
+  display: block;
+  font-family: $sole-display;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 7px;
 }
-
 ///Weblinks ///////////////////////////////////////////////
-
 .CrossRefs .weblinks {
   opacity: 0;
   border-top: 1px solid #c3c3bb;
@@ -258,11 +244,8 @@
   }
 
   li {
-      padding-left: 0;
-      padding-right: 3px;
-      padding-top: 6px;
-      padding-bottom: 20px;
-      border-top: 1px solid rgb(195, 195, 187);
+    padding: 6px 3px 20px 0;
+    border-top: 1px solid rgb(195, 195, 187);
   }
 }
 
@@ -271,15 +254,15 @@
 }
 
 .CrossRefs .weblinks .date {
-    color: #999;
+  color: #999;
 }
 
 .CrossRefs .weblinks .section {
-    color: $brightness-7;
-    display: block;
-    font-family: $sole-display;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 20px;
-    padding-top: 3px;
+  color: $brightness-7;
+  display: block;
+  font-family: $sole-display;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 3px;
 }

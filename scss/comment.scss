@@ -11,8 +11,9 @@
   font-size: 44px;
   line-height: 46px;
   font-weight: lighter;
+  max-width: 440px;
 
-  .byline__author{
+  .byline__author {
     font-style: italic;
     font-weight: 200;
     font-size: 44px;
@@ -27,36 +28,32 @@
   margin-top: vertical(2);
   padding-bottom: vertical(2);
 
-    img {
-      width: horizotal(20);
-      z-index: 1000;
-      bottom: 0;
-      margin-left: horizotal(-19);
-      position: absolute;
-    }
-    p {
-      padding-top: vertical(1);
-      width: 70%;
-      z-index: -200;
-      position: relative;
-    }
+  img {
+    width: horizotal(20);
+    z-index: 1000;
+    bottom: 0;
+    margin-left: horizotal(-19);
+    position: absolute;
+  }
 
-    li {
-      padding-right: horizotal(12);
+  p {
+    padding-top: vertical(1);
+    width: 70%;
+    z-index: -200;
+    position: relative;
+  }
 
-      @media (orientation: landscape) {
-          padding-right: horizotal(14);
-      }
+  li {
+    padding-right: horizotal(12);
+    @media (orientation: landscape) {
+      padding-right: horizotal(14);
     }
+  }
 }
-
 // .comment-standfirst-byline-img-container {
 //   display: flex;
 //
 // }
-
-
-
 // .standfirst--comment {
 //   width: 64%;
 //   padding-top: vertical(0.8);
@@ -69,7 +66,6 @@
 //     padding-right: 0;
 //   }
 // }
-
 // .picture__byline-image {
 //   margin-top: vertical(-6);
 //   margin-left: auto;
@@ -82,7 +78,6 @@
 //     margin-bottom: -4px;
 //   }
 // }
-
 // .comment-oneline {
 //   border-top: 1px solid $brightness-86;
 //   margin-top: vertical(3);
@@ -92,28 +87,28 @@
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMXB4IiBoZWlnaHQ9IjFweCIgdmlld0JveD0iMCAwIDEgMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5BcnRpY2xlX2NvbW1lbnQ8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gICAgPGRlZnM+PC9kZWZzPiAgICA8ZyBpZD0iQXJ0aWNsZV90ZW1wbGF0ZXMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9IkFydGljbGVfY29tbWVudCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxLjAwMDAwMCwgLTM0MC4wMDAwMDApIj4gICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlLTMiIGZpbGw9IiNGRUY5RjUiIHg9IjAiIHk9Ijc4IiB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIyMDkzIj48L3JlY3Q+ICAgICAgICAgICAgPGcgaWQ9ImFydGljbGVfYm9keSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAuMDAwMDAwLCA5NC4wMDAwMDApIiBzdHJva2U9IiNDQkM4QzYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+ICAgICAgICAgICAgICAgIDxnIGlkPSJoZWFkZXIiPiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9IlNwb3J0X3J1bGVzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgMTYxLjAwMDAwMCkiPiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0wLjk1NzIyNzEzOSw4NS41IEw2NDguMTgxNTI4LDg1LjUiIGlkPSJMaW5lLTItQ29weS0zNyI+PC9wYXRoPiAgICAgICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+");
   background-repeat: repeat-x;
   background-position-x: 0;
+  width: 100%;
 }
-
-
 //a convoluted but the only way we could hint to target the first letter in this way because the system needed something much more specific
 // then the ususal p:first-of-type:first-letter in order to not give a dropcaup to every p tag
 //these combinations cover all the options within 'opinion'
+
 .comment-standfirst-container + .multiline + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $egyptian-display;
-    font-size: 86px;
-    text-transform: uppercase;
-    line-height: 67px;
-    font-weight: 200;
-    padding-right: horizotal(1);
-    float: left;
+  font-family: $egyptian-display;
+  font-size: 86px;
+  text-transform: uppercase;
+  line-height: 67px;
+  font-weight: 200;
+  padding-right: horizotal(1);
+  float: left;
 }
 
 .comment-standfirst-container + .multiline + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $egyptian-display;
-    font-size: 86px;
-    text-transform: uppercase;
-    line-height: 67px;
-    font-weight: 200;
-    padding-right: horizotal(1);
-    float: left;
+  font-family: $egyptian-display;
+  font-size: 86px;
+  text-transform: uppercase;
+  line-height: 67px;
+  font-weight: 200;
+  padding-right: horizotal(1);
+  float: left;
 }

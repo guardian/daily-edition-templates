@@ -21,10 +21,10 @@
 }
 
 .byline--feature .byline__author {
-    font-style: normal;
-    font-weight: 900;
-    color: $brightness-7;
-  }
+  font-style: normal;
+  font-weight: 900;
+  color: $brightness-7;
+}
 
 .picture {
   &__caption-container--simple {
@@ -73,71 +73,74 @@
 }
 
 .review--stars-1 {
-    position: absolute;
-    z-index: 1000;
-    background: url(stars/1-stars.svg);
-    width: 171px;
-    height: 40px;
+  position: absolute;
+  z-index: 1000;
+  background: url("stars/1-stars.svg");
+  width: 171px;
+  height: 40px;
 }
+
 .review--stars-2 {
-    position: absolute;
-    z-index: 1000;
-    background: url(stars/2-stars.svg);
-    width: 171px;
-    height: 40px;
+  position: absolute;
+  z-index: 1000;
+  background: url("stars/2-stars.svg");
+  width: 171px;
+  height: 40px;
 }
+
 .review--stars-3 {
-    position: absolute;
-    z-index: 1000;
-    background: url(stars/3-stars.svg);
-    width: 171px;
-    height: 40px;
+  position: absolute;
+  z-index: 1000;
+  background: url("stars/3-stars.svg");
+  width: 171px;
+  height: 40px;
 }
+
 .review--stars-4 {
-    position: absolute;
-    z-index: 1000;
-    background: url(stars/4-stars.svg);
-    width: 171px;
-    height: 40px;
+  position: absolute;
+  z-index: 1000;
+  background: url("stars/4-stars.svg");
+  width: 171px;
+  height: 40px;
 }
+
 .review--stars-5 {
-    position: absolute;
-    z-index: 1000;
-    background: url(stars/5-stars.svg);
-    width: 171px;
-    height: 40px;
+  position: absolute;
+  z-index: 1000;
+  background: url("stars/5-stars.svg");
+  width: 171px;
+  height: 40px;
 }
-
-
 //a convoluted but the only way we could hint to target the first letter in this way because the system needed something much more specific
 // then the ususal p:first-of-type:first-letter in order to not give a dropcaup to every p tag
 //these combinations cover all the options within 'feature'
+
 .standfirst + .byline--feature + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $sole-display;
-    font-size: 90px;
-    text-transform: uppercase;
-    line-height: 70px;
-    padding-right: horizotal(1);
-    float: left;
-    font-weight: bold;
+  font-family: $sole-display;
+  font-size: 90px;
+  text-transform: uppercase;
+  line-height: 70px;
+  padding-right: horizotal(1);
+  float: left;
+  font-weight: bold;
 }
 
 .standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $sole-display;
-    font-size: 90px;
-    text-transform: uppercase;
-    line-height: 70px;
-    padding-right: horizotal(1);
-    float: left;
-    font-weight: bold;
+  font-family: $sole-display;
+  font-size: 90px;
+  text-transform: uppercase;
+  line-height: 70px;
+  padding-right: horizotal(1);
+  float: left;
+  font-weight: bold;
 }
 
 .standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $sole-display;
-    font-size: 90px;
-    text-transform: uppercase;
-    line-height: 70px;
-    padding-right: horizotal(1);
-    float: left;
-    font-weight: bold;
+  font-family: $sole-display;
+  font-size: 90px;
+  text-transform: uppercase;
+  line-height: 70px;
+  padding-right: horizotal(1);
+  float: left;
+  font-weight: bold;
 }

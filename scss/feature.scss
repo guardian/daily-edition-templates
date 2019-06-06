@@ -25,6 +25,7 @@
 
 .standfirst--feature {
   padding-bottom: 0;
+
   p {
     padding: 0;
   }
@@ -104,121 +105,127 @@
 }
 
 .review--stars-1 {
-    position: absolute;
-    z-index: 1000;
-    background: url(stars/1-stars.svg);
-    width: 171px;
-    height: 40px;
-    //margin-top: 11px;
-}
-.review--stars-2 {
-    position: absolute;
-    z-index: 1000;
-    background: url(stars/2-stars.svg);
-    width: 171px;
-    height: 40px;
-    //margin-top: 11px;
-}
-.review--stars-3 {
-    position: absolute;
-    z-index: 1000;
-    background: url(stars/3-stars.svg);
-    width: 171px;
-    height: 40px;
-    //margin-top: 11px;
-}
-.review--stars-4 {
-    position: absolute;
-    z-index: 1000;
-    background: url(stars/4-stars.svg);
-    width: 171px;
-    height: 40px;
-    //margin-top: 11px;
-}
-.review--stars-5 {
-    position: absolute;
-    z-index: 1000;
-    background: url(stars/5-stars.svg);
-    width: 171px;
-    height: 40px;
-    //margin-top: 11px;
+  position: absolute;
+  z-index: 1000;
+  background: url("stars/1-stars.svg");
+  width: 171px;
+  height: 40px;
+  //margin-top: 11px;
 }
 
+.review--stars-2 {
+  position: absolute;
+  z-index: 1000;
+  background: url("stars/2-stars.svg");
+  width: 171px;
+  height: 40px;
+  //margin-top: 11px;
+}
+
+.review--stars-3 {
+  position: absolute;
+  z-index: 1000;
+  background: url("stars/3-stars.svg");
+  width: 171px;
+  height: 40px;
+  //margin-top: 11px;
+}
+
+.review--stars-4 {
+  position: absolute;
+  z-index: 1000;
+  background: url("stars/4-stars.svg");
+  width: 171px;
+  height: 40px;
+  //margin-top: 11px;
+}
+
+.review--stars-5 {
+  position: absolute;
+  z-index: 1000;
+  background: url("stars/5-stars.svg");
+  width: 171px;
+  height: 40px;
+  //margin-top: 11px;
+}
 /////Review star when no pic is showing /////////
 .review--stars-nopic-1 {
-    position: relative;
-    z-index: 1000;
-    background: url(stars/1-stars.svg);
-    width: 171px;
-    height: 40px;
-    margin-bottom: vertical(4);
+  position: relative;
+  z-index: 1000;
+  background: url("stars/1-stars.svg");
+  width: 171px;
+  height: 40px;
+  margin-bottom: vertical(4);
 }
+
 .review--stars-nopic-2 {
-    position: relative;
-    z-index: 1000;
-    background: url(stars/2-stars.svg);
-    width: 171px;
-    height: 40px;
-    margin-bottom: vertical(4);
+  position: relative;
+  z-index: 1000;
+  background: url("stars/2-stars.svg");
+  width: 171px;
+  height: 40px;
+  margin-bottom: vertical(4);
 }
+
 .review--stars-nopic-3 {
-    position: relative;
-    z-index: 1000;
-    background: url(stars/3-stars.svg);
-    width: 171px;
-    height: 40px;
-    margin-bottom: vertical(4);
+  position: relative;
+  z-index: 1000;
+  background: url("stars/3-stars.svg");
+  width: 171px;
+  height: 40px;
+  margin-bottom: vertical(4);
 }
+
 .review--stars-nopic-4 {
-    position: relative;
-    z-index: 1000;
-    background: url(stars/4-stars.svg);
-    width: 171px;
-    height: 40px;
-    margin-bottom: vertical(4);
+  position: relative;
+  z-index: 1000;
+  background: url("stars/4-stars.svg");
+  width: 171px;
+  height: 40px;
+  margin-bottom: vertical(4);
 }
+
 .review--stars-nopic-5 {
-    position: relative;
-    z-index: 1000;
-    background: url(stars/5-stars.svg);
-    width: 171px;
-    height: 40px;
-    margin-bottom: vertical(4);
+  position: relative;
+  z-index: 1000;
+  background: url("stars/5-stars.svg");
+  width: 171px;
+  height: 40px;
+  margin-bottom: vertical(4);
 }
-
-
 //a convoluted but the only way we could hint to target the first letter in this way because the system needed something much more specific
 // then the ususal p:first-of-type:first-letter in order to not give a dropcaup to every p tag
 //these combinations cover all the options within 'feature'
+
 .standfirst + .byline--feature + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $egyptian-display;
-    font-size: 86px;
-    text-transform: uppercase;
-    line-height: 67px;
-    font-weight: lighter;
-    padding-right: horizotal(1);
-    float: left;
-    font-weight: bold;
+  font-family: $egyptian-display;
+  font-size: 86px;
+  text-transform: uppercase;
+  line-height: 67px;
+  font-weight: lighter;
+  padding-right: horizotal(1);
+  float: left;
+  font-weight: bold;
 }
 
 .standfirst + .byline--feature + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $egyptian-display;
-    font-size: 86px;
-    text-transform: uppercase;
-    line-height: 67px;
-    font-weight: lighter;
-    padding-right: horizotal(1);
-    float: left;
-    font-weight: bold;
+  font-family: $egyptian-display;
+  font-size: 86px;
+  text-transform: uppercase;
+  line-height: 67px;
+  font-weight: lighter;
+  padding-right: horizotal(1);
+  float: left;
+  font-weight: bold;
 }
 
 .standfirst + .picture + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $egyptian-display;
-    font-size: 86px;
-    text-transform: uppercase;
-    line-height: 67px;
-    font-weight: lighter;
-    padding-right: horizotal(1);
-    float: left;
-    font-weight: bold;
+  font-family: $egyptian-display;
+  font-size: 86px;
+  text-transform: uppercase;
+  line-height: 67px;
+  font-weight: lighter;
+  padding-right: horizotal(1);
+  float: left;
+  font-weight: bold;
 }

@@ -1,13 +1,12 @@
 .header--interview {
-    position: absolute;
-    z-index: 100;
-    width: $width-content;
+  position: absolute;
+  z-index: 100;
+  width: $width-content;
 }
 
 .interview-main {
   margin-top: 117px;
 }
-
 
 .section__container--interview {
   color: $brightness-100;
@@ -25,7 +24,7 @@
   padding-bottom: 0;
 
   a {
-      line-height: 26px;
+    line-height: 26px;
   }
 }
 
@@ -38,10 +37,11 @@
   margin-left: horizotal(0.5);
   padding-bottom: 0;
   width: $width-content-portrait;
+
   span {
     color: white;
     background: $brightness-7;
-    box-shadow:5px 0 0 $brightness-7, -5px 0 0 $brightness-7;
+    box-shadow: 5px 0 0 $brightness-7, -5px 0 0 $brightness-7;
     padding-bottom: horizotal(0.7);
   }
 }
@@ -54,9 +54,10 @@
   line-height: 28px;
   margin-top: 12px;
   margin-left: horizotal(0.5);
+
   span {
-    background:$obs-lifestyle-main;
-    box-shadow:5px 0 0 $obs-lifestyle-main, -5px 0 0 $obs-lifestyle-main;
+    background: $obs-lifestyle-main;
+    box-shadow: 5px 0 0 $obs-lifestyle-main, -5px 0 0 $obs-lifestyle-main;
     padding: 6px 0;
   }
 }
@@ -66,16 +67,16 @@
 }
 
 .picture--interview {
-    top: 107px;
+  top: 107px;
 }
 
 .standfirst--interview + .multiline + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $sole-display;
-    font-size: 92px;
-    text-transform: uppercase;
-    line-height: 70px;
-    font-weight: lighter;
-    padding-right: horizotal(1);
-    float: left;
-    font-weight: bold;
+  font-family: $sole-display;
+  font-size: 92px;
+  text-transform: uppercase;
+  line-height: 70px;
+  font-weight: lighter;
+  padding-right: horizotal(1);
+  float: left;
+  font-weight: bold;
 }

@@ -1,6 +1,7 @@
 .picture--fullscreen {
   margin-bottom: 0;
   position: relative;
+
   img {
     background-repeat: no-repeat;
     width: 100vw;
@@ -34,7 +35,8 @@
     margin-left: horizotal(2);
     padding-top: vertical(0.5);
     border-right: 1px solid $brightness-60;
-    }
+  }
+
   .byline--feature {
     margin-top: vertical(0.5);
     padding-right: horizotal(1);
@@ -52,6 +54,7 @@
 
   .standfirst--feature {
     font-weight: 100;
+
     p {
       padding: 0;
     }
@@ -82,11 +85,11 @@
 
   .section__container {
     color: white;
-    padding: 0px horizotal(1) horizotal(0.3) horizotal(2);
-      @media (orientation: landscape) {
-        color: white;
-        padding: 0px horizotal(1) horizotal(0.3) horizotal(0.5);
-      }
+    padding: 0 horizotal(1) horizotal(0.3) horizotal(2);
+    @media (orientation: landscape) {
+      color: white;
+      padding: 0 horizotal(1) horizotal(0.3) horizotal(0.5);
+    }
   }
 }
 
@@ -97,24 +100,23 @@
   color: white;
   font-weight: bold;
   padding-bottom: vertical(5);
-
-    @media (orientation: landscape) {
-      padding-left: horizotal(0.5);
-        padding-right: horizotal(1);
-    }
+  @media (orientation: landscape) {
+    padding-left: horizotal(0.5);
+    padding-right: horizotal(1);
+  }
 }
 
 .picture--immersive {
   img {
     margin: 0;
-    padding: 6px 0 0 0;
+    padding: 6px 0 0;
     display: block;
     width: $width-content;
   }
   @media (orientation: portrait) {
     img {
       margin: 0;
-      padding: 6px 0 0 0;
+      padding: 6px 0 0;
       display: block;
       width: $width-content-portrait;
     }
@@ -125,10 +127,9 @@
       max-width: 140px;
     }
   }
-
 }
 
-.text-paragraph-line::before{
+.text-paragraph-line::before {
   display: block;
   content: '';
   width: horizotal(7);
@@ -137,12 +138,12 @@
 }
 
 .text-paragraph-line p:first-of-type:first-letter {
-    font-family: $egyptian-display;
-    font-size: 86px;
-    text-transform: uppercase;
-    line-height: 67px;
-    font-weight: lighter;
-    padding-right: horizotal(1);
-    float: left;
-    font-weight: bold;
+  font-family: $egyptian-display;
+  font-size: 86px;
+  text-transform: uppercase;
+  line-height: 67px;
+  font-weight: lighter;
+  padding-right: horizotal(1);
+  float: left;
+  font-weight: bold;
 }

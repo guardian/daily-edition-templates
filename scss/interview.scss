@@ -1,18 +1,17 @@
-
 .header--interview {
-    position: absolute;
-    z-index: 100;
-    width: $width-content;
+  position: absolute;
+  z-index: 100;
+  width: $width-content;
 }
 
 .picture--interview {
-    top: 117px;
+  top: 117px;
 }
 
 .section__container--interview {
   color: $brightness-100;
   //position: relative;
-  padding: vertical(1.2) vertical(1.2) 9px vertical(1.2);
+  padding: vertical(1.2) vertical(1.2) 9px;
 }
 
 .interview-main {
@@ -36,7 +35,7 @@
   padding-bottom: 0;
 
   a {
-      line-height: 26px;
+    line-height: 26px;
   }
 }
 
@@ -50,10 +49,11 @@
   padding-bottom: 0;
   font-size: 34px;
   width: $width-content-portrait;
+
   span {
     color: white;
     background: $brightness-7;
-    box-shadow:5px 0 0 $brightness-7, -5px 0 0 $brightness-7;
+    box-shadow: 5px 0 0 $brightness-7, -5px 0 0 $brightness-7;
     padding-bottom: horizotal(0.5);
   }
 }
@@ -66,9 +66,10 @@
   line-height: 28px;
   margin-top: 9px;
   margin-left: horizotal(0.5);
+
   span {
-    background:$highlight-main;
-    box-shadow:5px 0 0 $highlight-main, -5px 0 0 $highlight-main;
+    background: $highlight-main;
+    box-shadow: 5px 0 0 $highlight-main, -5px 0 0 $highlight-main;
     padding: 6px 0;
   }
 
@@ -81,18 +82,18 @@
 }
 
 .byline--interview .byline__author {
-    font-style: italic;
-    font-weight: 200;
-    color: $brightness-7;
-  }
+  font-style: italic;
+  font-weight: 200;
+  color: $brightness-7;
+}
 
 .standfirst--interview + .multiline + .guardian-body-text--caps > p:first-of-type:first-letter {
-    font-family: $egyptian-display;
-    font-size: 84px;
-    text-transform: uppercase;
-    line-height: 68px;
-    font-weight: lighter;
-    padding-right: horizotal(1);
-    float: left;
-    font-weight: bold;
+  font-family: $egyptian-display;
+  font-size: 84px;
+  text-transform: uppercase;
+  line-height: 68px;
+  font-weight: lighter;
+  padding-right: horizotal(1);
+  float: left;
+  font-weight: bold;
 }

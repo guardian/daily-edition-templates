@@ -3,12 +3,12 @@
 @import "base/unit";
 @import "base/typography";
 @import "base/rules";
-@import "base/vars";
-//@import "base/pillars";
+@import "base/vars"; //@import "base/pillars";
 @import "base/observer-pillars";
 @include fontList(ios);
 /* This overrides standard-common css for Observer standard article*/
 ///////////////////////////////////////////////////
+
 body {
   background-color: white;
   color: $brightness-7;
@@ -27,7 +27,6 @@ a {
 a:hover {
   text-decoration: none;
 }
-
 /* wrapper for left content */
 .content {
   width: $width-content-portrait;
@@ -35,7 +34,6 @@ a:hover {
   padding-top: horizotal(1);
   padding-bottom: horizotal(1);
   border-right: 1px solid $brightness-60;
-
   @media (orientation: landscape) {
     padding-left: 128px;
     width: $width-content;
@@ -52,28 +50,32 @@ a:hover {
     border-bottom: 1px solid $brightness-60;
     padding-bottom: vertical(1);
   }
+
   &--sport {
     border-bottom: 1px solid $brightness-60;
     padding-bottom: vertical(1);
   }
+
   &--arts {
     border-bottom: 1px solid $brightness-60;
     padding-bottom: vertical(1);
   }
+
   &--opinion {
     border-bottom: 1px solid $brightness-60;
     padding-bottom: vertical(1);
   }
+
   &--lifestyle {
     border-bottom: 1px solid $brightness-60;
     padding-bottom: vertical(1);
   }
+
   &--cartoon {
     border-bottom: 1px solid $brightness-60;
     padding-bottom: vertical(1);
   }
 }
-
 /* headline */
 .headline {
   font-family: $sole-display;
@@ -100,7 +102,7 @@ a:hover {
   letter-spacing: -0.3;
 
   p {
-      padding: 0;
+    padding: 0;
   }
 
   a {
@@ -112,7 +114,6 @@ a:hover {
     text-decoration: none;
     border-bottom: 0.0625rem solid !important;
   }
-
 }
 
 .guardian-body-text {
@@ -226,7 +227,6 @@ a:hover {
     display: none;
   }
 }
-
 /* byline */
 /////////////////////////////////////////
 
@@ -257,7 +257,6 @@ a:hover {
 /////////////////////////////////////////
 
 .picture {
-
   &__caption {
     font-family: $sole-display;
     font-style: italic;
@@ -307,6 +306,4 @@ a:hover {
     }
   }
 }
-
-
 //////text bullets ////////////
